@@ -1,0 +1,122 @@
+[
+    {
+        "rankResult": 1,
+        "complexName": "시화국가산업단지",
+        "finalSimilarityScore": 0.7410397989,
+        "regionScore": 0,
+        "industryScore": 1,
+        "landPriceScore": 1,
+        "rawMaterialScore": 1,
+        "productScore": 0.820617113,
+        "transportScore": 0.3666666667,
+        "workerScore": 1
+    },
+    {
+        "rankResult": 2,
+        "complexName": "대구제3일반산업단지",
+        "finalSimilarityScore": 0.6912180031,
+        "regionScore": 1,
+        "industryScore": 0.7420444608,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.5688565934,
+        "productScore": 0.5302371904,
+        "transportScore": 0.7,
+        "workerScore": 0.2973926157
+    },
+    {
+        "rankResult": 3,
+        "complexName": "북구검단일반산업단지",
+        "finalSimilarityScore": 0.671575839,
+        "regionScore": 1,
+        "industryScore": 0.6027557498,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.5223607582,
+        "productScore": 0.5118597839,
+        "transportScore": 0.7666666667,
+        "workerScore": 0.2973926157
+    },
+    {
+        "rankResult": 4,
+        "complexName": "온산국가산업단지",
+        "finalSimilarityScore": 0.6475281413,
+        "regionScore": 1,
+        "industryScore": 0.4422902474,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.5082292778,
+        "productScore": 0.5020475347,
+        "transportScore": 0.9333333333,
+        "workerScore": 0.1468011283
+    },
+    {
+        "rankResult": 5,
+        "complexName": "진주상평일반산업단지",
+        "finalSimilarityScore": 0.6420258433,
+        "regionScore": 1,
+        "industryScore": 0.6432178838,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.517497288,
+        "productScore": 0.506060081,
+        "transportScore": 0.5666666667,
+        "workerScore": 0.260743478
+    },
+    {
+        "rankResult": 6,
+        "complexName": "남동국가산업단지",
+        "finalSimilarityScore": 0.6224930012,
+        "regionScore": 0,
+        "industryScore": 0.939608607,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.7500168478,
+        "productScore": 0.6774356371,
+        "transportScore": 0.6333333333,
+        "workerScore": 0.3570609409
+    },
+    {
+        "rankResult": 7,
+        "complexName": "사상재생사업지구",
+        "finalSimilarityScore": 0.6138491813,
+        "regionScore": 1,
+        "industryScore": 0.6844212049,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.529196422,
+        "productScore": 0.5174032219,
+        "transportScore": 0.4333333333,
+        "workerScore": 0.1325943841
+    },
+    {
+        "rankResult": 8,
+        "complexName": "창원국가산업단지",
+        "finalSimilarityScore": 0.6051383994,
+        "regionScore": 1,
+        "industryScore": 0.8322388913,
+        "landPriceScore": 0.0142642339,
+        "rawMaterialScore": 0.5754021163,
+        "productScore": 0.622088639,
+        "transportScore": 0.4333333333,
+        "workerScore": 0.758645818
+    },
+    {
+        "rankResult": 9,
+        "complexName": "서대구일반산업단지",
+        "finalSimilarityScore": 0.6048488554,
+        "regionScore": 1,
+        "industryScore": 0.5826304135,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.5143167719,
+        "productScore": 0.5108502021,
+        "transportScore": 0.5333333333,
+        "workerScore": 0.0928155007
+    },
+    {
+        "rankResult": 10,
+        "complexName": "양산산막일반산업단지",
+        "finalSimilarityScore": 0.5939228268,
+        "regionScore": 1,
+        "industryScore": 0.5040025165,
+        "landPriceScore": 1,
+        "rawMaterialScore": 0.5088407263,
+        "productScore": 0.503052067,
+        "transportScore": 0.4,
+        "workerScore": 0.2415686355
+    }
+]

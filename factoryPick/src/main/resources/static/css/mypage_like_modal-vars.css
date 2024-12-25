@@ -1,0 +1,310 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --wwwpeterpanzcom-alto: #d0d0d0;
+  --wwwpeterpanzcom-athens-gray: #f4f4f5;
+  --wwwpeterpanzcom-athens-gray: #f4f4f5;
+  --wwwpeterpanzcom-athens-gray: #fafafb;
+  --wwwpeterpanzcom-athens-gray: #fafafb;
+  --wwwpeterpanzcom-black: #000000;
+  --wwwpeterpanzcom-blue: #1c32f7;
+  --wwwpeterpanzcom-blue-charcoal: #000a12;
+  --wwwpeterpanzcom-carnation: #f55858;
+  --wwwpeterpanzcom-dodger-blue: #4292fa;
+  --wwwpeterpanzcom-french-gray: #cacacd;
+  --wwwpeterpanzcom-geyser: #ced5e0;
+  --wwwpeterpanzcom-gray: #818181;
+  --wwwpeterpanzcom-iron: #e7e7e9;
+  --wwwpeterpanzcom-iron: #e2e2e5;
+  --wwwpeterpanzcom-iron: #cacdd1;
+  --wwwpeterpanzcom-iron: #dadadc;
+  --wwwpeterpanzcom-mine-shaft: #3f3f3f;
+  --wwwpeterpanzcom-mine-shaft: #323234;
+  --wwwpeterpanzcom-mountain-meadow: #1db177;
+  --wwwpeterpanzcom-picton-blue: #2f87ec;
+  --wwwpeterpanzcom-porcelain: #e7eaec;
+  --wwwpeterpanzcom-scarpa-flow: #555558;
+  --wwwpeterpanzcom-shark: #323234;
+  --wwwpeterpanzcom-shark: #222225;
+  --wwwpeterpanzcom-shuttle-gray: #535c68;
+  --wwwpeterpanzcom-silver-chalice: #aaaaaa;
+  --wwwpeterpanzcom-spun-pearl: #a6a6ab;
+  --wwwpeterpanzcom-jumbo: #707075;
+  --wwwpeterpanzcom-jumbo: #898990;
+  --wwwpeterpanzcom-linear-mercury-iron: linear-gradient(
+    0deg,
+    rgba(229, 229, 229, 1) 0%,
+    rgba(218, 218, 220, 1) 0%
+  );
+  --wwwpeterpanzcom-mercury: #e5e5e5;
+  --wwwpeterpanzcom-tundora: #444444;
+  --wwwpeterpanzcom-white: #ffffff;
+  --wwwpeterpanzcom-white: #fefefe;
+  --wwwpeterpanzcom-white-white: linear-gradient(to left, #ffffff, #ffffff),
+    linear-gradient(to left, #ffffff, #ffffff);
+  --wwwpeterpanzcom-woodsmoke: #0c0c0d;
+
+  /* Fonts */
+  --headline-1-font-family: Inter-Bold, sans-serif;
+  --headline-1-font-size: 72px;
+  --headline-1-line-height: 120%;
+  --headline-1-font-weight: 700;
+  --headline-1-font-style: normal;
+  --headline-2-font-family: Inter-Bold, sans-serif;
+  --headline-2-font-size: 45px;
+  --headline-2-line-height: 120%;
+  --headline-2-font-weight: 700;
+  --headline-2-font-style: normal;
+  --navigation-font-family: Inter-Bold, sans-serif;
+  --navigation-font-size: 14px;
+  --navigation-line-height: 120%;
+  --navigation-font-weight: 700;
+  --navigation-font-style: normal;
+  --login-font-family: Roboto-Bold, sans-serif;
+  --login-font-size: 48px;
+  --login-line-height: 120%;
+  --login-font-weight: 700;
+  --login-font-style: normal;
+  --main-font-family: Inter-Regular, sans-serif;
+  --main-font-size: 20px;
+  --main-line-height: normal;
+  --main-font-weight: 400;
+  --main-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-family: NotoSansKr-Bold,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-line-height: 23px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-weight: 700;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-family: NotoSansKr-Bold,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-line-height: 20px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-weight: 700;
+  --wwwpeterpanzcom-noto-sans-kr-bold-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-bold-18-font-family: NotoSansKr-Bold,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-bold-18-font-size: 18px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-18-line-height: 25.71px;
+  --wwwpeterpanzcom-noto-sans-kr-bold-18-font-weight: 700;
+  --wwwpeterpanzcom-noto-sans-kr-bold-18-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-size: 13px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-line-height: 18.57px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-size: 13px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-line-height: 20px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-size: 13px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-line-height: 18.57px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-underline-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-underline-font-size: 13px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-underline-line-height: 18.57px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-underline-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-13-underline-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-line-height: 23px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-line-height: 20px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-size: 15px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-line-height: 21.43px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-size: 15px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-line-height: 22px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-size: 15px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-line-height: 21.43px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-15-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-16-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-16-font-size: 16px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-16-line-height: 22.86px;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-16-font-weight: 400;
+  --wwwpeterpanzcom-noto-sans-kr-demilight-16-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-11-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-11-font-size: 11px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-11-line-height: 12px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-11-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-11-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-13-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-13-font-size: 13px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-13-line-height: 18.57px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-13-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-13-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-line-height: 20px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-size: 14px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-line-height: 18.2px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-14-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-15-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-15-font-size: 15px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-15-line-height: 22px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-15-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-15-font-style: normal;
+  --wwwpeterpanzcom-noto-sans-kr-medium-16-font-family: NotoSansKr-Medium,
+    sans-serif;
+  --wwwpeterpanzcom-noto-sans-kr-medium-16-font-size: 16px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-16-line-height: 22.86px;
+  --wwwpeterpanzcom-noto-sans-kr-medium-16-font-weight: 500;
+  --wwwpeterpanzcom-noto-sans-kr-medium-16-font-style: normal;
+  --wwwpeterpanzcom-inter-regular-1378-font-family: Inter-Regular, sans-serif;
+  --wwwpeterpanzcom-inter-regular-1378-font-size: 13.78125px;
+  --wwwpeterpanzcom-inter-regular-1378-line-height: 20px;
+  --wwwpeterpanzcom-inter-regular-1378-font-weight: 400;
+  --wwwpeterpanzcom-inter-regular-1378-font-style: normal;
+  --wwwpeterpanzcom-nanumgothic-bold-922-font-family: NanumGothic-Bold,
+    sans-serif;
+  --wwwpeterpanzcom-nanumgothic-bold-922-font-size: 9.21875px;
+  --wwwpeterpanzcom-nanumgothic-bold-922-line-height: 11px;
+  --wwwpeterpanzcom-nanumgothic-bold-922-font-weight: 700;
+  --wwwpeterpanzcom-nanumgothic-bold-922-font-style: normal;
+  --wwwpeterpanzcom-semantic-button-font-family: NotoSansKr-Medium, sans-serif;
+  --wwwpeterpanzcom-semantic-button-font-size: 14px;
+  --wwwpeterpanzcom-semantic-button-line-height: 21px;
+  --wwwpeterpanzcom-semantic-button-font-weight: 500;
+  --wwwpeterpanzcom-semantic-button-font-style: normal;
+  --wwwpeterpanzcom-semantic-button-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-semantic-button-font-size: 14px;
+  --wwwpeterpanzcom-semantic-button-line-height: 14px;
+  --wwwpeterpanzcom-semantic-button-font-weight: 400;
+  --wwwpeterpanzcom-semantic-button-font-style: normal;
+  --wwwpeterpanzcom-semantic-button-font-family: NotoSansKr-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-button-font-size: 14px;
+  --wwwpeterpanzcom-semantic-button-line-height: 16px;
+  --wwwpeterpanzcom-semantic-button-font-weight: 700;
+  --wwwpeterpanzcom-semantic-button-font-style: normal;
+  --wwwpeterpanzcom-semantic-button-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-semantic-button-font-size: 14px;
+  --wwwpeterpanzcom-semantic-button-line-height: 16px;
+  --wwwpeterpanzcom-semantic-button-font-weight: 400;
+  --wwwpeterpanzcom-semantic-button-font-style: normal;
+  --wwwpeterpanzcom-semantic-button-font-family: NotoSansKr-Medium, sans-serif;
+  --wwwpeterpanzcom-semantic-button-font-size: 14px;
+  --wwwpeterpanzcom-semantic-button-line-height: 20px;
+  --wwwpeterpanzcom-semantic-button-font-weight: 500;
+  --wwwpeterpanzcom-semantic-button-font-style: normal;
+  --wwwpeterpanzcom-semantic-data-font-family: NotoSansKr-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-data-font-size: 24px;
+  --wwwpeterpanzcom-semantic-data-line-height: 34.29px;
+  --wwwpeterpanzcom-semantic-data-font-weight: 700;
+  --wwwpeterpanzcom-semantic-data-font-style: normal;
+  --wwwpeterpanzcom-semantic-details-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-semantic-details-font-size: 14px;
+  --wwwpeterpanzcom-semantic-details-line-height: 20px;
+  --wwwpeterpanzcom-semantic-details-font-weight: 400;
+  --wwwpeterpanzcom-semantic-details-font-style: normal;
+  --wwwpeterpanzcom-semantic-heading-1-font-family: Inter-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-heading-1-font-size: 23.8125px;
+  --wwwpeterpanzcom-semantic-heading-1-line-height: 36px;
+  --wwwpeterpanzcom-semantic-heading-1-font-weight: 700;
+  --wwwpeterpanzcom-semantic-heading-1-font-style: normal;
+  --wwwpeterpanzcom-semantic-heading-3-font-family: NotoSansKr-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-heading-3-font-size: 20px;
+  --wwwpeterpanzcom-semantic-heading-3-line-height: 22px;
+  --wwwpeterpanzcom-semantic-heading-3-font-weight: 700;
+  --wwwpeterpanzcom-semantic-heading-3-font-style: normal;
+  --wwwpeterpanzcom-semantic-heading-3-font-family: NotoSansKr-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-heading-3-font-size: 20px;
+  --wwwpeterpanzcom-semantic-heading-3-line-height: 30px;
+  --wwwpeterpanzcom-semantic-heading-3-font-weight: 700;
+  --wwwpeterpanzcom-semantic-heading-3-font-style: normal;
+  --wwwpeterpanzcom-semantic-item-font-family: Inter-Medium, sans-serif;
+  --wwwpeterpanzcom-semantic-item-font-size: 15.75px;
+  --wwwpeterpanzcom-semantic-item-line-height: 24px;
+  --wwwpeterpanzcom-semantic-item-font-weight: 500;
+  --wwwpeterpanzcom-semantic-item-font-style: normal;
+  --wwwpeterpanzcom-semantic-item-font-family: Inter-Regular, sans-serif;
+  --wwwpeterpanzcom-semantic-item-font-size: 15.875px;
+  --wwwpeterpanzcom-semantic-item-line-height: 24px;
+  --wwwpeterpanzcom-semantic-item-font-weight: 400;
+  --wwwpeterpanzcom-semantic-item-font-style: normal;
+  --wwwpeterpanzcom-semantic-item-font-family: NotoSansKr-DemiLight, sans-serif;
+  --wwwpeterpanzcom-semantic-item-font-size: 13px;
+  --wwwpeterpanzcom-semantic-item-line-height: 20px;
+  --wwwpeterpanzcom-semantic-item-font-weight: 400;
+  --wwwpeterpanzcom-semantic-item-font-style: normal;
+  --wwwpeterpanzcom-semantic-item-font-family: NotoSansKr-Medium, sans-serif;
+  --wwwpeterpanzcom-semantic-item-font-size: 13px;
+  --wwwpeterpanzcom-semantic-item-line-height: 18.57px;
+  --wwwpeterpanzcom-semantic-item-font-weight: 500;
+  --wwwpeterpanzcom-semantic-item-font-style: normal;
+  --wwwpeterpanzcom-semantic-item-font-family: NotoSansKr-DemiLight, sans-serif;
+  --wwwpeterpanzcom-semantic-item-font-size: 13px;
+  --wwwpeterpanzcom-semantic-item-line-height: 18.57px;
+  --wwwpeterpanzcom-semantic-item-font-weight: 400;
+  --wwwpeterpanzcom-semantic-item-font-style: normal;
+  --wwwpeterpanzcom-semantic-link-font-family: Inter-Regular, sans-serif;
+  --wwwpeterpanzcom-semantic-link-font-size: 15.75px;
+  --wwwpeterpanzcom-semantic-link-line-height: 22.86px;
+  --wwwpeterpanzcom-semantic-link-font-weight: 400;
+  --wwwpeterpanzcom-semantic-link-font-style: normal;
+  --wwwpeterpanzcom-semantic-link-font-family: Inter-Medium, sans-serif;
+  --wwwpeterpanzcom-semantic-link-font-size: 15.875px;
+  --wwwpeterpanzcom-semantic-link-line-height: 22.86px;
+  --wwwpeterpanzcom-semantic-link-font-weight: 500;
+  --wwwpeterpanzcom-semantic-link-font-style: normal;
+  --wwwpeterpanzcom-semantic-link-font-family: Inter-Regular, sans-serif;
+  --wwwpeterpanzcom-semantic-link-font-size: 16px;
+  --wwwpeterpanzcom-semantic-link-line-height: 22.86px;
+  --wwwpeterpanzcom-semantic-link-font-weight: 400;
+  --wwwpeterpanzcom-semantic-link-font-style: normal;
+  --wwwpeterpanzcom-semantic-strong-font-family: NotoSansKr-Bold, sans-serif;
+  --wwwpeterpanzcom-semantic-strong-font-size: 15px;
+  --wwwpeterpanzcom-semantic-strong-line-height: 22px;
+  --wwwpeterpanzcom-semantic-strong-font-weight: 700;
+  --wwwpeterpanzcom-semantic-strong-font-style: normal;
+  --wwwpeterpanzcom-semantic-superscript-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-semantic-superscript-font-size: 10.5px;
+  --wwwpeterpanzcom-semantic-superscript-line-height: 20px;
+  --wwwpeterpanzcom-semantic-superscript-font-weight: 400;
+  --wwwpeterpanzcom-semantic-superscript-font-style: normal;
+  --wwwpeterpanzcom-semantic-superscript-font-family: NotoSansKr-DemiLight,
+    sans-serif;
+  --wwwpeterpanzcom-semantic-superscript-font-size: 12px;
+  --wwwpeterpanzcom-semantic-superscript-line-height: 23px;
+  --wwwpeterpanzcom-semantic-superscript-font-weight: 400;
+  --wwwpeterpanzcom-semantic-superscript-font-style: normal;
+
+  /* Effects */
+}

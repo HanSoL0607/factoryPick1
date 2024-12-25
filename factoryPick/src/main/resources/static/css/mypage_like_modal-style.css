@@ -1,0 +1,409 @@
+.frame-1,
+.frame-1 * {
+  box-sizing: border-box;
+}
+.frame-1 {
+  background: #ffffff;
+  height: 1316px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-11 {
+  background: #fca311;
+  border-radius: 10px;
+  width: 1217px;
+  height: 712px;
+  position: absolute;
+  left: 412px;
+  top: 257px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.frame-2 {
+  width: 1217px;
+  height: 552px;
+  position: absolute;
+  left: 412px;
+  top: 407px;
+}
+.group-7 {
+  height: auto;
+  position: relative ;
+  left: 62px;
+  top: 84px;
+  overflow: visible;
+}
+.first_size {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 148px;
+  top: 134px;
+  width: 194px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 545px;
+  top: 96px;
+  width: 114px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_comparison {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 779px;
+  top: 97px;
+  width: 359px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_comparison {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 51px;
+  top: 93px;
+  width: 384px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 420px;
+  top: 133px;
+  width: 359px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_size {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 134px;
+  width: 194px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 420px;
+  top: 175px;
+  width: 360px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_competion_date {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 791px;
+  top: 175px;
+  width: 296px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div4 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 420px;
+  top: 220px;
+  width: 360px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_highway {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 216px;
+  width: 194px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div5 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 419px;
+  top: 256px;
+  width: 360px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_seaport {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 256px;
+  width: 194px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div6 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 420px;
+  top: 297px;
+  width: 359px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_train {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 297px;
+  width: 194px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div7 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 419px;
+  top: 338px;
+  width: 361px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second_airport {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 338px;
+  width: 194px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_completion_date {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 108px;
+  top: 175px;
+  width: 262px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_highway {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 147px;
+  top: 216px;
+  width: 195px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_seaport {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 147px;
+  top: 256px;
+  width: 195px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_station {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 147px;
+  top: 297px;
+  width: 195px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first_airport {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 147px;
+  top: 338px;
+  width: 195px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div8 {
+  color: var(--color, #14213d);
+  text-align: center;
+  font-family: var(
+    --var-sds-typography-title-hero-font-family,
+    "Inter-Bold",
+    sans-serif
+  );
+  font-size: var(--display-medium-size, 45px);
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: absolute;
+  left: 415px;
+  top: 376px;
+  width: 1217px;
+  height: 45px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+.second_station{
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 842px;
+  top: 297px;
+  width: 194px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pleaseButtonHover:hover {
+    cursor: pointer; /* hover 시 클릭 모양으로 변경 */
+ }

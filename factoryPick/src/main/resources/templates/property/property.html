@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/property-vars.css}">
+  <link rel="stylesheet" th:href="@{/css/property-style.css}">
+   <script th:src="@{/script/jquery-3.7.1.min.js}"></script>
+   <script th:src="@{/script/authStatus.js}" defer></script>
+    
+  <title>산업단지 지도</title>
+</head>
+
+<body>
+  <!-- frame-1 내부 구성 -->
+  <div class="frame-1">
+    <div class="rectangle-7"></div>
+
+    <!-- 안내 텍스트 -->
+    <div class="div">
+      ✅ 지도를 확대하여 산업단지 위치를 확인하고, 클릭 시 상세 정보를 얻을 수 있습니다.
+    </div>
+
+    <!-- Kakao Map Integration -->
+    <div id="map">
+      <!-- 검색창 -->
+      <div class="search-box">
+        <input id="search-input" type="text" placeholder="단지명을 입력하세요">
+        <button id="property-search-button">검색</button>
+        <ul id="autocomplete-list"></ul>
+      </div>
+    </div>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1708a916702bd0a90d99218c7d3dbfbd"></script>
+    <script th:src="@{/script/property.js}"></script>
+
+     <!-- 테이블 헤더 -->
+
+<div class="header-container">
+  <div class="heart-buttons">
+    <button class="emptyheart" id="emptyheart" style="display: none;">
+      <img src="/images/whiteheart.png" alt="White Heart">
+    </button>
+    <button class="fullheart" id="fullheart" style="display: none;">
+      <img src="/images/redheart.png" alt="Red Heart">
+    </button>
+  </div>
+  <div id="complex-name-header">산업단지 정보</div>
+</div>
+<div> 
+  <!-- Display success message if present -->
+  <p th:if="${message}" th:text="${message}"></p>
+
+  <!-- Display error message if present -->
+  <p th:if="${error}" th:text="${error}" style="color: red;"></p>
+</div>
+    <!-- 산업단지 정보 테이블 -->
+    <table id="complex-info-table">
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>세부정보</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>면적</td>
+          <td id="size">m²</td>
+        </tr>
+        <tr>
+          <td>착공일 / 준공인가일</td>
+          <td id="completeDate">YYYY년 MM월 DD일</td>
+        </tr>
+        <tr>
+          <td>고속도로</td>
+          <td id="highway">000 고속도로 00KM</td>
+        </tr>
+        <tr>
+          <td>항만</td>
+          <td id="seaport">00항만 00KM</td>
+        </tr>
+        <tr>
+          <td>철도</td>
+          <td id="train">00역 00KM</td>
+        </tr>
+        <tr>
+          <td>항공</td>
+          <td id="airport">00공항 00KM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 이미지와 추가 내용 섹션 -->
+  <div class="rectangle-4"></div>
+  <img class="image-2" th:src="@{../images/image-20.png}" />
+  <div class="div2">추천 시스템 소개</div>
+  <div class="div3">마이페이지</div>
+  <div class="div4">산업단지 둘러보기</div>
+  <div class="div5">공장입지 추천받기</div>
+  <div class="div6">로그인 / 회원가입</div>
+
+  <!-- 구분선 -->
+  <div class="line-6"></div>
+  <div class="line-7"></div>
+  <div class="line-8"></div>
+  <div class="line-9"></div>
+  <div class="line-10"></div>
+
+  <!-- 하단 저작권 정보 -->
+  <div class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com">
+    <span>
+      상호 : (주)팩토리픽 | 대표 : 임ㅎ | 사업자등록번호: 120-87-61559
+      <br />
+      주소 : 서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽 고객센터 1661-6844
+      <br />
+      COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+      <br />
+      서비스 이용문의: 1661-8734 | 이메일 : hanwhasystem@factorypick.com
+      <br />
+      팩스 : 02-568-4908 | 서비스제휴문의 : partnership@factorypick.com
+    </span>
+  </div>
+
+  <img class="image-3" th:src="@{../images/image-30.png}" />
+  
+  <!-- 네비게이션 섹션 -->
+  <div class="group-52">
+    <div class="group-4">
+      <div class="group-1">
+        <div class="button">
+                  <a class="recommendation pleaseButtonHover" data-recommendation="recommendation" th:href="@{/recommendation/recommendation_intro}">
+          공장입지 추천 받기
+        </a>
+        </div>
+        <div class="button2">
+          <button class="intro" data-intro="intro">추천시스템 소개</button>
+        </div>
+        <div class="button3">
+          <button class="property" data-property="property">산업단지 둘러보기</button>
+        </div>
+        <div class="button4">
+          <button class="myPage" data-my-page="myPage">마이페이지</button>
+        </div>
+        <div class="button5">
+          <button class="support" data-support="support">고객지원</button>
+        </div>
+        <div class="button6">
+          <div class="users">일반회원</div>
+        </div>
+        <div class="button7">
+          <div class="agent">중개인</div>
+        </div>
+        <div class="button8" >
+          <div class="login" id="authButton">로그인/ 회원가입</div>
+        </div>
+      </div>
+      <div class="button9">
+        <img class="home" data-mainpage="mainpage" th:src="@{../images/image-11.png}" />
+      </div>
+    </div>
+  </div>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="login-options">
+       <span class="alert">로그인 및 회원가입 후 이용해주세요!</span>
+      <a href="/oauth2/authorization/kakao">
+        <img class="image-1" src="../images/kakao_login_medium_narrow.png" alt="Kakao Login" />
+      </a>
+      <a href="/oauth2/authorization/naver">
+        <img class="image-4" src="../images/btnG_완성형.png" alt="Naver Login" />
+      </a>
+      <a href="/oauth2/authorization/google">
+        <img class="image-5" src="../images/web_light_sq_SU@1x.png" alt="Google Login" />
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+</script>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/usermodal-vars.css">
+  <link rel="stylesheet" href="./css/usermodal-style.css">
+  
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <div class="rectangle-1"></div>
+    <div class="div">
+      <!-- 본인 정보와 를을 구분하여 스타일 적용 -->
+      <span class="combined-span">
+        <span class="div-span">본인정보</span><span class="div-span-black">를</span>
+        <span class="div-span2"> 입력해주세요.</span>
+      </span>
+    </div>
+    <div class="line-6"></div>
+    <div class="form-log-in">
+      <!-- Name Field -->
+      <div class="input-field">
+        <div class="label">이름</div>
+        <input type="text" class="name"  placeholder="입력해주세요." />
+      </div>
+      <!-- Phone Number Field -->
+      <div class="input-field">
+        <div class="label2">전화번호</div>
+        <input type="text" class="phone" placeholder="입력해주세요." />
+      </div>
+      <!-- Submit Button -->
+      <div class="button-group">
+        <div class="button2" onclick="submitForm()">
+          <div class="button3">입력완료</div>
+        </div>
+      </div>
+      <div class="text-link"></div>
+    </div>
+    <div class="cancel-button">
+      <div class="x" onclick="resetForm()">x</div>
+    </div>
+  </div>
+
+  <script>
+    function submitForm() {
+      const name = document.getElementById('nameInput').value;
+      const phone = document.getElementById('phoneInput').value;
+      if (name && phone) {
+        alert(`이름: ${name}\n전화번호: ${phone}`);
+      } else {
+        alert('모든 필드를 입력해주세요.');
+      }
+    }
+
+    function resetForm() {
+      document.getElementById('nameInput').value = '';
+      document.getElementById('phoneInput').value = '';
+    }
+  </script>
+</body>
+</html>

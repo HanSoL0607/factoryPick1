@@ -1,0 +1,2437 @@
+[
+ {
+  "complex_name": "GW일반산업단지",
+  "latitude": 35.4283005,
+  "longitude": 129.2154003
+ },
+ {
+  "complex_name": "I-Food Park일반산업단지",
+  "latitude": 37.6132247,
+  "longitude": 126.632494
+ },
+ {
+  "complex_name": "KCC울산일반산업단지",
+  "latitude": 35.7047347,
+  "longitude": 129.1943274
+ },
+ {
+  "complex_name": "가평목동일반산업단지",
+  "latitude": 37.8943505,
+  "longitude": 127.558337
+ },
+ {
+  "complex_name": "강릉과학일반산업단지",
+  "latitude": 37.796346,
+  "longitude": 128.8550202
+ },
+ {
+  "complex_name": "강릉중소일반산업단지",
+  "latitude": 37.7679055,
+  "longitude": 128.9247954
+ },
+ {
+  "complex_name": "강진환경산업단지",
+  "latitude": 34.6789339,
+  "longitude": 126.7449499
+ },
+ {
+  "complex_name": "강화일반산업단지",
+  "latitude": 37.7634071,
+  "longitude": 126.5039747
+ },
+ {
+  "complex_name": "강화하점일반산업단지",
+  "latitude": 37.7688873,
+  "longitude": 126.4384253
+ },
+ {
+  "complex_name": "거제모사일반산업단지",
+  "latitude": 34.9410142,
+  "longitude": 128.5959781
+ },
+ {
+  "complex_name": "거제오비일반산업단지",
+  "latitude": 34.9175129,
+  "longitude": 128.6189774
+ },
+ {
+  "complex_name": "거창일반산업단지",
+  "latitude": 35.6508623,
+  "longitude": 127.9262262
+ },
+ {
+  "complex_name": "경북바이오일반산업단지",
+  "latitude": 36.5959604,
+  "longitude": 128.5463774
+ },
+ {
+  "complex_name": "경산제1일반산업단지",
+  "latitude": 35.8667219,
+  "longitude": 128.8233352
+ },
+ {
+  "complex_name": "경산제2일반산업단지",
+  "latitude": 35.826347,
+  "longitude": 128.821584
+ },
+ {
+  "complex_name": "경산제3일반산업단지",
+  "latitude": 35.8603647,
+  "longitude": 128.8219343
+ },
+ {
+  "complex_name": "경주강동일반산업단지",
+  "latitude": 35.9630069,
+  "longitude": 129.3085901
+ },
+ {
+  "complex_name": "경주건천용명일반산업단지",
+  "latitude": 35.8740844,
+  "longitude": 129.0865256
+ },
+ {
+  "complex_name": "경주건천제1일반산업단지",
+  "latitude": 35.8632511,
+  "longitude": 129.1133142
+ },
+ {
+  "complex_name": "경주건천제2일반산업단지",
+  "latitude": 35.8736926,
+  "longitude": 129.1043355
+ },
+ {
+  "complex_name": "경주검단일반산업단지",
+  "latitude": 35.9200072,
+  "longitude": 129.1955577
+ },
+ {
+  "complex_name": "경주구어제2일반산업단지",
+  "latitude": 35.7030719,
+  "longitude": 129.296028
+ },
+ {
+  "complex_name": "경주녹동일반산업단지",
+  "latitude": 35.6576138,
+  "longitude": 129.2903181
+ },
+ {
+  "complex_name": "경주모화일반산업단지",
+  "latitude": 35.6864163,
+  "longitude": 129.3248969
+ },
+ {
+  "complex_name": "경주문산일반산업단지",
+  "latitude": 35.6662504,
+  "longitude": 129.316153
+ },
+ {
+  "complex_name": "경주문산제2일반산업단지",
+  "latitude": 35.670265,
+  "longitude": 129.3039047
+ },
+ {
+  "complex_name": "경주석계일반산업단지",
+  "latitude": 35.6619372,
+  "longitude": 129.306244
+ },
+ {
+  "complex_name": "경주석계제2일반산업단지",
+  "latitude": 35.6650089,
+  "longitude": 129.3052844
+ },
+ {
+  "complex_name": "경주석계제4일반산업단지",
+  "latitude": 35.6846578,
+  "longitude": 129.310307
+ },
+ {
+  "complex_name": "경주외동일반산업단지",
+  "latitude": 35.6710324,
+  "longitude": 129.3278912
+ },
+ {
+  "complex_name": "경주외동제2일반산업단지",
+  "latitude": 35.6694532,
+  "longitude": 129.3166079
+ },
+ {
+  "complex_name": "경주제내제2일반산업단지",
+  "latitude": 35.7021672,
+  "longitude": 129.2690344
+ },
+ {
+  "complex_name": "경주천북일반산업단지",
+  "latitude": 35.9495324,
+  "longitude": 129.2633562
+ },
+ {
+  "complex_name": "경주천북제2일반산업단지",
+  "latitude": 35.9216311,
+  "longitude": 129.2648487
+ },
+ {
+  "complex_name": "경주화산일반산업단지",
+  "latitude": 35.9320793,
+  "longitude": 129.2702099
+ },
+ {
+  "complex_name": "계룡제1산업단지",
+  "latitude": 36.2492024,
+  "longitude": 127.2712272
+ },
+ {
+  "complex_name": "고덕국제화계획지구일반산업단지",
+  "latitude": 37.0262501,
+  "longitude": 127.0515786
+ },
+ {
+  "complex_name": "고령개진일반산업단지",
+  "latitude": 35.7177243,
+  "longitude": 128.3104894
+ },
+ {
+  "complex_name": "고령제1일반산업단지",
+  "latitude": 35.7892992,
+  "longitude": 128.3895163
+ },
+ {
+  "complex_name": "고령제2일반산업단지",
+  "latitude": 35.7956162,
+  "longitude": 128.3737454
+ },
+ {
+  "complex_name": "고성내산일반산업단지",
+  "latitude": 35.0489917,
+  "longitude": 128.4762532
+ },
+ {
+  "complex_name": "고성대가룡일반산업단지",
+  "latitude": 35.0118603,
+  "longitude": 128.4830314
+ },
+ {
+  "complex_name": "고성대독일반산업단지",
+  "latitude": 34.9657319,
+  "longitude": 128.307872
+ },
+ {
+  "complex_name": "고성율대일반산업단지",
+  "latitude": 34.9605529,
+  "longitude": 128.3498481
+ },
+ {
+  "complex_name": "고성장좌일반산업단지",
+  "latitude": 34.9936593,
+  "longitude": 128.4617264
+ },
+ {
+  "complex_name": "고창일반산업단지",
+  "latitude": 35.4173323,
+  "longitude": 126.6814774
+ },
+ {
+  "complex_name": "공주유구자카드일반산업단지",
+  "latitude": 36.5488891,
+  "longitude": 126.9412116
+ },
+ {
+  "complex_name": "공주탄천일반산업단지",
+  "latitude": 36.2993545,
+  "longitude": 127.0570808
+ },
+ {
+  "complex_name": "관리일반산업단지",
+  "latitude": 37.2612401,
+  "longitude": 127.357622
+ },
+ {
+  "complex_name": "광명일반산업단지",
+  "latitude": 35.9444489,
+  "longitude": 129.4240673
+ },
+ {
+  "complex_name": "광양세풍일반산업단지",
+  "latitude": 34.9359155,
+  "longitude": 127.5861293
+ },
+ {
+  "complex_name": "광양신금일반산업단지",
+  "latitude": 34.9726227,
+  "longitude": 127.7237376
+ },
+ {
+  "complex_name": "광양익신일반산업단지",
+  "latitude": 34.9541983,
+  "longitude": 127.6068345
+ },
+ {
+  "complex_name": "광양황금일반산업단지",
+  "latitude": 34.7686075,
+  "longitude": 127.7016156
+ },
+ {
+  "complex_name": "광주본촌일반산업단지",
+  "latitude": 35.1976519,
+  "longitude": 126.884828
+ },
+ {
+  "complex_name": "광주소촌일반산업단지",
+  "latitude": 35.1490512,
+  "longitude": 126.7901836
+ },
+ {
+  "complex_name": "광주송암일반산업단지",
+  "latitude": 35.1117183,
+  "longitude": 126.8804399
+ },
+ {
+  "complex_name": "광주평동3차일반산업단지",
+  "latitude": 35.1116764,
+  "longitude": 126.7538473
+ },
+ {
+  "complex_name": "광주평동일반산업단지",
+  "latitude": 35.1183179,
+  "longitude": 126.7636096
+ },
+ {
+  "complex_name": "광주하남일반산업단지",
+  "latitude": 35.199489,
+  "longitude": 126.8026063
+ },
+ {
+  "complex_name": "괴산대제일반산업단지",
+  "latitude": 36.8185706,
+  "longitude": 127.8164863
+ },
+ {
+  "complex_name": "괴산유기식품일반산업단지",
+  "latitude": 36.769849,
+  "longitude": 127.8652479
+ },
+ {
+  "complex_name": "괴산첨단산업단지",
+  "latitude": 36.789862,
+  "longitude": 127.6455591
+ },
+ {
+  "complex_name": "군산일반산업단지",
+  "latitude": 35.9690484,
+  "longitude": 126.6239782
+ },
+ {
+  "complex_name": "기장기룡제1일반산업단지",
+  "latitude": 35.3599186,
+  "longitude": 129.2564949
+ },
+ {
+  "complex_name": "기장기룡제2일반산업단지",
+  "latitude": 35.3613742,
+  "longitude": 129.2583005
+ },
+ {
+  "complex_name": "기장명례일반산업단지",
+  "latitude": 35.3776862,
+  "longitude": 129.2568461
+ },
+ {
+  "complex_name": "기장에코장안일반산업단지",
+  "latitude": 35.3547912,
+  "longitude": 129.2584005
+ },
+ {
+  "complex_name": "기장장안일반산업단지",
+  "latitude": 35.3318926,
+  "longitude": 129.261564
+ },
+ {
+  "complex_name": "기장정관일반산업단지",
+  "latitude": 35.3156333,
+  "longitude": 129.1857842
+ },
+ {
+  "complex_name": "김제순동일반산업단지",
+  "latitude": 35.818361,
+  "longitude": 126.9226629
+ },
+ {
+  "complex_name": "김제지평선일반산업단지",
+  "latitude": 35.843365,
+  "longitude": 126.8702947
+ },
+ {
+  "complex_name": "김천제1일반산업단지",
+  "latitude": 36.1599863,
+  "longitude": 128.1312008
+ },
+ {
+  "complex_name": "김포상마일반산업단지",
+  "latitude": 37.6877721,
+  "longitude": 126.5476335
+ },
+ {
+  "complex_name": "김포양촌일반산업단지",
+  "latitude": 37.6212501,
+  "longitude": 126.6133834
+ },
+ {
+  "complex_name": "김포율생일반산업단지",
+  "latitude": 37.6463065,
+  "longitude": 126.5775517
+ },
+ {
+  "complex_name": "김포통진일반산업단지",
+  "latitude": 37.6981699,
+  "longitude": 126.5703005
+ },
+ {
+  "complex_name": "김포학운2일반산업단지",
+  "latitude": 37.6061273,
+  "longitude": 126.589056
+ },
+ {
+  "complex_name": "김포학운3일반산업단지",
+  "latitude": 37.6068352,
+  "longitude": 126.6077264
+ },
+ {
+  "complex_name": "김포학운4일반산업단지",
+  "latitude": 37.6096446,
+  "longitude": 126.6171361
+ },
+ {
+  "complex_name": "김포학운일반산업단지",
+  "latitude": 37.6041157,
+  "longitude": 126.5854896
+ },
+ {
+  "complex_name": "김포항공일반산업단지",
+  "latitude": 37.6187242,
+  "longitude": 126.5778711
+ },
+ {
+  "complex_name": "김해GoldenRoot일반산업단지",
+  "latitude": 35.2137147,
+  "longitude": 128.8380639
+ },
+ {
+  "complex_name": "김해덕암일반산업단지",
+  "latitude": 35.2590667,
+  "longitude": 128.8151359
+ },
+ {
+  "complex_name": "김해명동일반산업단지",
+  "latitude": 35.2945555,
+  "longitude": 128.8009832
+ },
+ {
+  "complex_name": "김해오척일반산업단지",
+  "latitude": 35.2799164,
+  "longitude": 128.7330696
+ },
+ {
+  "complex_name": "김해이노비즈벨리일반산업단지",
+  "latitude": 35.2561266,
+  "longitude": 128.8278932
+ },
+ {
+  "complex_name": "김해진영주호일반산업단지",
+  "latitude": 35.318543,
+  "longitude": 128.7418864
+ },
+ {
+  "complex_name": "김해테크노밸리일반산업단지",
+  "latitude": 35.2708019,
+  "longitude": 128.7733532
+ },
+ {
+  "complex_name": "나주문평일반산업단지",
+  "latitude": 35.0208991,
+  "longitude": 126.6283888
+ },
+ {
+  "complex_name": "나주신도일반산업단지",
+  "latitude": 34.998205,
+  "longitude": 126.8044839
+ },
+ {
+  "complex_name": "나주일반산업단지",
+  "latitude": 34.9873305,
+  "longitude": 126.6836792
+ },
+ {
+  "complex_name": "나주혁신일반산업단지",
+  "latitude": 34.9802516,
+  "longitude": 126.6903567
+ },
+ {
+  "complex_name": "남공주일반산업단지",
+  "latitude": 36.4231259,
+  "longitude": 127.0767051
+ },
+ {
+  "complex_name": "남양주광릉테크노밸리일반산업단지",
+  "latitude": 37.7507921,
+  "longitude": 127.2351275
+ },
+ {
+  "complex_name": "남양주금곡일반산업단지",
+  "latitude": 37.7094599,
+  "longitude": 127.2123801
+ },
+ {
+  "complex_name": "남양주진관일반산업단지",
+  "latitude": 37.6373474,
+  "longitude": 127.1572358
+ },
+ {
+  "complex_name": "남여주일반산업단지",
+  "latitude": 37.2557751,
+  "longitude": 127.5966106
+ },
+ {
+  "complex_name": "남원일반산업단지",
+  "latitude": 35.4914982,
+  "longitude": 127.3477658
+ },
+ {
+  "complex_name": "남춘천일반산업단지",
+  "latitude": 37.7491226,
+  "longitude": 127.7165059
+ },
+ {
+  "complex_name": "논산동산일반산업단지",
+  "latitude": 36.1354863,
+  "longitude": 127.1360235
+ },
+ {
+  "complex_name": "논산일반산업단지",
+  "latitude": 36.2208251,
+  "longitude": 127.0476059
+ },
+ {
+  "complex_name": "논산제2일반산업단지",
+  "latitude": 36.2170699,
+  "longitude": 127.0419065
+ },
+ {
+  "complex_name": "단양일반산업단지",
+  "latitude": 37.0136452,
+  "longitude": 128.3044084
+ },
+ {
+  "complex_name": "달성2차일반산업단지",
+  "latitude": 35.6325529,
+  "longitude": 128.4286786
+ },
+ {
+  "complex_name": "달성일반산업단지",
+  "latitude": 35.7411146,
+  "longitude": 128.4704412
+ },
+ {
+  "complex_name": "담양일반산업단지",
+  "latitude": 35.3421305,
+  "longitude": 127.0079118
+ },
+ {
+  "complex_name": "당진송산제2일반산업단지",
+  "latitude": 36.9746128,
+  "longitude": 126.7074158
+ },
+ {
+  "complex_name": "당진제1철강일반산업단지",
+  "latitude": 36.9819208,
+  "longitude": 126.7035216
+ },
+ {
+  "complex_name": "당진합덕인더스파크일반산업단지",
+  "latitude": 36.7903395,
+  "longitude": 126.7457911
+ },
+ {
+  "complex_name": "당진합덕일반산업단지",
+  "latitude": 36.8149772,
+  "longitude": 126.7488524
+ },
+ {
+  "complex_name": "대구염색일반산업단지",
+  "latitude": 35.8843897,
+  "longitude": 128.5452004
+ },
+ {
+  "complex_name": "대구이시아폴리스일반산업단지",
+  "latitude": 35.9178698,
+  "longitude": 128.6388897
+ },
+ {
+  "complex_name": "대구제3일반산업단지",
+  "latitude": 35.8993558,
+  "longitude": 128.5746007
+ },
+ {
+  "complex_name": "대구출판산업단지",
+  "latitude": 35.8407307,
+  "longitude": 128.5267846
+ },
+ {
+  "complex_name": "대구테크노폴리스일반산업단지",
+  "latitude": 35.6782593,
+  "longitude": 128.4603354
+ },
+ {
+  "complex_name": "대전 일반산업단지",
+  "latitude": 36.3725319,
+  "longitude": 127.4066029
+ },
+ {
+  "complex_name": "대전하소친환경일반산업단지",
+  "latitude": 36.2197097,
+  "longitude": 127.4367273
+ },
+ {
+  "complex_name": "동고령일반산업단지",
+  "latitude": 35.7805912,
+  "longitude": 128.3748443
+ },
+ {
+  "complex_name": "동두천상봉암일반산업단지",
+  "latitude": 37.9417922,
+  "longitude": 127.0608797
+ },
+ {
+  "complex_name": "동두천일반산업단지",
+  "latitude": 37.9308563,
+  "longitude": 127.0515373
+ },
+ {
+  "complex_name": "동두천제2일반산업단지",
+  "latitude": 37.9394303,
+  "longitude": 127.0544429
+ },
+ {
+  "complex_name": "마산진북일반산업단지",
+  "latitude": 35.1357452,
+  "longitude": 128.4816511
+ },
+ {
+  "complex_name": "명계3일반산업단지",
+  "latitude": 35.717659,
+  "longitude": 129.2300258
+ },
+ {
+  "complex_name": "목포대양일반산업단지",
+  "latitude": 34.829803,
+  "longitude": 126.4037746
+ },
+ {
+  "complex_name": "목포삽진일반산업단지",
+  "latitude": 34.8274797,
+  "longitude": 126.3821612
+ },
+ {
+  "complex_name": "문경신기일반산업단지",
+  "latitude": 36.6202574,
+  "longitude": 128.1658174
+ },
+ {
+  "complex_name": "문경신기제2일반산업단지",
+  "latitude": 36.6402469,
+  "longitude": 128.1848321
+ },
+ {
+  "complex_name": "밀양사포일반산업단지",
+  "latitude": 35.468361,
+  "longitude": 128.7368534
+ },
+ {
+  "complex_name": "밀양용전일반산업단지",
+  "latitude": 35.4188494,
+  "longitude": 128.8252474
+ },
+ {
+  "complex_name": "밀양하남일반산업단지",
+  "latitude": 35.3846243,
+  "longitude": 128.7204897
+ },
+ {
+  "complex_name": "보령관창일반산업단지",
+  "latitude": 36.383809,
+  "longitude": 126.5774719
+ },
+ {
+  "complex_name": "보은동부일반산업단지",
+  "latitude": 36.4584281,
+  "longitude": 127.8120222
+ },
+ {
+  "complex_name": "보은일반산업단지",
+  "latitude": 36.4262574,
+  "longitude": 127.7344458
+ },
+ {
+  "complex_name": "부산강서보고일반산업단지",
+  "latitude": 35.1530875,
+  "longitude": 128.8345336
+ },
+ {
+  "complex_name": "부산강서신호일반산업단지",
+  "latitude": 35.0869826,
+  "longitude": 128.8823163
+ },
+ {
+  "complex_name": "부산강서화전일반산업단지",
+  "latitude": 35.1052906,
+  "longitude": 128.8787943
+ },
+ {
+  "complex_name": "부산과학일반산업단지",
+  "latitude": 35.1482093,
+  "longitude": 128.8353452
+ },
+ {
+  "complex_name": "부산미음일반산업단지",
+  "latitude": 35.1615799,
+  "longitude": 128.8625603
+ },
+ {
+  "complex_name": "부산반룡일반산업단지",
+  "latitude": 35.3356309,
+  "longitude": 129.2540847
+ },
+ {
+  "complex_name": "부산생곡지구일반산업단지",
+  "latitude": 35.1355072,
+  "longitude": 128.8799591
+ },
+ {
+  "complex_name": "부산성우일반산업단지",
+  "latitude": 35.1419692,
+  "longitude": 128.8312349
+ },
+ {
+  "complex_name": "부산센텀시티일반산업단지",
+  "latitude": 35.1762459,
+  "longitude": 129.1254007
+ },
+ {
+  "complex_name": "부산신소재일반산업단지",
+  "latitude": 35.3410451,
+  "longitude": 129.2684493
+ },
+ {
+  "complex_name": "부산신평장림일반산업단지(기존단지)",
+  "latitude": 35.0871651,
+  "longitude": 128.978292
+ },
+ {
+  "complex_name": "부산신항배후 국제산업물류도시(1단계)일반산업단지",
+  "latitude": 35.1463489,
+  "longitude": 128.8621518
+ },
+ {
+  "complex_name": "부산오리일반산업단지",
+  "latitude": 35.3608713,
+  "longitude": 129.2712124
+ },
+ {
+  "complex_name": "부산정관코리일반산업단지",
+  "latitude": 35.3177536,
+  "longitude": 129.2077435
+ },
+ {
+  "complex_name": "부산지사제2일반산업단지",
+  "latitude": 35.1537694,
+  "longitude": 128.816552
+ },
+ {
+  "complex_name": "부산풍상일반산업단지",
+  "latitude": 35.1438754,
+  "longitude": 128.8478238
+ },
+ {
+  "complex_name": "부안신재생에너지 일반산업단지",
+  "latitude": 35.7151537,
+  "longitude": 126.6028249
+ },
+ {
+  "complex_name": "부천오정일반산업단지",
+  "latitude": 37.5312426,
+  "longitude": 126.7810345
+ },
+ {
+  "complex_name": "북구검단일반산업단지",
+  "latitude": 35.913051,
+  "longitude": 128.6210849
+ },
+ {
+  "complex_name": "뷰티풀파크",
+  "latitude": 37.5882078,
+  "longitude": 126.6204271
+ },
+ {
+  "complex_name": "사상재생사업지구",
+  "latitude": 35.1442532,
+  "longitude": 128.9729007
+ },
+ {
+  "complex_name": "사천제1일반산업단지",
+  "latitude": 35.0644211,
+  "longitude": 128.0545142
+ },
+ {
+  "complex_name": "사천제2일반산업단지",
+  "latitude": 35.0595985,
+  "longitude": 128.0472873
+ },
+ {
+  "complex_name": "사천종포일반산업단지",
+  "latitude": 35.0286511,
+  "longitude": 128.0411884
+ },
+ {
+  "complex_name": "산청매촌일반산업단지",
+  "latitude": 35.4242502,
+  "longitude": 127.8562985
+ },
+ {
+  "complex_name": "산청매촌제2일반산업단지",
+  "latitude": 35.4254033,
+  "longitude": 127.854781
+ },
+ {
+  "complex_name": "상복일반산업단지",
+  "latitude": 35.2050492,
+  "longitude": 128.6522516
+ },
+ {
+  "complex_name": "상주청리일반산업단지",
+  "latitude": 36.3230818,
+  "longitude": 128.1236319
+ },
+ {
+  "complex_name": "상주한방일반산업단지",
+  "latitude": 36.5344616,
+  "longitude": 128.0356669
+ },
+ {
+  "complex_name": "서김해일반산업단지",
+  "latitude": 35.2129939,
+  "longitude": 128.8427258
+ },
+ {
+  "complex_name": "서대구일반산업단지",
+  "latitude": 35.8598361,
+  "longitude": 128.536645
+ },
+ {
+  "complex_name": "서동일반산업단지",
+  "latitude": 35.6639925,
+  "longitude": 129.429387
+ },
+ {
+  "complex_name": "서산대산일반산업단지",
+  "latitude": 37.0062313,
+  "longitude": 126.3868323
+ },
+ {
+  "complex_name": "서산대산제3일반산업단지",
+  "latitude": 36.9931953,
+  "longitude": 126.3865452
+ },
+ {
+  "complex_name": "서산대죽일반산업단지",
+  "latitude": 37.0076006,
+  "longitude": 126.4150494
+ },
+ {
+  "complex_name": "서산오토밸리일반산업단지",
+  "latitude": 36.8486188,
+  "longitude": 126.45524
+ },
+ {
+  "complex_name": "서산인더스밸리일반산업단지",
+  "latitude": 36.8595055,
+  "longitude": 126.4792186
+ },
+ {
+  "complex_name": "서산테크노밸리일반산업단지",
+  "latitude": 36.8306346,
+  "longitude": 126.4452432
+ },
+ {
+  "complex_name": "서울마곡일반산업단지",
+  "latitude": 37.5624728,
+  "longitude": 126.8365679
+ },
+ {
+  "complex_name": "서울온수일반산업단지",
+  "latitude": 37.4928747,
+  "longitude": 126.8155501
+ },
+ {
+  "complex_name": "서울우유일반산업단지",
+  "latitude": 37.8420985,
+  "longitude": 127.0375247
+ },
+ {
+  "complex_name": "설성일반산업단지",
+  "latitude": 37.1286323,
+  "longitude": 127.4810793
+ },
+ {
+  "complex_name": "성남일반산업단지",
+  "latitude": 37.4386522,
+  "longitude": 127.1741675
+ },
+ {
+  "complex_name": "성서5차첨단산업단지",
+  "latitude": 35.876436,
+  "longitude": 128.4648872
+ },
+ {
+  "complex_name": "성주월항일반산업단지",
+  "latitude": 35.9515784,
+  "longitude": 128.3283991
+ },
+ {
+  "complex_name": "성주일반산업단지",
+  "latitude": 35.932018,
+  "longitude": 128.2869748
+ },
+ {
+  "complex_name": "성주제2일반산업단지",
+  "latitude": 35.9454785,
+  "longitude": 128.2934408
+ },
+ {
+  "complex_name": "세종명학일반산업단지",
+  "latitude": 36.5426945,
+  "longitude": 127.3338191
+ },
+ {
+  "complex_name": "세종미래일반산업단지",
+  "latitude": 36.6383852,
+  "longitude": 127.1747111
+ },
+ {
+  "complex_name": "세종부강일반산업단지",
+  "latitude": 36.4992567,
+  "longitude": 127.3644253
+ },
+ {
+  "complex_name": "세종소정일반산업단지",
+  "latitude": 36.7037338,
+  "longitude": 127.1550348
+ },
+ {
+  "complex_name": "세종월산일반산업단지",
+  "latitude": 36.5271481,
+  "longitude": 127.2933273
+ },
+ {
+  "complex_name": "세종전의일반산업단지",
+  "latitude": 36.6997064,
+  "longitude": 127.2163216
+ },
+ {
+  "complex_name": "세종전의제2일반산업단지",
+  "latitude": 36.6988712,
+  "longitude": 127.2110553
+ },
+ {
+  "complex_name": "세종조치원일반산업단지",
+  "latitude": 36.5518083,
+  "longitude": 127.2677633
+ },
+ {
+  "complex_name": "세종첨단일반산업단지",
+  "latitude": 36.7208621,
+  "longitude": 127.1944838
+ },
+ {
+  "complex_name": "송도지식정보일반산업단지",
+  "latitude": 37.3869237,
+  "longitude": 126.6518622
+ },
+ {
+  "complex_name": "순천일반산업단지",
+  "latitude": 34.9803664,
+  "longitude": 127.5069249
+ },
+ {
+  "complex_name": "순천해룡일반산업단지",
+  "latitude": 34.9042908,
+  "longitude": 127.5660637
+ },
+ {
+  "complex_name": "시흥매화일반산업단지",
+  "latitude": 37.4139115,
+  "longitude": 126.8203663
+ },
+ {
+  "complex_name": "신갈일반산업단지",
+  "latitude": 37.1960296,
+  "longitude": 127.4480605
+ },
+ {
+  "complex_name": "신둔일반산업단지",
+  "latitude": 37.2946174,
+  "longitude": 127.3976179
+ },
+ {
+  "complex_name": "아산디지털일반산업단지",
+  "latitude": 36.8709328,
+  "longitude": 127.0389774
+ },
+ {
+  "complex_name": "아산운용일반산업단지",
+  "latitude": 36.9325612,
+  "longitude": 127.0646401
+ },
+ {
+  "complex_name": "아산인주일반산업단지",
+  "latitude": 36.8755757,
+  "longitude": 126.8798605
+ },
+ {
+  "complex_name": "아산제2테크노밸리일반산업단지",
+  "latitude": 36.8993823,
+  "longitude": 127.0578677
+ },
+ {
+  "complex_name": "아산탕정디스플레이시티1일반산업단지",
+  "latitude": 36.8140788,
+  "longitude": 127.0639904
+ },
+ {
+  "complex_name": "아산테크노밸리일반산업단지",
+  "latitude": 36.9133556,
+  "longitude": 127.0648429
+ },
+ {
+  "complex_name": "안산반월도금일반산업단지",
+  "latitude": 37.2900962,
+  "longitude": 126.8872493
+ },
+ {
+  "complex_name": "안성가율일반산업단지",
+  "latitude": 37.0691495,
+  "longitude": 127.305269
+ },
+ {
+  "complex_name": "안성개정일반산업단지",
+  "latitude": 36.9584445,
+  "longitude": 127.1993727
+ },
+ {
+  "complex_name": "안성공도일반산업단지",
+  "latitude": 37.0051915,
+  "longitude": 127.1767496
+ },
+ {
+  "complex_name": "안성금산지방산업단지",
+  "latitude": 37.0740666,
+  "longitude": 127.4948188
+ },
+ {
+  "complex_name": "안성덕산일반산업단지",
+  "latitude": 37.0786483,
+  "longitude": 127.3784479
+ },
+ {
+  "complex_name": "안성동항일반산업단지",
+  "latitude": 37.0659057,
+  "longitude": 127.1818416
+ },
+ {
+  "complex_name": "안성동항제2일반산업단지",
+  "latitude": 37.0626275,
+  "longitude": 127.1860823
+ },
+ {
+  "complex_name": "안성마정일반산업단지",
+  "latitude": 37.0151783,
+  "longitude": 127.1967799
+ },
+ {
+  "complex_name": "안성방초일반산업단지",
+  "latitude": 37.1408712,
+  "longitude": 127.4356625
+ },
+ {
+  "complex_name": "안성용월일반산업단지",
+  "latitude": 37.076555,
+  "longitude": 127.383548
+ },
+ {
+  "complex_name": "안성원곡일반산업단지",
+  "latitude": 37.0416411,
+  "longitude": 127.1189206
+ },
+ {
+  "complex_name": "안성월정일반산업단지",
+  "latitude": 37.0852378,
+  "longitude": 127.4577119
+ },
+ {
+  "complex_name": "안성장원일반산업단지",
+  "latitude": 37.0672118,
+  "longitude": 127.4261989
+ },
+ {
+  "complex_name": "안성장원제2일반산업단지",
+  "latitude": 37.0672378,
+  "longitude": 127.4268857
+ },
+ {
+  "complex_name": "안성제1일반산업단지",
+  "latitude": 37.0491265,
+  "longitude": 127.1919648
+ },
+ {
+  "complex_name": "안성제2일반산업단지",
+  "latitude": 36.9792107,
+  "longitude": 127.2556176
+ },
+ {
+  "complex_name": "안성제3일반산업단지",
+  "latitude": 36.9758635,
+  "longitude": 127.2666986
+ },
+ {
+  "complex_name": "안성제4일반산업단지",
+  "latitude": 36.9589961,
+  "longitude": 127.2479616
+ },
+ {
+  "complex_name": "안성지문일반산업단지",
+  "latitude": 37.0459929,
+  "longitude": 127.1406475
+ },
+ {
+  "complex_name": "양산덕계일반산업단지",
+  "latitude": 35.3602374,
+  "longitude": 129.1704864
+ },
+ {
+  "complex_name": "양산산막일반산업단지",
+  "latitude": 35.370153,
+  "longitude": 129.0675736
+ },
+ {
+  "complex_name": "양산서창일반산업단지",
+  "latitude": 35.427574,
+  "longitude": 129.157584
+ },
+ {
+  "complex_name": "양산석계2일반산업단지",
+  "latitude": 35.4104618,
+  "longitude": 129.070245
+ },
+ {
+  "complex_name": "양산어곡일반산업단지",
+  "latitude": 35.3823929,
+  "longitude": 129.019847
+ },
+ {
+  "complex_name": "양산용당일반산업단지",
+  "latitude": 35.4349178,
+  "longitude": 129.1932444
+ },
+ {
+  "complex_name": "양산유산일반산업단지",
+  "latitude": 35.3628092,
+  "longitude": 129.0258634
+ },
+ {
+  "complex_name": "양산일반산업단지",
+  "latitude": 35.3588804,
+  "longitude": 129.0300266
+ },
+ {
+  "complex_name": "양주검준일반산업단지",
+  "latitude": 37.8661308,
+  "longitude": 126.9960994
+ },
+ {
+  "complex_name": "양주구암일반산업단지",
+  "latitude": 37.8897881,
+  "longitude": 126.9734455
+ },
+ {
+  "complex_name": "양주남면일반산업단지",
+  "latitude": 37.8821782,
+  "longitude": 126.9716893
+ },
+ {
+  "complex_name": "양주도하일반산업단지",
+  "latitude": 37.8430916,
+  "longitude": 127.0097974
+ },
+ {
+  "complex_name": "양주상수일반산업단지",
+  "latitude": 37.8755501,
+  "longitude": 126.9757026
+ },
+ {
+  "complex_name": "양주홍죽일반산업단지",
+  "latitude": 37.8000607,
+  "longitude": 126.963885
+ },
+ {
+  "complex_name": "에스폼산업단지",
+  "latitude": 36.9608542,
+  "longitude": 127.4226725
+ },
+ {
+  "complex_name": "여수오천일반산업단지",
+  "latitude": 34.7916323,
+  "longitude": 127.7538904
+ },
+ {
+  "complex_name": "여수율촌제1일반산업단지",
+  "latitude": 34.8995732,
+  "longitude": 127.5871836
+ },
+ {
+  "complex_name": "여주강천일반산업단지",
+  "latitude": 37.2830514,
+  "longitude": 127.7057476
+ },
+ {
+  "complex_name": "여주삼교일반산업단지",
+  "latitude": 37.2271774,
+  "longitude": 127.6525639
+ },
+ {
+  "complex_name": "여주장안일반산업단지",
+  "latitude": 37.2077691,
+  "longitude": 127.6984371
+ },
+ {
+  "complex_name": "연천백학일반산업단지",
+  "latitude": 38.01756,
+  "longitude": 126.9146217
+ },
+ {
+  "complex_name": "연천백학통구일반산업단지",
+  "latitude": 38.0196818,
+  "longitude": 126.9228098
+ },
+ {
+  "complex_name": "연천장남일반산업단지",
+  "latitude": 37.9891118,
+  "longitude": 126.8791602
+ },
+ {
+  "complex_name": "영광대마일반산업단지",
+  "latitude": 35.2839632,
+  "longitude": 126.5771292
+ },
+ {
+  "complex_name": "영동일반산업단지",
+  "latitude": 36.2898575,
+  "longitude": 127.8147309
+ },
+ {
+  "complex_name": "영암삼호일반산업단지",
+  "latitude": 34.7471074,
+  "longitude": 126.364597
+ },
+ {
+  "complex_name": "영주SK스페셜티일반산업단지",
+  "latitude": 36.82783,
+  "longitude": 128.5903682
+ },
+ {
+  "complex_name": "영주가흥일반산업단지",
+  "latitude": 36.8259283,
+  "longitude": 128.5920697
+ },
+ {
+  "complex_name": "영주갈산일반산업단지",
+  "latitude": 36.7859005,
+  "longitude": 128.5704521
+ },
+ {
+  "complex_name": "영주두전일반산업단지",
+  "latitude": 36.787202,
+  "longitude": 128.5790222
+ },
+ {
+  "complex_name": "영주일반산업단지",
+  "latitude": 36.8537121,
+  "longitude": 128.5249667
+ },
+ {
+  "complex_name": "영천일반산업단지",
+  "latitude": 35.9109345,
+  "longitude": 128.9492184
+ },
+ {
+  "complex_name": "예산신소재일반산업단지",
+  "latitude": 36.801456,
+  "longitude": 126.7003451
+ },
+ {
+  "complex_name": "예산예당일반산업단지",
+  "latitude": 36.7689442,
+  "longitude": 126.7259487
+ },
+ {
+  "complex_name": "예산일반산업단지",
+  "latitude": 36.6694219,
+  "longitude": 126.7465031
+ },
+ {
+  "complex_name": "오산가장2일반산업단지",
+  "latitude": 37.1637999,
+  "longitude": 127.0297442
+ },
+ {
+  "complex_name": "오산가장지방산업단지",
+  "latitude": 37.1598876,
+  "longitude": 127.0395238
+ },
+ {
+  "complex_name": "오산세마일반산업단지",
+  "latitude": 37.181268,
+  "longitude": 127.0336934
+ },
+ {
+  "complex_name": "옥천청산일반산업단지",
+  "latitude": 36.3296919,
+  "longitude": 127.7944924
+ },
+ {
+  "complex_name": "옥천테크노밸리일반산업단지",
+  "latitude": 36.276936,
+  "longitude": 127.5896331
+ },
+ {
+  "complex_name": "완장일반산업단지",
+  "latitude": 37.1630095,
+  "longitude": 127.1804402
+ },
+ {
+  "complex_name": "완주일반산업단지",
+  "latitude": 35.9513264,
+  "longitude": 127.1405099
+ },
+ {
+  "complex_name": "완주테크노밸리일반산업단지",
+  "latitude": 35.973136,
+  "longitude": 127.1134081
+ },
+ {
+  "complex_name": "왜관일반산업단지",
+  "latitude": 35.965662,
+  "longitude": 128.4212408
+ },
+ {
+  "complex_name": "왜관제3일반산업단지",
+  "latitude": 35.9261288,
+  "longitude": 128.4222597
+ },
+ {
+  "complex_name": "용인농서일반산업단지",
+  "latitude": 37.2214216,
+  "longitude": 127.0815578
+ },
+ {
+  "complex_name": "용인원삼일반산업단지",
+  "latitude": 37.154024,
+  "longitude": 127.3002068
+ },
+ {
+  "complex_name": "용인제일일반산업단지",
+  "latitude": 37.2335928,
+  "longitude": 127.3028255
+ },
+ {
+  "complex_name": "용인테크노밸리일반산업단지",
+  "latitude": 37.1723435,
+  "longitude": 127.2125196
+ },
+ {
+  "complex_name": "용인통삼일반산업단지",
+  "latitude": 37.1387406,
+  "longitude": 127.1301971
+ },
+ {
+  "complex_name": "용인패키징디자인일반산업단지",
+  "latitude": 37.2580133,
+  "longitude": 127.1962798
+ },
+ {
+  "complex_name": "울산길천일반산업단지",
+  "latitude": 35.5975923,
+  "longitude": 129.0755418
+ },
+ {
+  "complex_name": "울산매곡일반산업단지",
+  "latitude": 35.6479303,
+  "longitude": 129.3649062
+ },
+ {
+  "complex_name": "울산매곡제2일반산업단지",
+  "latitude": 35.6521686,
+  "longitude": 129.3637151
+ },
+ {
+  "complex_name": "울산매곡제3일반산업단지",
+  "latitude": 35.6386024,
+  "longitude": 129.3673824
+ },
+ {
+  "complex_name": "울산모듈화일반산업단지",
+  "latitude": 35.5806612,
+  "longitude": 129.3746115
+ },
+ {
+  "complex_name": "울산반천일반산업단지",
+  "latitude": 35.5656819,
+  "longitude": 129.1541925
+ },
+ {
+  "complex_name": "울산봉계일반산업단지",
+  "latitude": 35.7086649,
+  "longitude": 129.2075014
+ },
+ {
+  "complex_name": "울산신일반산업단지",
+  "latitude": 35.4658175,
+  "longitude": 129.3349636
+ },
+ {
+  "complex_name": "울산와지일반산업단지",
+  "latitude": 35.4385688,
+  "longitude": 129.1594484
+ },
+ {
+  "complex_name": "울산전읍일반산업단지",
+  "latitude": 35.6676863,
+  "longitude": 129.1712969
+ },
+ {
+  "complex_name": "울산중산2차일반산업단지",
+  "latitude": 35.6550973,
+  "longitude": 129.3547425
+ },
+ {
+  "complex_name": "울산중산일반산업단지",
+  "latitude": 35.6517759,
+  "longitude": 129.3576706
+ },
+ {
+  "complex_name": "울산테크노일반산업단지",
+  "latitude": 35.5121037,
+  "longitude": 129.2984768
+ },
+ {
+  "complex_name": "웅천일반산업단지",
+  "latitude": 36.2398395,
+  "longitude": 126.5758281
+ },
+ {
+  "complex_name": "원주동화일반산업단지",
+  "latitude": 37.3352711,
+  "longitude": 127.8451446
+ },
+ {
+  "complex_name": "원주문막반계일반산업단지",
+  "latitude": 37.2968982,
+  "longitude": 127.7955922
+ },
+ {
+  "complex_name": "원주문막지방산업단지",
+  "latitude": 37.29378,
+  "longitude": 127.8069971
+ },
+ {
+  "complex_name": "원주우산일반산업단지",
+  "latitude": 37.3763785,
+  "longitude": 127.9391495
+ },
+ {
+  "complex_name": "원주자동차부품일반산업단지",
+  "latitude": 37.330827,
+  "longitude": 127.8273363
+ },
+ {
+  "complex_name": "음성금왕일반산업단지",
+  "latitude": 36.9833625,
+  "longitude": 127.5798249
+ },
+ {
+  "complex_name": "음성금왕테크노밸리일반산업단지",
+  "latitude": 36.9610709,
+  "longitude": 127.5683732
+ },
+ {
+  "complex_name": "음성대풍일반산업단지",
+  "latitude": 36.9733426,
+  "longitude": 127.4651417
+ },
+ {
+  "complex_name": "음성리노삼봉일반산업단지",
+  "latitude": 36.945342,
+  "longitude": 127.559463
+ },
+ {
+  "complex_name": "음성맹동일반산업단지",
+  "latitude": 36.924207,
+  "longitude": 127.5652774
+ },
+ {
+  "complex_name": "음성생극일반산업단지",
+  "latitude": 37.040505,
+  "longitude": 127.6173116
+ },
+ {
+  "complex_name": "음성성본일반산업단지",
+  "latitude": 36.9595809,
+  "longitude": 127.5400213
+ },
+ {
+  "complex_name": "음성오선일반산업단지",
+  "latitude": 36.9733911,
+  "longitude": 127.5669507
+ },
+ {
+  "complex_name": "음성용산일반산업단지",
+  "latitude": 36.9390433,
+  "longitude": 127.673255
+ },
+ {
+  "complex_name": "음성원남일반산업단지",
+  "latitude": 36.8853758,
+  "longitude": 127.6777041
+ },
+ {
+  "complex_name": "음성유촌일반산업단지",
+  "latitude": 36.9512112,
+  "longitude": 127.5638255
+ },
+ {
+  "complex_name": "음성이테크일반산업단지",
+  "latitude": 37.1197424,
+  "longitude": 127.696689
+ },
+ {
+  "complex_name": "음성중부일반산업단지",
+  "latitude": 36.973112,
+  "longitude": 127.5062419
+ },
+ {
+  "complex_name": "음성하이텍일반산업단지",
+  "latitude": 37.0130639,
+  "longitude": 127.4678782
+ },
+ {
+  "complex_name": "의정부용현일반산업단지",
+  "latitude": 37.7451959,
+  "longitude": 127.08319
+ },
+ {
+  "complex_name": "이당일반산업단지",
+  "latitude": 34.9780091,
+  "longitude": 128.2913502
+ },
+ {
+  "complex_name": "이천대월일반산업단지",
+  "latitude": 37.2161373,
+  "longitude": 127.4907986
+ },
+ {
+  "complex_name": "이천도암일반산업단지",
+  "latitude": 37.323043,
+  "longitude": 127.4394365
+ },
+ {
+  "complex_name": "이천모가일반산업단지",
+  "latitude": 37.1840767,
+  "longitude": 127.4538337
+ },
+ {
+  "complex_name": "이천장호원일반산업단지",
+  "latitude": 37.1193573,
+  "longitude": 127.6098163
+ },
+ {
+  "complex_name": "이화일반산업단지",
+  "latitude": 35.6720203,
+  "longitude": 129.3512372
+ },
+ {
+  "complex_name": "익산제2일반산업단지",
+  "latitude": 35.9581205,
+  "longitude": 127.0109251
+ },
+ {
+  "complex_name": "익산제3일반산업단지",
+  "latitude": 36.0364794,
+  "longitude": 126.9976546
+ },
+ {
+  "complex_name": "익산제4일반산업단지",
+  "latitude": 36.0336159,
+  "longitude": 126.9604018
+ },
+ {
+  "complex_name": "인천기계일반산업단지",
+  "latitude": 37.4786129,
+  "longitude": 126.6731083
+ },
+ {
+  "complex_name": "인천서부일반산업단지",
+  "latitude": 37.5525981,
+  "longitude": 126.6401066
+ },
+ {
+  "complex_name": "인천서운일반산업단지",
+  "latitude": 37.5360421,
+  "longitude": 126.7589737
+ },
+ {
+  "complex_name": "인천일반산업단지",
+  "latitude": 37.4875902,
+  "longitude": 126.6737589
+ },
+ {
+  "complex_name": "인천청라1지구일반산업단지",
+  "latitude": 37.5325034,
+  "longitude": 126.6060173
+ },
+ {
+  "complex_name": "장흥바이오식품일반산업단지",
+  "latitude": 34.6901363,
+  "longitude": 126.9354871
+ },
+ {
+  "complex_name": "전주과학산업연구단지",
+  "latitude": 35.9518297,
+  "longitude": 127.1220565
+ },
+ {
+  "complex_name": "전주시자원순환특화일반산업단지",
+  "latitude": 35.8085574,
+  "longitude": 127.0684602
+ },
+ {
+  "complex_name": "전주제1일반산업단지",
+  "latitude": 35.8557161,
+  "longitude": 127.102681
+ },
+ {
+  "complex_name": "전주제2일반산업단지",
+  "latitude": 35.8535162,
+  "longitude": 127.0867722
+ },
+ {
+  "complex_name": "전주친환경첨단복합일반산업단지(3-1단계)",
+  "latitude": 35.8663237,
+  "longitude": 127.0920967
+ },
+ {
+  "complex_name": "정읍제1일반산업단지",
+  "latitude": 35.6108457,
+  "longitude": 126.8450799
+ },
+ {
+  "complex_name": "정읍제2일반산업단지",
+  "latitude": 35.5928735,
+  "longitude": 126.869677
+ },
+ {
+  "complex_name": "정읍제3일반산업단지",
+  "latitude": 35.6181467,
+  "longitude": 126.912131
+ },
+ {
+  "complex_name": "정읍첨단과학일반산업단지",
+  "latitude": 35.5060342,
+  "longitude": 126.8374185
+ },
+ {
+  "complex_name": "정주일반산업단지",
+  "latitude": 35.1526629,
+  "longitude": 128.8271681
+ },
+ {
+  "complex_name": "제주용암해수일반산업단지",
+  "latitude": 33.5415032,
+  "longitude": 126.816361
+ },
+ {
+  "complex_name": "제천일반산업단지",
+  "latitude": 37.1461127,
+  "longitude": 128.1641523
+ },
+ {
+  "complex_name": "제천제2산업단지",
+  "latitude": 37.1510171,
+  "longitude": 128.146891
+ },
+ {
+  "complex_name": "제천제3산업단지",
+  "latitude": 37.148431,
+  "longitude": 128.1448606
+ },
+ {
+  "complex_name": "증평2일반산업단지",
+  "latitude": 36.817268,
+  "longitude": 127.5960795
+ },
+ {
+  "complex_name": "증평일반산업단지",
+  "latitude": 36.8002217,
+  "longitude": 127.5934517
+ },
+ {
+  "complex_name": "진주뿌리일반산업단지",
+  "latitude": 35.1139871,
+  "longitude": 128.1028216
+ },
+ {
+  "complex_name": "진주상평일반산업단지",
+  "latitude": 35.173665,
+  "longitude": 128.1147408
+ },
+ {
+  "complex_name": "진주일반산업단지",
+  "latitude": 35.1876211,
+  "longitude": 128.2813946
+ },
+ {
+  "complex_name": "진주정촌일반산업단지",
+  "latitude": 35.1209869,
+  "longitude": 128.100115
+ },
+ {
+  "complex_name": "진주지수일반산업단지",
+  "latitude": 35.2341556,
+  "longitude": 128.260849
+ },
+ {
+  "complex_name": "진천문백정밀기계일반산업단지",
+  "latitude": 36.7832508,
+  "longitude": 127.4594617
+ },
+ {
+  "complex_name": "진천문백태흥일반산업단지",
+  "latitude": 36.8139724,
+  "longitude": 127.4355476
+ },
+ {
+  "complex_name": "진천산수일반산업단지",
+  "latitude": 36.8963591,
+  "longitude": 127.4816495
+ },
+ {
+  "complex_name": "진천신척일반산업단지",
+  "latitude": 36.928054,
+  "longitude": 127.4815159
+ },
+ {
+  "complex_name": "진천이월일반산업단지",
+  "latitude": 36.9177485,
+  "longitude": 127.4242493
+ },
+ {
+  "complex_name": "진천죽현일반산업단지",
+  "latitude": 36.9475572,
+  "longitude": 127.421336
+ },
+ {
+  "complex_name": "진천초평은암일반산업단지",
+  "latitude": 36.7926862,
+  "longitude": 127.5306223
+ },
+ {
+  "complex_name": "진천케이푸드밸리",
+  "latitude": 36.8827715,
+  "longitude": 127.4596343
+ },
+ {
+  "complex_name": "진해남양지방산업단지",
+  "latitude": 35.1175934,
+  "longitude": 128.7801464
+ },
+ {
+  "complex_name": "진해마천일반산업단지",
+  "latitude": 35.1206677,
+  "longitude": 128.7842221
+ },
+ {
+  "complex_name": "진해죽곡일반산업단지",
+  "latitude": 35.1125666,
+  "longitude": 128.7241958
+ },
+ {
+  "complex_name": "창녕넥센일반산업단지",
+  "latitude": 35.6313009,
+  "longitude": 128.4526716
+ },
+ {
+  "complex_name": "창녕대합일반산업단지",
+  "latitude": 35.6204563,
+  "longitude": 128.4413344
+ },
+ {
+  "complex_name": "창녕억만일반산업단지",
+  "latitude": 35.5627046,
+  "longitude": 128.4934213
+ },
+ {
+  "complex_name": "창원수곡일반산업단지",
+  "latitude": 35.2696908,
+  "longitude": 128.4967495
+ },
+ {
+  "complex_name": "창원일반산업단지",
+  "latitude": 35.3348764,
+  "longitude": 128.7019148
+ },
+ {
+  "complex_name": "창원진전평암일반산업단지",
+  "latitude": 35.150107,
+  "longitude": 128.3902713
+ },
+ {
+  "complex_name": "창원창곡일반산업단지",
+  "latitude": 35.2135119,
+  "longitude": 128.6467519
+ },
+ {
+  "complex_name": "창원천선일반산업단지",
+  "latitude": 35.1853051,
+  "longitude": 128.7071555
+ },
+ {
+  "complex_name": "천안마정일반산업단지",
+  "latitude": 36.8651968,
+  "longitude": 127.1038018
+ },
+ {
+  "complex_name": "천안산업기술일반산업단지",
+  "latitude": 36.8838275,
+  "longitude": 127.1613116
+ },
+ {
+  "complex_name": "천안제2일반산업단지",
+  "latitude": 36.857438,
+  "longitude": 127.1231515
+ },
+ {
+  "complex_name": "천안제3일반산업단지",
+  "latitude": 36.8238031,
+  "longitude": 127.1111138
+ },
+ {
+  "complex_name": "천안제4일반산업단지",
+  "latitude": 36.8628529,
+  "longitude": 127.1187694
+ },
+ {
+  "complex_name": "천안제5일반산업단지",
+  "latitude": 36.7434543,
+  "longitude": 127.2507483
+ },
+ {
+  "complex_name": "천안풍세일반산업단지",
+  "latitude": 36.7317976,
+  "longitude": 127.097351
+ },
+ {
+  "complex_name": "청산대전일반산업단지",
+  "latitude": 38.0072075,
+  "longitude": 127.0799108
+ },
+ {
+  "complex_name": "청원옥산일반산업단지",
+  "latitude": 36.7029746,
+  "longitude": 127.3741127
+ },
+ {
+  "complex_name": "청주오송제2생명과학일반산업단지(충북경제자유구역 오송바이오폴리스지구)",
+  "latitude": 36.6266293,
+  "longitude": 127.304492
+ },
+ {
+  "complex_name": "청주오창과학일반산업단지",
+  "latitude": 36.7255624,
+  "longitude": 127.4271141
+ },
+ {
+  "complex_name": "청주오창제2일반산업단지",
+  "latitude": 36.7272822,
+  "longitude": 127.4493964
+ },
+ {
+  "complex_name": "청주오창제3일반산업단지",
+  "latitude": 36.731986,
+  "longitude": 127.3459194
+ },
+ {
+  "complex_name": "청주테크노폴리스일반산업단지",
+  "latitude": 36.6556516,
+  "longitude": 127.4386676
+ },
+ {
+  "complex_name": "청주현도일반산업단지",
+  "latitude": 36.5082748,
+  "longitude": 127.418948
+ },
+ {
+  "complex_name": "춘천동춘천일반산업단지",
+  "latitude": 37.76787,
+  "longitude": 127.7765028
+ },
+ {
+  "complex_name": "춘천전력IT문화복합일반산업단지",
+  "latitude": 37.7678975,
+  "longitude": 127.6221531
+ },
+ {
+  "complex_name": "춘천후평일반산업단지",
+  "latitude": 37.8878929,
+  "longitude": 127.7451253
+ },
+ {
+  "complex_name": "충주DH산업단지",
+  "latitude": 37.0115561,
+  "longitude": 127.7643052
+ },
+ {
+  "complex_name": "충주KGC예본일반산업단지",
+  "latitude": 36.9338212,
+  "longitude": 127.8925103
+ },
+ {
+  "complex_name": "충주대신일반산업단지",
+  "latitude": 37.0968937,
+  "longitude": 127.9690124
+ },
+ {
+  "complex_name": "충주만정일반산업단지",
+  "latitude": 36.9651711,
+  "longitude": 127.8575765
+ },
+ {
+  "complex_name": "충주메가폴리스일반산업단지",
+  "latitude": 36.9943109,
+  "longitude": 127.8261027
+ },
+ {
+  "complex_name": "충주제1일반산업단지",
+  "latitude": 37.4410874,
+  "longitude": 127.1721526
+ },
+ {
+  "complex_name": "충주제3일반산업단지",
+  "latitude": 37.0081523,
+  "longitude": 127.9325389
+ },
+ {
+  "complex_name": "충주제4일반산업단지",
+  "latitude": 37.0111324,
+  "longitude": 127.9407839
+ },
+ {
+  "complex_name": "충주제5일반산업단지",
+  "latitude": 37.0086,
+  "longitude": 127.9472
+ },
+ {
+  "complex_name": "충주중원일반산업단지",
+  "latitude": 37.0105378,
+  "longitude": 127.7525314
+ },
+ {
+  "complex_name": "충주첨단일반산업단지",
+  "latitude": 37.0011633,
+  "longitude": 127.8409062
+ },
+ {
+  "complex_name": "칠곡연화일반산업단지",
+  "latitude": 35.9550933,
+  "longitude": 128.4567513
+ },
+ {
+  "complex_name": "칠서일반산업단지",
+  "latitude": 35.3732939,
+  "longitude": 128.4866665
+ },
+ {
+  "complex_name": "탕정일반산업단지",
+  "latitude": 36.7915142,
+  "longitude": 127.0635884
+ },
+ {
+  "complex_name": "태백동점산업단지",
+  "latitude": 37.0869379,
+  "longitude": 129.0430941
+ },
+ {
+  "complex_name": "파주LCD일반산업단지",
+  "latitude": 37.8121485,
+  "longitude": 126.762693
+ },
+ {
+  "complex_name": "파주금파일반산업단지",
+  "latitude": 37.9230586,
+  "longitude": 126.8415719
+ },
+ {
+  "complex_name": "파주문발제1일반산업단지",
+  "latitude": 37.7301559,
+  "longitude": 126.7088774
+ },
+ {
+  "complex_name": "파주문발제2일반산업단지",
+  "latitude": 37.7299357,
+  "longitude": 126.7092822
+ },
+ {
+  "complex_name": "파주법원2일반산업단지",
+  "latitude": 37.840536,
+  "longitude": 126.8554672
+ },
+ {
+  "complex_name": "파주신촌일반산업단지",
+  "latitude": 37.7284023,
+  "longitude": 126.6966695
+ },
+ {
+  "complex_name": "파주오산일반산업단지",
+  "latitude": 37.7727913,
+  "longitude": 126.8398995
+ },
+ {
+  "complex_name": "파주월롱첨단일반산업단지",
+  "latitude": 37.8330415,
+  "longitude": 126.7760588
+ },
+ {
+  "complex_name": "파주적성일반산업단지",
+  "latitude": 37.9710866,
+  "longitude": 126.9091974
+ },
+ {
+  "complex_name": "파주첨단일반산업단지(선유지구)",
+  "latitude": 37.8584037,
+  "longitude": 126.8047706
+ },
+ {
+  "complex_name": "파주축현일반산업단지",
+  "latitude": 37.8026068,
+  "longitude": 126.7444535
+ },
+ {
+  "complex_name": "파주탄현일반산업단지",
+  "latitude": 37.7940431,
+  "longitude": 126.6918406
+ },
+ {
+  "complex_name": "평택LGDigitalPark일반산업단지",
+  "latitude": 37.1261177,
+  "longitude": 127.0928352
+ },
+ {
+  "complex_name": "평택고렴일반산업단지",
+  "latitude": 37.0556336,
+  "longitude": 126.9345325
+ },
+ {
+  "complex_name": "평택송탄일반산업단지",
+  "latitude": 37.0345937,
+  "longitude": 127.0790025
+ },
+ {
+  "complex_name": "평택어연.한산일반산업단지",
+  "latitude": 37.0487401,
+  "longitude": 126.9716029
+ },
+ {
+  "complex_name": "평택일반산업단지",
+  "latitude": 37.0100657,
+  "longitude": 127.0810896
+ },
+ {
+  "complex_name": "평택장당일반산업단지",
+  "latitude": 37.0442431,
+  "longitude": 127.0604131
+ },
+ {
+  "complex_name": "평택진위2일반산업단지",
+  "latitude": 37.1192088,
+  "longitude": 127.0779597
+ },
+ {
+  "complex_name": "평택진위일반산업단지",
+  "latitude": 37.1216041,
+  "longitude": 127.0838226
+ },
+ {
+  "complex_name": "평택추팔일반산업단지",
+  "latitude": 36.9586974,
+  "longitude": 127.0736138
+ },
+ {
+  "complex_name": "평택칠괴일반산업단지",
+  "latitude": 37.0346532,
+  "longitude": 127.0906771
+ },
+ {
+  "complex_name": "평택포승2일반산업단지",
+  "latitude": 36.9702764,
+  "longitude": 126.8622677
+ },
+ {
+  "complex_name": "평택현곡일반산업단지",
+  "latitude": 37.0390765,
+  "longitude": 126.9435815
+ },
+ {
+  "complex_name": "포천금현일반산업단지",
+  "latitude": 37.8115727,
+  "longitude": 127.192806
+ },
+ {
+  "complex_name": "포천신평일반산업단지",
+  "latitude": 37.9424498,
+  "longitude": 127.2269736
+ },
+ {
+  "complex_name": "포천양문일반산업단지",
+  "latitude": 38.0065423,
+  "longitude": 127.2601957
+ },
+ {
+  "complex_name": "포천용정일반산업단지",
+  "latitude": 37.8776278,
+  "longitude": 127.2029914
+ },
+ {
+  "complex_name": "포천장자일반산업단지",
+  "latitude": 37.9584968,
+  "longitude": 127.2278275
+ },
+ {
+  "complex_name": "포항영일만2일반산업단지",
+  "latitude": 36.11184,
+  "longitude": 129.4143213
+ },
+ {
+  "complex_name": "포항영일만3일반산업단지",
+  "latitude": 36.1177562,
+  "longitude": 129.4167357
+ },
+ {
+  "complex_name": "포항영일만4일반산업단지",
+  "latitude": 36.103169,
+  "longitude": 129.4047683
+ },
+ {
+  "complex_name": "포항영일만일반산업단지",
+  "latitude": 36.0952027,
+  "longitude": 129.4183056
+ },
+ {
+  "complex_name": "함안대산대사일반산업단지",
+  "latitude": 35.3396035,
+  "longitude": 128.4654524
+ },
+ {
+  "complex_name": "함안법수강주일반산업단지",
+  "latitude": 35.3111401,
+  "longitude": 128.3349992
+ },
+ {
+  "complex_name": "함안법수우거일반산업단지",
+  "latitude": 35.3091194,
+  "longitude": 128.3620856
+ },
+ {
+  "complex_name": "함안사내일반산업단지",
+  "latitude": 35.2686531,
+  "longitude": 128.3711533
+ },
+ {
+  "complex_name": "함안일반산업단지",
+  "latitude": 35.2945849,
+  "longitude": 128.313621
+ },
+ {
+  "complex_name": "함안장지일반산업단지",
+  "latitude": 35.2779812,
+  "longitude": 128.3395099
+ },
+ {
+  "complex_name": "함양일반산업단지",
+  "latitude": 35.5489792,
+  "longitude": 127.8009724
+ },
+ {
+  "complex_name": "함평동함평일반산업단지",
+  "latitude": 35.0614098,
+  "longitude": 126.5477022
+ },
+ {
+  "complex_name": "홍성일반산업단지",
+  "latitude": 36.6335752,
+  "longitude": 126.5333247
+ },
+ {
+  "complex_name": "홍천북방일반산업단지",
+  "latitude": 37.6917713,
+  "longitude": 127.8408289
+ },
+ {
+  "complex_name": "화성 영진바이오 일반산업단지",
+  "latitude": 37.1799003,
+  "longitude": 126.8511162
+ },
+ {
+  "complex_name": "화성 팔탄(한미약품) 일반산업단지",
+  "latitude": 37.1802201,
+  "longitude": 126.8632385
+ },
+ {
+  "complex_name": "화성동탄일반산업단지",
+  "latitude": 37.1615912,
+  "longitude": 127.0862859
+ },
+ {
+  "complex_name": "화성마도일반산업단지",
+  "latitude": 37.1848445,
+  "longitude": 126.7925426
+ },
+ {
+  "complex_name": "화성바이오밸리일반산업단지",
+  "latitude": 37.167725,
+  "longitude": 126.7755811
+ },
+ {
+  "complex_name": "화성발안일반산업단지",
+  "latitude": 37.083873,
+  "longitude": 126.9119808
+ },
+ {
+  "complex_name": "화성송산테크노파크일반산업단지",
+  "latitude": 37.2176437,
+  "longitude": 126.6974633
+ },
+ {
+  "complex_name": "화성일반산업단지",
+  "latitude": 37.2234399,
+  "longitude": 127.063343
+ },
+ {
+  "complex_name": "화성전곡해양일반산업단지",
+  "latitude": 37.1878209,
+  "longitude": 126.6803795
+ },
+ {
+  "complex_name": "화성정남일반산업단지",
+  "latitude": 37.1453764,
+  "longitude": 127.029381
+ },
+ {
+  "complex_name": "화성주곡일반산업단지",
+  "latitude": 37.1163453,
+  "longitude": 126.8124534
+ },
+ {
+  "complex_name": "화성향남제약일반산업단지",
+  "latitude": 37.0892232,
+  "longitude": 126.899568
+ },
+ {
+  "complex_name": "화성화남일반산업단지",
+  "latitude": 37.1610596,
+  "longitude": 126.670589
+ },
+ {
+  "complex_name": "화순지방산업단지",
+  "latitude": 35.0288287,
+  "longitude": 126.974006
+ },
+ {
+  "complex_name": "횡성우천일반산업단지",
+  "latitude": 37.4923915,
+  "longitude": 128.0580861
+ },
+ {
+  "complex_name": "광주첨단과학국가산업단지",
+  "latitude": 35.202768,
+  "longitude": 126.8635266
+ },
+ {
+  "complex_name": "반월국가산업단지",
+  "latitude": 37.3151711,
+  "longitude": 126.7784978
+ },
+ {
+  "complex_name": "구미국가산업단지",
+  "latitude": 36.1113293,
+  "longitude": 128.3781187
+ },
+ {
+  "complex_name": "시화국가산업단지",
+  "latitude": 37.3134761,
+  "longitude": 126.7474746
+ },
+ {
+  "complex_name": "익산국가산업단지",
+  "latitude": 35.944627,
+  "longitude": 126.974257
+ },
+ {
+  "complex_name": "국가식품클러스터국가산업단지",
+  "latitude": 35.9852128,
+  "longitude": 127.085831
+ },
+ {
+  "complex_name": "서울디지털국가산업단지",
+  "latitude": 37.4843266,
+  "longitude": 126.8970986
+ },
+ {
+  "complex_name": "국가식품클러스터식품산업단지중소협력단지형외국인투자지역",
+  "latitude": 35.9852128,
+  "longitude": 127.085831
+ },
+ {
+  "complex_name": "군산2국가산업단지",
+  "latitude": 35.9597517,
+  "longitude": 126.5483371
+ },
+ {
+  "complex_name": "군산국가산업단지",
+  "latitude": 35.9616898,
+  "longitude": 126.58636
+ },
+ {
+  "complex_name": "남동국가산업단지",
+  "latitude": 37.4022672,
+  "longitude": 126.6949838
+ },
+ {
+  "complex_name": "대구국가산업단지",
+  "latitude": 35.6449335,
+  "longitude": 128.4179634
+ },
+ {
+  "complex_name": "대불국가산업단지",
+  "latitude": 34.7685146,
+  "longitude": 126.443275
+ },
+ {
+  "complex_name": "명지녹산국가산업단지",
+  "latitude": 35.0932941,
+  "longitude": 128.8524155
+ },
+ {
+  "complex_name": "대불외국인투자지역",
+  "latitude": 34.7760503,
+  "longitude": 126.4468117
+ },
+ {
+  "complex_name": "동두천국가산업단지",
+  "latitude": 37.9100183,
+  "longitude": 127.0245983
+ },
+ {
+  "complex_name": "밀양나노융합국가산업단지",
+  "latitude": 35.4936707,
+  "longitude": 128.7216749
+ },
+ {
+  "complex_name": "창원국가산업단지",
+  "latitude": 35.2171164,
+  "longitude": 128.6634156
+ },
+ {
+  "complex_name": "북평국가산업단지",
+  "latitude": 37.4809877,
+  "longitude": 129.1408851
+ },
+ {
+  "complex_name": "빛그린국가산업단지",
+  "latitude": 35.1793189,
+  "longitude": 126.6496826
+ },
+ {
+  "complex_name": "여수국가산업단지",
+  "latitude": 34.8252028,
+  "longitude": 127.6814398
+ },
+ {
+  "complex_name": "온산국가산업단지",
+  "latitude": 35.4375233,
+  "longitude": 129.3382361
+ },
+ {
+  "complex_name": "울산미포국가산업단지",
+  "latitude": 35.515332,
+  "longitude": 129.35866
+ },
+ {
+  "complex_name": "한국수출산업(부평)국가산업단지",
+  "latitude": 37.5197599,
+  "longitude": 126.7163069
+ },
+ {
+  "complex_name": "한국수출산업(주안)국가산업단지",
+  "latitude": 37.4721463,
+  "longitude": 126.6908935
+ },
+ {
+  "complex_name": "석문국가산업단지",
+  "latitude": 36.985885,
+  "longitude": 126.5828005
+ },
+ {
+  "complex_name": "포항블루밸리국가산업단지",
+  "latitude": 35.9597888,
+  "longitude": 129.4996398
+ },
+ {
+  "complex_name": "파주탄현중소기업전용국가산업단지",
+  "latitude": 37.8270395,
+  "longitude": 126.7357769
+ },
+ {
+  "complex_name": "장항국가생태산업단지",
+  "latitude": 36.0047804,
+  "longitude": 126.7153028
+ },
+ {
+  "complex_name": "오송생명과학단지",
+  "latitude": 36.6331884,
+  "longitude": 127.3300576
+ },
+ {
+  "complex_name": "안정국가산업단지",
+  "latitude": 34.9545075,
+  "longitude": 128.4171668
+ },
+ {
+  "complex_name": "진해국가산업단지",
+  "latitude": 35.1105507,
+  "longitude": 128.7176445
+ },
+ {
+  "complex_name": "아산국가산업단지",
+  "latitude": 36.9620099,
+  "longitude": 126.8541355
+ },
+ {
+  "complex_name": "포항국가산업단지",
+  "latitude": 36.0255,
+  "longitude": 129.373
+ }
+]

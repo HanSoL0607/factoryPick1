@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/mainresult-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/mainresult-style.css}">
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1708a916702bd0a90d99218c7d3dbfbd"></script>
+  <!-- Kakao 지도 API 추가 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js 추가 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery 추가 -->
+  <script th:src="@{/script/authStatus.js}" defer></script>
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <title>추천 결과</title>
+</head>
+
+<body>
+  <div class="frame-1">
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-menu">
+          <a href="#">추천 시스템 소개</a>
+          <a href="#">공장입지 추천받기</a>
+          <a href="#">산업단지 둘러보기</a>
+          <a href="#">마이페이지</a>
+          <a href="#">로그인 / 회원가입</a>
+        </div>
+
+        <div class="footer-info">
+          <p>상호: (주)팩토리픽 | 대표: 임한솔 | 사업자등록번호: 120-87-61559</p>
+          <p>주소: 서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽 고객센터 1661-6844</p>
+          <p>COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.</p>
+          <p>서비스 이용문의: 1661-8734 | 이메일: hanwhasystem@factorypick.com</p>
+          <p>팩스: 02-568-4908 | 서비스제휴문의: partnership@factorypick.com | 분양광고 문의: ad@factorypick.com</p>
+        </div>
+        <img src="../images/image-30.png" alt="FactoryPick Logo" class="footer-logo" />
+      </div>
+    </footer>
+
+    <!-- 지도 부분 추가 -->
+    <div id="map"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com">
+    </div>
+
+
+    <div class="div6">
+      <span>
+        <span class="div-6-span">산업단지</span>
+        <span class="div-6-span2">추천 순위</span>
+      </span>
+    </div>
+
+    <div class="rectangle-5">
+      <!-- 차트를 그릴 canvas 태그 -->
+      <canvas id="radarChart" style="width: 500px; height: 500px;"></canvas>
+
+    </div>
+    <span class="div7" th:text="${industrialComplexName}">산업단지명</span>
+
+    <div class="button-container" style="margin-top: 20px; text-align: center;">
+      <button id="detailButton" class="go-detail-button">
+        자세히 보기
+      </button>
+    </div>
+    <div class="rectangle-6">
+      <span class="ranking-header">추천 순위</span> <!-- 중앙에 위치할 텍스트 -->
+      <table class="ranking-table" id="rankingTable"> <!-- id="rankingTable" 추가 -->
+        <thead> <!-- 표 컬럼 -->
+          <tr>
+            <th>추천 순위</th>
+            <th>추천 단지</th>
+          </tr>
+        </thead>
+        <tbody> <!-- AJAX 데이터 들어갈 구간 1 -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- AJAX로 데이터 가져오기 -->
+    <script>
+      let selectedComplexName = ""; // 선택된 단지명 저장
+
+      // 데이터 로딩 함수 정의 (위도, 경도 및 산업단지 정보)
+      function loadSurveyAndPositionData() {
+        return $.ajax({
+          url: "/recommendation/api/recent-results",
+          method: "GET",
+          dataType: "json"
+        });
+      }
+
+      // 지도 부분
+      function createMarkersOnMap(data) {
+        const map = new kakao.maps.Map(document.getElementById('map'), {
+          center: new kakao.maps.LatLng(36.4109, 128.1591), // 상주시 중심
+          level: 12
+        });
+
+        // 각 마커와 infoWindow를 저장하는 배열
+        const markers = [];
+        const infoWindows = [];
+
+        data.forEach((item, index) => {
+          if (item.latitude !== "0" && item.longitude !== "0") {
+            const marker = new kakao.maps.Marker({
+              position: new kakao.maps.LatLng(item.latitude, item.longitude),
+              map: map,
+              title: item.complexName
+            });
+
+            markers.push(marker);
+
+         // 인포윈도우 내용을 정의하고 CSS 스타일을 적용
+            const infoWindowContent = `
+                <div id="custom-info-window" 
+                     style="
+                         cursor: pointer; 
+                         background-color: #fca311; 
+                         padding: 10px; 
+                         transform: translate(70%, 0%); 
+                      " 
+                     onclick="onInfoWindowClick('${item.complexName}', ${index})">
+                    ${item.rankResult}위
+                </div>
+            `;
+
+            const infoWindow = new kakao.maps.InfoWindow({
+              content: infoWindowContent,
+              zIndex: 100 - item.rankResult // 순위에 따라 zIndex 설정
+            });
+
+            infoWindows.push(infoWindow);
+
+            // 마커 클릭 시 방사형 차트 업데이트
+            kakao.maps.event.addListener(marker, 'click', function () {
+              onInfoWindowClick(item.complexName, index); // 클릭 이벤트를 함수로 추출
+            });
+
+            // 마커가 생성될 때 인포윈도우 자동으로 열기
+            infoWindow.open(map, marker);
+          }
+        });
+
+        // 줌 변경 및 지도 드래그 시 인포윈도우 처리
+        kakao.maps.event.addListener(map, 'zoom_changed', displayVisibleMarkersInfoWindows);
+        kakao.maps.event.addListener(map, 'dragend', displayVisibleMarkersInfoWindows);
+
+        // 인포윈도우 표시 함수
+        function displayVisibleMarkersInfoWindows() {
+          const bounds = map.getBounds();
+
+          markers.forEach((marker, index) => {
+            if (bounds.contain(marker.getPosition())) {
+              infoWindows[index].open(map, marker);
+            } else {
+              infoWindows[index].close();
+            }
+          });
+        }
+      }
+
+      // 방사형 차트 그리기 함수
+      function drawRadarChart(data) {
+        const canvas = document.getElementById('radarChart');
+        const ctx = canvas.getContext('2d');
+
+        // div7에 선택된 단지명 표시
+        document.querySelector('.div7').innerText = data.complexName;
+
+        // 캔버스 크기를 명확히 설정 (내부 해상도와 스타일 크기 일치)
+        const displaySize = 500;
+        canvas.width = displaySize;
+        canvas.height = displaySize;
+        canvas.style.width = `${displaySize}px`;
+        canvas.style.height = `${displaySize}px`;
+
+        // 기존 차트를 파괴하고 새로운 차트 생성
+        if (window.radarChartInstance) {
+          window.radarChartInstance.destroy();
+        }
+
+        window.radarChartInstance = new Chart(ctx, {
+          type: 'radar',
+          data: {
+            labels: [
+              '선호 지역',
+              '업종집적도',
+              '임대 가격',
+              '원자재 유사도',
+              '생산품 유사도',
+              '교통접근성',
+              '노동력 공급'
+            ],
+            datasets: [{
+              label: data.complexName,
+              data: [
+                data.regionScore * 100,
+                data.industryScore * 100,
+                data.landPriceScore * 100,
+                data.rawMaterialScore * 100,
+                data.productScore * 100,
+                data.transportScore * 100,
+                data.workerScore * 100
+              ],
+              backgroundColor: 'rgba(120, 180, 255, 0.5)',
+              borderColor: '#14213d',
+              borderWidth: 3,
+              pointBackgroundColor: '#14213d',
+              pointBorderColor: '#fff',
+              pointHoverBackgroundColor: '#fff',
+              pointHoverBorderColor: '#14213d'
+            }]
+          },
+          options: {
+            responsive: false,
+            plugins: {
+              legend: {
+                display: true,
+                position: 'bottom',
+                labels: {
+                  font: {
+                    size: 20
+                  }
+                }
+              }
+            },
+            scales: {
+              r: {
+                ticks: {
+                  display: true,
+                  font: {
+                    size: 14
+                  }
+                },
+                pointLabels: {
+                  font: {
+                    size: 16
+                  }
+                },
+                suggestedMin: 0,
+                suggestedMax: 100
+              }
+            }
+          }
+        });
+      }
+
+
+      // 새로운 함수: infoWindow나 마커가 클릭될 때 방사형 차트를 업데이트
+      function onInfoWindowClick(complexName, index) {
+        // `data` 배열에서 해당 index의 데이터 가져오기
+        const item = window.loadedData[index];
+
+        drawRadarChart(item); // 클릭된 item의 데이터를 이용하여 차트 그리기
+        selectedComplexName = complexName;
+        $("#detailButton").show(); // "자세히 보기" 버튼 활성화
+        $(".div7").text(complexName); // 산업단지명 표시
+      }
+
+      // 페이지 로드 시 데이터 로딩 및 지도 마커 생성
+      $(document).ready(function () {
+        loadSurveyAndPositionData()
+          .then(data => {
+            // rankResult 기준으로 데이터 정렬
+            data.sort((a, b) => a.rankResult - b.rankResult);
+
+            // 위치 데이터와 테이블 업데이트
+            window.loadedData = data; // `data`를 전역으로 저장하여 클릭 이벤트에서 접근 가능
+            createMarkersOnMap(data);
+            updateTable(data);
+
+            // 기본으로 1위 산업단지의 정보를 방사형 차트에 표시
+            if (data.length > 0) {
+              drawRadarChart(data[0]);  // 첫 번째 데이터 (1위)로 차트 그리기
+            }
+          })
+          .catch(error => console.error('데이터 로딩 중 오류 발생:', error));
+      });
+
+
+
+      // 테이블 부분
+      function updateTable(data) {
+        const tableBody = $("#rankingTable tbody");
+        tableBody.empty(); // 테이블 초기화
+
+        for (let i = 1; i <= 10; i++) {
+          // `rankResult`를 가진 데이터를 찾습니다.
+          const matchedItem = data.find(item => parseInt(item.rankResult) === i);
+
+          if (matchedItem) {
+            const row = `<tr data-complex="${matchedItem.complexName}">
+                     <td class="rank-clickable" data-rank="${i}">${i}위</td>
+                     <td class="complex-clickable" data-complex="${matchedItem.complexName}">${matchedItem.complexName}</td>
+                   </tr>`;
+            tableBody.append(row);
+          } else {
+            const row = `<tr>
+                     <td>${i}위</td>
+                     <td>정보 없음</td>
+                   </tr>`;
+            tableBody.append(row);
+          }
+        }
+
+        // "추천 순위" 클릭 이벤트 추가
+        $(".rank-clickable").on("click", function () {
+          const rank = $(this).data("rank");
+          const selectedData = data.find(item => parseInt(item.rankResult) === rank);
+          if (selectedData) {
+            drawRadarChart(selectedData);
+            $(".div7").text(selectedData.complexName); // 산업단지명 표시
+          }
+        });
+
+        // "추천 단지" 클릭 이벤트 추가
+        $(".complex-clickable").on("click", function () {
+          const complexName = $(this).data("complex");
+          const selectedData = data.find(item => item.complexName === complexName);
+          if (selectedData) {
+            drawRadarChart(selectedData);
+            $(".div7").text(selectedData.complexName); // 산업단지명 표시
+          }
+        });
+
+        // "추천 순위" 또는 "추천 단지" 클릭 시 해당하는 complexName을 selectedComplexName에 저장
+        $(".rank-clickable, .complex-clickable").on("click", function () {
+          selectedComplexName = $(this).data("complex"); // 클릭된 요소의 complexName을 저장
+          drawRadarChart(data.find(item => item.complexName === selectedComplexName)); // 방사형 차트 업데이트
+        });
+      }
+
+
+
+
+
+      // "자세히 보기" 버튼 클릭 시 상세 페이지로 이동
+      $("#detailButton").on("click", function () {
+        if (selectedComplexName) {
+          window.location.href = "/detailresult?name=" + encodeURIComponent(selectedComplexName);
+        } else {
+          alert("먼저 산업단지를 선택하세요.");
+        }
+      });
+    </script>
+
+
+    <div class="group-1">
+      <div class="button">
+        <a class="recommendation pleaseButtonHover" data-recommendation="recommendation"
+          th:href="@{/recommendation/recommendation_intro}">
+          공장입지 추천 받기
+        </a>
+      </div>
+      <div class="button2">
+        <a class="intro pleaseButtonHover" data-intro="intro" th:href="@{/intro}">추천시스템 소개</a>
+      </div>
+      <div class="button3">
+        <a class="property pleaseButtonHover" data-property="property" th:href="@{/property/intro}">산업단지 둘러보기</a>
+      </div>
+      <div class="button4">
+        <a class="myPage pleaseButtonHover" data-my-page="myPage" th:href="@{/FinalModal}">마이페이지</a>
+      </div>
+      <div class="button5">
+        <a class="support pleaseButtonHover" data-support="support" th:href="@{/support}">고객지원</a>
+      </div>
+      <div class="button6">
+        <div class="users pleaseButtonHover">일반회원</div>
+      </div>
+      <div class="button7">
+        <div class="agent pleaseButtonHover">중개인</div>
+      </div>
+      <div class="button8">
+        <div class="login pleaseButtonHover" id="authButton"><a th:href="@{/login}">로그인/ 회원가입</a></div>
+      </div>
+    </div>
+    <div class="button9">
+      <a th:href="@{/}">
+        <img class="home pleaseButtonHover" data-mainpage="mainpage" th:src="@{../images/image-20.png}" />
+      </a>
+    </div>
+    <div class="line-6"></div>
+
+  </div>
+
+</body>
+
+</html>

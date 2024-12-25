@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로딩 중...</title>
+</head>
+<body>
+    <div>
+        <h2>데이터를 처리 중입니다. 잠시만 기다려 주세요...</h2>
+        <!-- 로딩 애니메이션 -->
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        // 로딩 페이지에서 서버 처리 결과가 완료되면 결과 페이지로 리다이렉트하는 코드
+        setTimeout(function() {
+            window.location.href = '/recommendation_result/mainresult';
+        }, 3000); // 서버 응답 대기 시간 설정 (3초 후 이동)
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/intro-vars.css}">
+  <link rel="stylesheet" th:href="@{/css/intro-style.css}">
+  <script th:src="@{/script/authStatus.js}" defer></script>
+  <script th:src="@{/script/jquery-3.7.1.min.js}"></script>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   .pleaseButtonHover:hover {
+    cursor: pointer; /* hover 시 클릭 모양으로 변경 */
+ }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <div class="rectangle-1"></div>
+    <div class="button"></div>
+    <img class="image-4" th:src="@{/images/first.png}" />
+    <img class="image-3" th:src="@{/images/second.png}" />
+    <div class="div">추천 시스템 소개</div>
+    <div class="rectangle-4"></div>
+    <img class="image-2" th:src="@{/images/image-20.png}" />
+    <div class="div2">추천 시스템 소개</div>
+    <div class="div3">마이페이지</div>
+    <div class="div4">산업단지 둘러보기</div>
+    <div class="div5">공장입지 추천받기</div>
+    <div class="div6">로그인 / 회원가입</div>
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com"
+    >
+      <span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span"
+        >
+          상호 : (주)팩토리픽  |  대표 : 임한솔 |  사업자등록번호: 120-87-61559
+          <br />
+          주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽
+          고객센터 1661-6844
+          <br />
+          COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+          <br />
+          서비스 이용문의: 1661-8734  |  이메일 : hanwhasystem.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3"
+        >
+           |  팩스 : 02-568-4908
+          <br />
+          서비스제휴문의 : 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4"
+        >
+          partnership@factorypick.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5"
+        >
+            |  분양광고 문의 : ad@factorypick.com
+        </span>
+      </span>
+    </div>
+    <a>
+    </a>
+    <img class="image-32" th:src="@{/images/image-31.png}" />
+    <div class="group-1">
+       <div class="button2">
+    
+        <a class="recommendation pleaseButtonHover" data-recommendation="recommendation" th:href="@{/recommendation/recommendation_intro}">
+          공장입지 추천 받기
+        </a>
+      </div>
+      <div class="button3">
+        <a class="intro pleaseButtonHover" data-intro="intro" th:href="@{/intro}" >추천시스템 소개</a>
+      </div>
+      <div class="button4">
+        <a class="property pleaseButtonHover" data-property="property" th:href="@{/property/intro}">산업단지 둘러보기</a>
+      </div>
+      <div class="button5">
+        <a class="myPage pleaseButtonHover" data-my-page="myPage" th:href="@{/FinalModal}">마이페이지</a>
+      </div>
+      <div class="button6">
+        <a class="support pleaseButtonHover" data-support="support" th:href="@{/support}">고객지원</a>
+      </div>
+      <div class="button7">
+        <button class="users pleaseButtonHover">일반회원</button>
+      </div>
+      <div class="button8">
+        <button class="agent pleaseButtonHover">중개인</button>
+      </div>
+      <div class="button9">
+         <div class="login pleaseButtonHover" id="authButton"><a th:href="@{/login}">로그인/ 회원가입</a></div>
+      </div>
+    </div>
+    <div class="button10">
+    <a th:href="@{/}">
+      <img class="home" data-mainpage="mainpage" th:src="@{/images/image-11.png}" />
+      </a>
+    </div>
+    <div class="line-6"></div>
+  </div>
+  
+</body>
+</html>

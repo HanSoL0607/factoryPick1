@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/transportaion chocie-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/transportaion chocie-style.css}">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>교통</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="frame-1">
+      <div class="div2">
+        <span>
+          <span class="div-2-span">중요도 순으로</span>
+          <span class="div-2-span2">"교통수단"</span>
+          <span class="div-2-span3">을 선택해주세요!</span>
+        </span>
+      </div>
+      <div class="div">
+        ※ 교통수단을 클릭하면, 중요도 순위가 정해집니다.
+      </div>
+
+      <!-- 교통수단 버튼 -->
+      <div class="button-container">
+        <div class="transport-button-container">
+          <div class="priority-label" id="highway-priority-label"></div>
+          <button class="transport-button" id="highway-btn" data-priority="0">고속도로</button>
+        </div>
+
+        <div class="transport-button-container">
+          <div class="priority-label" id="railway-priority-label"></div>
+          <button class="transport-button" id="railway-btn" data-priority="0">고속철도</button>
+        </div>
+
+        <div class="transport-button-container">
+          <div class="priority-label" id="port-priority-label"></div>
+          <button class="transport-button" id="port-btn" data-priority="0">항만</button>
+        </div>
+
+        <div class="transport-button-container">
+          <div class="priority-label" id="airport-priority-label"></div>
+          <button class="transport-button" id="airport-btn" data-priority="0">항공</button>
+        </div>
+      </div>
+
+
+      <!-- 초기화 버튼 -->
+      <button class="reset-button" id="reset-button">초기화</button>
+
+      <!-- 화살표 버튼 및 번호 -->
+      <div class="arrow-and-number">
+        <a th:href="@{/recommendation/region_choice}">
+          <img class="left" th:src="@{../images/left.svg}" />
+        </a>
+        <div class="_2">2</div>
+        <a href="#" id="submit-arrow">
+          <img class="right" th:src="@{../images/right.svg}" />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 폼 추가 (숨겨진 필드 포함) -->
+  <form id="transportationForm" action="/recommendation/transportation_choice" method="post">
+    <input type="hidden" name="highwayPreference" id="highwayPreference">
+    <input type="hidden" name="railwayPreference" id="railwayPreference">
+    <input type="hidden" name="portPreference" id="portPreference">
+    <input type="hidden" name="airportPreference" id="airportPreference">
+  </form>
+
+  <script>
+    // 교통수단 버튼과 우선순위 박스 가져오기
+    const transportButtons = document.querySelectorAll('.transport-button');
+    const form = document.getElementById('transportationForm'); // ***백엔드 연계***
+    let currentPriority = 1;
+
+    // 우선순위 저장용 변수
+    let priorities = {
+      highway: null,
+      railway: null,
+      port: null,
+      airport: null
+    };
+
+
+
+    // 우선순위 설정 함수
+    function setPriority(button, priorityName, labelId) {
+      if (priorities[priorityName] !== null) {
+        resetButton(button, priorityName, labelId);
+        currentPriority--; // 우선순위 감소
+      } else {
+        if (currentPriority <= 4) {
+          button.classList.add('selected');
+          const priorityLabel = document.getElementById(labelId);
+          priorityLabel.textContent = `${currentPriority}순위`;
+          priorityLabel.style.display = 'block'; // 순위 표시
+          priorities[priorityName] = 5 - currentPriority;
+          currentPriority++;
+        }
+      }
+    }
+
+
+
+
+    // 각 버튼에 클릭 이벤트 추가 (labelId 포함)
+    document.getElementById('highway-btn').addEventListener('click', function () {
+      setPriority(this, 'highway', 'highway-priority-label');
+    });
+    document.getElementById('railway-btn').addEventListener('click', function () {
+      setPriority(this, 'railway', 'railway-priority-label');
+    });
+    document.getElementById('port-btn').addEventListener('click', function () {
+      setPriority(this, 'port', 'port-priority-label');
+    });
+    document.getElementById('airport-btn').addEventListener('click', function () {
+      setPriority(this, 'airport', 'airport-priority-label');
+    });
+
+    // 초기화 함수
+    function resetButton(button, priorityName, labelId) {
+      button.classList.remove('selected');
+      const priorityLabel = document.getElementById(labelId);
+      priorityLabel.style.display = 'none'; // 순위 숨기기
+      priorities[priorityName] = null;
+    }
+
+    // 초기화 버튼 이벤트
+    document.getElementById('reset-button').addEventListener('click', function () {
+      transportButtons.forEach(button => {
+        const priorityName = button.id.replace('-btn', '');
+        const labelId = button.id.replace('-btn', '-priority-label');
+        resetButton(button, priorityName, labelId);
+      });
+      currentPriority = 1;
+    });
+
+    // 화살표 클릭 시 폼 제출
+    document.getElementById('submit-arrow').addEventListener('click', function (event) {
+      event.preventDefault();
+
+      // 모든 우선순위가 설정되었는지 확인
+      if (currentPriority > 4) {
+        // 숨겨진 필드에 우선순위 값 설정
+        document.getElementById('highwayPreference').value = priorities.highway || 0;
+        document.getElementById('railwayPreference').value = priorities.railway || 0;
+        document.getElementById('portPreference').value = priorities.port || 0;
+        document.getElementById('airportPreference').value = priorities.airport || 0;
+
+        form.submit(); // 폼 제출
+      } else {
+        alert('모든 순위를 선택해주세요.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{../css/property datail-vars.css}" rel="stylesheet">
+  <link th:href="@{../css/property datail-style.css}" rel="stylesheet">
+  <script th:src="@{/script/authStatus.js}" defer></script>
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <img class="image" th:src="@{../images/example%20map.png}" />
+    <div class="div">위치</div>
+    <div class="div2">위치정보</div>
+    <div class="group-8">
+      <div class="group-7">
+        <div class="_000" th:text ="${complexName}">000산업단지</div>
+        <div class="line-14"></div>
+        <div class="line-15"></div>
+        <div class="line-16"></div>
+      </div>
+      <div class="div3">면적</div>
+      <div class="m-2" th:text="${size}">m2</div>
+      <div class="div4">착공일 / 준공인가일</div>
+      <div class="complete_date" th:text="${completeDate}">YYYY년도 MM월 DD일</div>
+      <div class="div5">고속도로</div>
+      <div class="highway" th:text="${highway}">000 고속도로 00KM</div>
+      <div class="div6">항만</div>
+      <div class="seaport" th:text="${seaport}">00항만 00KM</div>
+      <div class="div7">철도</div>
+      <div class="train" th:text="${train}">00역 00KM</div>
+      <div class="div8">항공</div>
+      <div class="airport" th:text="${airport}">00공항 00KM</div>
+      <div class="line-12"></div>
+      <div class="line-152"></div>
+      <div class="line-142"></div>
+    </div>
+    <div class="rectangle-4"></div>
+    <img class="image-2" th:src="@{../images/image-20.png}" />
+    <div class="div9">추천 시스템 소개</div>
+    <div class="div10">마이페이지</div>
+    <div class="div11">산업단지 둘러보기</div>
+    <div class="div12">공장입지 추천받기</div>
+    <div class="div13">로그인 / 회원가입</div>
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com"
+    >
+      <span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span"
+        >
+          상호 : (주)팩토리픽  |  대표 : 임한솔 |  사업자등록번호: 120-87-61559
+          <br />
+          주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽
+          고객센터 1661-6844
+          <br />
+          COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+          <br />
+          서비스 이용문의: 1661-8734  |  이메일 : hanwhasystem.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3"
+        >
+           |  팩스 : 02-568-4908
+          <br />
+          서비스제휴문의 : 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4"
+        >
+          partnership@factorypick.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5"
+        >
+            |  분양광고 문의 : ad@factorypick.com
+        </span>
+      </span>
+    </div>
+    <img class="image-3" th:src="@{../images/image-30.png}" />
+    <div class="variant-3">
+      <img class="favorite" th:src="@{../images/empty%20heart.png}" />
+    </div>
+    <div class="div14">
+      <div class="property-1-heart">
+        <img class="favorite" th:src="@{../images/empty%20heart.png}" />
+      </div>
+      <div class="property-1-heart">
+        <img class="heart" th:src="@{../images/full%20heart.png}" />
+      </div>
+    </div>
+    <div class="line-6"></div>
+    <div class="group-52">
+      <div class="group-4">
+        <div class="group-1">
+          <div class="button">
+            <a class="recommendation pleaseButtonHover" data-recommendation="recommendation" th:href="@{/recommendation/recommendation_intro}">
+              공장입지 추천 받기
+            </a>
+          </div>
+          <div class="button2">
+            <button class="intro" data-intro="intro">추천시스템 소개</button>
+          </div>
+          <div class="button3">
+            <button class="property" data-property="property">
+              산업단지 둘러보기
+            </button>
+          </div>
+          <div class="button4">
+            <button class="myPage" data-my-page="myPage">마이페이지</button>
+          </div>
+          <div class="button5">
+            <button class="support" data-support="support">고객지원</button>
+          </div>
+          <div class="button6">
+            <div class="users">일반회원</div>
+          </div>
+          <div class="button7">
+            <div class="agent">중개인</div>
+          </div>
+          <div class="button8">
+            <div class="login">로그인/ 회원가입</div>
+          </div>
+        </div>
+        <div class="button9">
+          <img class="home" data-mainpage="mainpage" th:src="@{../images/image-11.png}" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

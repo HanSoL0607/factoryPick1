@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/index-vars.css}">
+  <link rel="stylesheet" th:href="@{/css/index-style.css}">
+  <script th:src="@{/script/jquery-3.7.1.min.js}"></script>
+  <script th:src="@{/script/authStatus.js}" defer></script>
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <div class="rectangle-7"></div>
+    <div class="div">
+      <span>
+        <span class="div-span">통계기반 데이터 분석</span>
+        <span class="div-span2">
+          을
+          <br />
+          통한 최적의 공장 입지 추천
+        </span>
+      </span>
+    </div>
+    <div class="_30-000">
+      약 30,000개의 데이터를 바탕으로 간단한 응답을 통해
+      <br />
+      쉽고 간편한 서비스를 제공합니다.
+    </div>
+    <div class="frame-2">
+      <div class="button">
+      <a th:href="@{/recommendation/recommendation_intro}">
+        <button class="recommendation-2 pleaseButtonHover" data-recommendation="recommendation">
+        <span>나의 공장 위치 찾기</span>
+        </button>
+        </a>
+      </div>
+    </div>
+    <img class="factory" th:src="@{/images/factory0.png}" />
+    <img
+      class="girl-and-boy-in-the-worker-jumpsuits"
+      th:src="@{/images/girl-and-boy-in-the-worker-jumpsuits0.png}"
+    />
+    <div class="rectangle-3"></div>
+    <div class="rectangle-32"></div>
+    <div class="rectangle-33"></div>
+    <div class="div2">공장입지 추천받기</div>
+    <div class="div3">추천 시스템 소개</div>
+    <div class="div4">산업단지 둘러보기</div>
+    <div class="rectangle-5"></div>
+    <img class="rectangle-6" th:src="@{/images/rectangle-60.svg}" />
+    <div class="div5 pleaseButtonHover">
+    	<a href="#" id="search-button" ></a>
+    🔍</div>
+  <div class="search-container">
+    <input 
+      type="text" 
+      class="div6" 
+      id="search-input" 
+      placeholder="산업단지명을 입력하세요." 
+    />
+    <ul id="autocomplete-list"></ul> <!-- 자동완성 목록 -->
+  </div>
+    
+    <div class="div7">
+
+      팩토리픽은 사용자의 선호 지역, 가격
+      <br />
+      상한, 교통 접근성 등 입력된 데이터를
+      <br />
+      기반으로 산업단지 내 최적의 공장
+      <br />
+      입지를 추천합니다.
+    </div>
+    <div class="div8">
+      팩토리픽은 시도별 유사도, 경제활동인구,
+      <br />
+      토지 개발 용이성 등을 평가하여
+      <br />
+      이를 통해 유사도 높은 산업단지 추천
+      <br />
+      및 상세 정보 제공을 지원하고 있습니다.
+    </div>
+    <div class="_780">
+      780여개의 산업단지 내에 등록된 매물을
+      <br />
+      한 눈에 파악하여 위치 파악에 용이합니다.
+    </div>
+    <img class="search" th:src="@{/images/search0.png}" />
+    <img class="laptop-settings" th:src="@{/images/laptop-settings0.png}" />
+    <img class="idea" th:src="@{/images/idea0.png}" />
+    <div class="rectangle-4"></div>
+    <img class="image-2" th:src="@{/images/image-20.png}" />
+    <div class="div9">추천 시스템 소개</div>
+    <div class="div10">마이페이지</div>
+    <div class="div11">산업단지 둘러보기</div>
+    <div class="div12">공장입지 추천받기</div>
+    <div class="div13">로그인 / 회원가입</div>
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystem-gmail-com-02-568-4908-partnership-factorypick-com-ad-factorypick-com"
+    >
+      <span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystem-gmail-com-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span"
+        >
+          상호 : (주)팩토리픽  |  대표 : 임한솔 |  사업자등록번호: 120-87-61559
+          <br />
+          주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽
+          고객센터 1661-6844
+          <br />
+          COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+          <br />
+          서비스 이용문의: 1661-8734  |  이메일 : hanwhasystem@gmail.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystem-gmail-com-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3"
+        >
+           |  팩스 : 02-568-4908
+          <br />
+          서비스제휴문의 : 
+        </span>
+        <span>partnership@factorypick.com </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystem-gmail-com-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5"
+        >
+            |  분양광고 문의 : ad@factorypick.com
+        </span>
+      </span>
+    </div>
+    <img class="image-3" th:src="@{/images/image-30.png}" />
+    <img
+      class="pngtree-oil-refinery-industrial-complex-hong-13043902"
+      th:src="@{/images/pngtree-oil-refinery-industrial-complex-hong-130439020.png}"
+    />
+    <div class="div14">
+      <span>
+        <span class="div-14-span">끊임없는</span>
+        <span class="div-14-span2">혁신과 도전</span>
+        <span class="div-14-span3">
+          으로
+          <br />
+          공장의 미래를 개척합니다.
+        </span>
+      </span>
+    </div>
+    <div class="group-1">
+      <div class="button2">
+    
+        <a class="recommendation pleaseButtonHover" data-recommendation="recommendation" th:href="@{/recommendation/recommendation_intro}">
+          공장입지 추천 받기
+        </a>
+      </div>
+      <div class="button3">
+        <a class="intro pleaseButtonHover" data-intro="intro">추천시스템 소개</a>
+      </div>
+      <div class="button4">
+        <a class="property pleaseButtonHover" data-property="property" >산업단지 둘러보기</a>
+      </div>
+      <div class="button5">
+        <a class="myPage pleaseButtonHover" data-my-page="myPage" >마이페이지</a>
+      </div>
+      <div class="button6">
+        <a class="support pleaseButtonHover" data-support="support" >고객지원</a>
+      </div>
+      <div class="button7">
+        <button class="users pleaseButtonHover">일반회원</button>
+      </div>
+      <div class="button8">
+        <button class="agent pleaseButtonHover">중개인</button>
+      </div>
+      <div class="button9">
+        <div class="login pleaseButtonHover" id="authButton">로그인/ 회원가입</div>
+      </div>
+    </div>
+    <div class="button10">
+    <a th:href="@{/}">
+    <img class="home pleaseButtonHover" data-mainpage="mainpage" th:src="@{/images/image-20.png}" />
+    </a>
+    </div>
+  </div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+	  let complexInfoData = []; // COMPLEX_INFO 데이터 저장
+
+	  // 1. JSON 데이터 로드
+	  fetch('/property/COMPLEX_INFO(20241021).json')
+	    .then(response => response.json())
+	    .then(data => {
+	      complexInfoData = data.COMPLEX_INFO; // complex_name 데이터 저장
+	    })
+	    .catch(error => console.error('데이터 로드 오류:', error));
+
+	  // DOM 요소 참조
+	  const searchInput = document.getElementById('search-input');
+	  const autocompleteList = document.getElementById('autocomplete-list');
+	  const searchButton = document.querySelector('.div5'); // 검색 버튼 참조
+
+	  // 2. 입력값 변경 시 자동완성 목록 업데이트
+	  searchInput.addEventListener('input', function () {
+	    const searchTerm = this.value.toLowerCase().trim(); // 입력값 소문자 처리
+	    autocompleteList.innerHTML = ''; // 기존 목록 초기화
+
+	    if (searchTerm) {
+	      // 입력값과 일치하는 complex_name 필터링
+	      const suggestions = complexInfoData
+	        .map(item => item.complex_name)
+	        .filter(name => name.toLowerCase().includes(searchTerm));
+
+	      // 자동완성 목록 생성
+	      suggestions.forEach((suggestion , index) => {
+	        const li = document.createElement('li');
+	        li.textContent = suggestion;
+
+	        // 항목 클릭 시 선택된 값을 입력 필드에 채우기
+	        li.addEventListener('click', () => {
+	          searchInput.value = suggestion;
+	          autocompleteList.innerHTML = ''; // 목록 제거
+	        });
+
+	        autocompleteList.appendChild(li);
+	        if (index === suggestions.length - 1) {
+	            scrollToViewIfNeeded(autocompleteList, li);
+	          }
+	        
+	      });
+	    }
+	  });
+
+	  // 3. 엔터 키 처리: 선택된 값으로 확정
+	  searchInput.addEventListener('keydown', function (event) {
+	    if (event.key === 'Enter' && autocompleteList.firstChild) {
+	      searchInput.value = autocompleteList.firstChild.textContent;
+	      autocompleteList.innerHTML = ''; // 목록 제거
+	      searchButton.click(); // 검색 버튼 자동 클릭
+	    }
+	  });
+
+	  // 4. 검색 버튼 클릭 시 URL로 값 전달
+	  searchButton.addEventListener('click', function () {
+	    const searchValue = searchInput.value.trim(); // 검색어 가져오기
+	    if (searchValue) {
+	      const encodedSearch = encodeURIComponent(searchValue); // URL 인코딩 처리
+	        // 세션 스토리지에 현재 경로 저장 (로그인 후 복원을 위해)
+	        const currentPath = `/property?search=${encodedSearch}`;
+	        sessionStorage.setItem('redirectPath', currentPath); // 세션에 저장
+
+	        // URL로 이동
+	        window.location.href = currentPath;
+	    } else {
+	      alert('검색어를 입력해 주세요!');
+	    }
+	  });
+	  
+
+	});
+</script>
+</html>

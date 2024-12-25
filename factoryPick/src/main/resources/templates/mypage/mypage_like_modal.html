@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/mypage_like_modal-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/mypage_like_modal-style.css}">
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <div class="rectangle-11"></div>
+    <div class="frame-2">
+      <img class="group-7" th:src="@{../images/modal-background.svg}" />
+      <div class="first_size" th:text="${firstSize}">m2</div> 
+      <div class="div">위치</div>
+      <div class="first_comparison" th:text="${firstComparisonName}">산업단지 2</div>
+      <div class="second_comparison" th:text="${secondComparisonName}">산업단지 1</div>
+      <div class="div2">면적</div> 
+      <div class="second_size" th:text="${secondSize}">m2</div> 
+      <div class="div3">착공일 / 준공인가일</div> 
+      <div class="second_competion_date" th:text="${secondCompletionDate}">YYYY년도 MM월 DD일</div> 
+      <div class="div4">고속도로</div>
+      <div class="second_highway" th:text="${secondHighway}">000 고속도로 00KM</div> 
+      <div class="div5">항만</div>
+      <div class="second_seaport" th:text="${secondSeaport}">00항만 00KM</div> 
+      <div class="div6">철도</div>
+      <div class="second_station" th:text="${secondStation}">00역 00KM</div> 
+      <div class="div7">항공</div>
+      <div class="second_airport" th:text="${secondAirport}">00공항 00KM</div> 
+      <div class="first_completion_date" th:text="${firstCompletionDate}">YYYY년도 MM월 DD일</div> 
+      <div class="first_highway" th:text="${firstHighway}">000 고속도로 00KM</div>
+      <div class="first_seaport" th:text="${firstSeaport}">00항만 00KM</div> 
+      <div class="first_station" th:text="${firstStation}">00역 00KM</div> 
+      <div class="first_airport" th:text="${firstAirport}">00공항 00KM</div>
+    </div>
+    <div class="div8">찜한 산업단지 비교하기</div>
+  </div>
+  
+</body>
+</html>

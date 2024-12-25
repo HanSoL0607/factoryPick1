@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/last choice-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/last choice-style.css}">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>생산품 및 원자재</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="frame-1">
+      <div class="div2">
+        <span>
+          <span class="div-2-span">어떤</span>
+          <span class="div-2-span2">"원자재"</span>
+          <span class="div-2-span3">를 사용하여</span>
+          <span class="div-2-span4">"상품"</span>
+          <span class="div-2-span5">을 생산하시나요?</span>
+        </span>
+      </div>
+      <div class="div">
+        ※ 정확한 원자재와 생산품을 구체적으로 알지 못하더라도, 간단하게 적어주시면 됩니다!
+      </div>
+      <div class="form-log-in" id="formLogIn">
+        <!-- 로딩 스피너와 안내 문구 -->
+
+        <form th:action="@{/recommendation/submit}" method="post" id="surveyForm">
+          <div class="input-field">
+            <div class="label">원자재</div>
+            <div class="input">
+              <input type="text" class="raw_materials" name="rawMaterial" th:placeholder="'입력해주세요'"
+                th:value="${raw_materials}" />
+            </div>
+          </div>
+          <div class="input-field">
+            <div class="label">생산품</div>
+            <div class="input">
+              <input type="text" class="products" name="product" th:placeholder="'입력해주세요'" th:value="${products}" />
+            </div>
+          </div>
+          <div class="button-group">
+            <div class="button">
+              <button type="submit" class="button2" id="submitButton" onclick="showLoading()">제출완료</button>
+            </div>
+          </div>
+        </form>
+
+        <div id="loadingContainer" style="display: none;">
+          <div class="spinner"></div>
+          <p class="loading-text">추천 시스템 작동중입니다. 잠시만 기다려주세요..</p>
+        </div>
+        <div class="text-link"></div>
+      </div>
+
+
+
+      <!-- 아래 번호 -->
+      <div class="arrow-and-number">
+        <a th:href="@{/recommendation/industry_choice}">
+          <img class="left" th:src="@{../images/left.svg}" />
+        </a>
+        <div class="_5">5</div>
+        <div class="right-placeholder"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 로딩창 구현 -->
+  <script>
+    function showLoading() {
+      // formLogIn의 자식 요소들을 숨기기
+      const formElements = document.getElementById("formLogIn").children;
+      for (let i = 0; i < formElements.length; i++) {
+        formElements[i].style.display = "none";
+      }
+
+      // 로딩 컨테이너 표시
+      document.getElementById("loadingContainer").style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>

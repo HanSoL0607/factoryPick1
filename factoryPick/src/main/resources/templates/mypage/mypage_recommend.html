@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script th:src="@{/script/jquery-3.7.1.min.js}"></script>
+  <link rel="stylesheet" th:href="@{../css/mypage_recommend-style.css}">
+  <link rel="stylesheet" th:href="@{../css/mypage_recommend-vars.css}">
+  <script th:src="@{/script/authStatus.js}" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+     const complexNames = Array.from(document.querySelectorAll('.complex_name'));
+     const complexInfos = Array.from(document.querySelectorAll('.complex_info'));
+     const images = Array.from(document.querySelectorAll('[id^="image"]')); // 'image'로 시작하는 ID
+     const prevButton = document.getElementById('prev-page');
+     const nextButton = document.getElementById('next-page');
+     const pageNumbers = document.querySelectorAll('.page-number');
+
+     const ITEMS_PER_PAGE = 6; // 페이지당 표시할 항목 수
+     let currentPage = 1; // 현재 페이지
+
+     const totalItems = Math.min(complexNames.length, complexInfos.length);
+     const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE); // 총 페이지 수
+
+     if (totalItems === 0) {
+       console.warn('No items to display.');
+       return;
+     }
+
+     // 페이지에 해당하는 이름, 정보, 이미지를 표시하는 함수
+     function showPage(page) {
+       const start = (page - 1) * ITEMS_PER_PAGE;
+       const end = start + ITEMS_PER_PAGE;
+
+       // 이름, 정보, 이미지 숨기기
+       complexNames.forEach((name, index) => {
+         name.style.display = index >= start && index < end ? 'block' : 'none';
+       });
+
+       complexInfos.forEach((info, index) => {
+         info.style.display = index >= start && index < end ? 'block' : 'none';
+       });
+
+       images.forEach((img, index) => {
+         img.style.display = index >= start && index < end ? 'block' : 'none';
+       });
+
+       // 페이지 번호 업데이트
+       pageNumbers.forEach((p) => p.classList.remove('active'));
+       const activePage = document.querySelector(`.page-number[data-page="${page}"]`);
+       if (activePage) activePage.classList.add('active');
+     }
+
+     // 페이지 번호 클릭 이벤트
+     pageNumbers.forEach((page) => {
+       page.addEventListener('click', () => {
+         currentPage = parseInt(page.getAttribute('data-page'));
+         showPage(currentPage);
+       });
+     });
+
+     // 이전 버튼 클릭 이벤트
+     prevButton.addEventListener('click', () => {
+       if (currentPage > 1) {
+         currentPage--;
+         showPage(currentPage);
+       }
+     });
+
+     // 다음 버튼 클릭 이벤트
+     nextButton.addEventListener('click', () => {
+       if (currentPage < totalPages) {
+         currentPage++;
+         showPage(currentPage);
+       }
+     });
+
+     // 초기 페이지 표시
+     showPage(currentPage);
+   });
+</script>
+  <style>
+    .pagination {
+      position: absolute;
+      top: 1175px;
+      left: 940px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 40px;
+      margin-top: 10px;
+      z-index: 9999;
+    }
+
+    .page-number {
+      cursor: pointer;
+      font-size: 18px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .page-number.active {
+      background-color: #14213d;
+      color: white;
+      font-weight: bold;
+    }
+
+    .arrow {
+      cursor: pointer;
+      font-size: 20px;
+      padding: 0 15px;
+    }
+
+    a, button, input, select, h1, h2, h3, h4, h5, * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu, ol, ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="frame-1">
+    <div class="div">
+      <div class="div2">마이페이지</div>
+    </div>
+   <img class="image-22" th:src="@{/images/image-11.png}" />
+    <div class="rectangle-10"></div>
+    <div class="rectangle-4"></div>
+    <div class="div3">추천 시스템 소개</div>
+    <div class="div4">마이페이지</div>
+    <div class="div5">산업단지 둘러보기</div>
+    <div class="div6">공장입지 추천받기</div>
+    <div class="div7">로그인 / 회원가입</div>
+
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+
+    <div class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com">
+      <span>
+        상호 : (주)팩토리픽 | 대표 : 임한솔 | 사업자등록번호: 120-87-61559<br />
+        주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽 고객센터 1661-6844<br />
+        COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.<br />
+        서비스 이용문의: 1661-8734 | 이메일 : hanwhasystemcom | 팩스 : 02-568-4908<br />
+        서비스제휴문의 : partnership@factorypick.com | 분양광고 문의 : ad@factorypick.com
+      </span>
+    </div>
+
+    <img class="image-3" th:src="@{../images/image-30.png}" />
+        <div class="div8">
+       <a href="/mypage/FinalModal">찜한 산업단지</a>
+   </div>
+    <div class="div9">추천받은 산업단지</div>
+    <div class="_1-1">1:1 문의</div>
+    <div class="div10">정보 수정</div>
+    <div class="line-6"></div>
+
+    <div class="group-5">
+      <div class="group-4">
+        <div class="group-1">
+          <div class="button">
+            <button class="recommendation" data-recommendation="recommendation">공장입지 추천 받기</button>
+          </div>
+          <div class="button2">
+            <button class="intro" data-intro="intro">추천시스템 소개</button>
+          </div>
+          <div class="button3">
+            <button class="property" data-property="property">산업단지 둘러보기</button>
+          </div>
+          <div class="button4">
+            <button class="myPage" data-my-page="myPage">마이페이지</button>
+          </div>
+          <div class="button5">
+            <button class="support" data-support="support">고객지원</button>
+          </div>
+          <div class="button6">
+            <div class="users">일반회원</div>
+          </div>
+          <div class="button7">
+            <div class="agent">중개인</div>
+          </div>
+          <div class="button8">
+            <div class="login" id="authButton">로그인/ 회원가입</div>
+          </div>
+        </div>
+        <div class="button9">
+          <img class="home" data-mainpage="mainpage" th:src="@{../images/image-20.png}" />
+        </div>
+      </div>
+    </div>
+       
+    <div class="pagination">
+      <span class="arrow" id="prev-page">&lt;</span>
+      <span class="page-number active" data-page="1">1</span>
+      <span class="page-number" data-page="2">2</span>
+      <span class="page-number" data-page="3">3</span>
+      <span class="page-number" data-page="4">4</span>
+      <span class="page-number" data-page="5">5</span>
+      <span class="arrow" id="next-page">&gt;</span>
+    </div>
+
+    <div class="div11">추천받은 산업단지</div>
+
+    <div th:each="name, status : ${likeList}">
+      <div class="complex_name" th:id="|complex_name${status.index+1}|" th:text="${name}">산업단지명</div>
+      <img th:id = "|image${status.index}|" th:src= "|/images/${status.index+29}.jpeg|"/>
+    </div>
+
+    <div th:each="dto, num : ${complexList}">
+      <div class="complex_info" th:id="|complex_info${num.index+1}|" th:text="${dto.address}">산업단지 정보</div>
+    </div>
+
+ 
+  </div>
+
+</body>
+</html>

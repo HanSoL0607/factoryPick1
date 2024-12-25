@@ -1,0 +1,841 @@
+
+.modal {
+    display: none;/* 기본적으로 숨김 */
+    position: absolute;
+    z-index: 1000;
+    left: 50%; /* 화면의 중앙에 위치 */
+    width: 500px;
+    height: 700px;
+    transform: translate(-50%); /* 완벽한 중앙 정렬 */
+    background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경 */
+    display: flex; /* 가운데 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+}
+.login-options {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 20px; /* 이미지 간 간격 */
+    align-items: center; /* 이미지 중앙 정렬 */
+    justify-content: center; /* 세로로 중앙 정렬 */
+    height: 100%; /* 부모 컨테이너의 높이에 맞춤 */
+}
+.modal-content {
+    position: relative;
+    width: 400px; /* 모달 창 너비 조정 */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.image-1, .image-4, .image-5, .alert {
+    position: relative; /* position 설정 */
+    width: 250px; /* 이미지의 너비 조정 */
+    object-fit: contain; /* 비율 유지 */
+}
+
+.alert{
+	    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    top : 20px;
+}
+.image-1 {
+    top: 10px; /* 원하는 위치 설정 */
+    height: auto; /* 이미지 높이 */
+}
+
+
+.image-4 {
+    top: 30px; /* 원하는 위치 설정 */
+    height: auto;
+}
+
+.image-5 {
+    top: 50px; /* 원하는 위치 설정 */
+    height: auto;
+}
+
+.button:hover,
+.button2:hover, 
+.button3:hover,
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover,
+.button8:hover,
+.button9:hover {
+  transform: scale(1.05); /* 요소 크기 살짝 확대 */
+  text-shadow: 2px 2px 3px rgba(20,33,61, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease; /* 애니메이션 효과 */
+}
+
+
+
+/* .frame-1의 전체 스타일 */
+.frame-1 {
+  padding-top: 120px;
+  background: #ffffff;
+  height: 1850px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 각 개별 요소에 대해 중첩된 CSS 제거 */
+.intro {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.property {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.myPage {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.support {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.recommendation {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.users {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.agent {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.login {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.rectangle-7 {
+  background: #fca311;
+  border-radius: 10px;
+  width: 1602px;
+  height: 66px;
+  position: absolute;
+  left: 154px;
+  top: 988px;
+}
+.image {
+  width: 1602px;
+  height: 796px;
+  position: absolute;
+  left: 154px;
+  top: 164px;
+  object-fit: cover;
+}
+
+.div {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: absolute;
+  left: 154px;
+  top: 994px;
+  width: 1602px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-5 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-4 {
+  background: rgba(203, 203, 203, 0.25);
+  width: 1927px;
+  height: 291px;
+  position: absolute;
+  left: -4px;
+  top: 1559px;
+}
+.image-2 {
+  width: 320px;
+  height: 93.81px;
+  position: absolute;
+  left: 1098px;
+  top: 1716px;
+  object-fit: cover;
+}
+.div2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 170px;
+  top: 1591px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1130px;
+  top: 1597px;
+  width: 300px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div4 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 814px;
+  top: 1588px;
+  width: 292px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div5 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 490px;
+  top: 1591px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div6 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1450px;
+  top: 1588px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-7 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 479px;
+  top: 1632.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.line-8 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 802px;
+  top: 1632.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.line-9 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 1120px;
+  top: 1635.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.line-10 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 1442px;
+  top: 1632.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: var(--line-height-23, 23px);
+  font-weight: 400;
+  position: absolute;
+  left: 234px;
+  top: 1686px;
+  width: 806px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span2 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.image-3 {
+  width: 327px;
+  height: 53px;
+  position: absolute;
+  left: 1460px;
+  top: 1751px;
+  object-fit: cover;
+}
+.group-2 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-6 {
+  border-radius: 0px;
+  width: 394px;
+  height: 80px;
+  position: absolute;
+  left: 1327px;
+  top: 196px;
+  overflow: visible;
+}
+
+.div8 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 1650.75px;
+  top: 204.74px;
+  width: 30.83px;
+  height: 28.71px;
+}
+.navigation {
+  position: absolute;
+  inset: 0;
+}
+.line-6 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1920px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 120.17px;
+  transform-origin: 0 0;
+  transform: rotate(-0.124deg) scale(1, 1);
+}
+.group-52 {
+  width: 1806px;
+  height: 103px;
+  position: static;
+}
+.group-4 {
+  width: 1806px;
+  height: 103px;
+  position: static;
+}
+.group-1 {
+  width: 1472px;
+  height: 103px;
+  position: static;
+}
+.button {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  position: absolute;
+  left: 642px;
+  top: 33px;
+}
+.button2 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 251px;
+  height: 30px;
+  position: absolute;
+  left: 414px;
+  top: 39px;
+}
+.button3 {
+
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 30px;
+  position: absolute;
+  left: 958px;
+  top: 39px;
+
+}
+.button4 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 196px;
+  height: 30px;
+  position: absolute;
+  left: 1240px;
+  top: 38px;
+
+}
+.button5 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 30px;
+  position: absolute;
+  left: 1443px;
+  top: 38px;
+
+}
+.button6 {
+  background: #fca311;
+  border-radius: 15px;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1713px;
+  top: 33px;
+
+}
+
+.button7 {
+  background: #fca311;
+  border-radius: 15px;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 123px;
+  position: absolute;
+  left: 1713px;
+  top: 71px;
+
+}
+.button8 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  height: 30px;
+  position: absolute;
+  left: 1658px;
+  top: 0px;
+}
+
+.button9 {
+  width: 253px;
+  height: 80px;
+  position: absolute;
+  left: 80px;
+  top: 9px;
+
+}
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+
+}
+
+    /* 기본 스타일 */
+    a, button, input, select, h1, h2, h3, h4, h5, * {
+      box-sizing: border-box;
+
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu, ol, ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 지도 스타일 */
+    #map {
+      margin: 35px auto;
+      border: 1px solid #ddd;
+      margin-left: 200px;
+      width: 1500px;
+      height: 800px;
+    }
+
+
+
+    div[style*="border"] {
+      border: none !important;
+      background: unset !important; /* 배경 제거 */
+    }
+
+    /* 커스텀 정보 창 스타일 */
+    #custom-info-window {
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+      background-color: #3b5998;
+      color: #ffffff;
+      width: 300px;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border: 2px solid #14213d;
+    }
+
+    /* 검색창 스타일 */
+    .search-box {
+      position: absolute;
+      top: 20px;
+      left: 70%;
+      z-index: 1000;
+      width: 400px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .search-box input {
+      width: 80%;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .search-box button {
+      padding: 8px 12px;
+      border-radius: 4px;
+      background-color: #fca311;
+      color: white;
+      cursor: pointer;
+    }
+
+.header-container {
+  display: flex; /* Flexbox 레이아웃 적용 */
+  align-items: center; /* 수직 정렬 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  gap: 20px; /* 요소 간 간격 */
+  margin-top: 90px; /* 전체 컨테이너의 위치 조정 */
+  position: absolute;
+  left: 760px;
+  transform: translate(-50%); /* 완벽한 중앙 배치 */
+}
+
+    /* 테이블 헤더 스타일 */
+#complex-name-header {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  position:absolute;
+  width : 800px;
+  left: 20px;
+  white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 */
+}
+
+        /* 테이블 스타일 */
+    #complex-info-table { 
+     width: 1100px;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      top: 1150px;
+      position: absolute;
+    
+    }
+
+    #complex-info-table th, #complex-info-table td {
+     padding : 10px;
+      text-align: center;
+      width: 1000px;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+    #complex-info-table th {
+      background-color: #fca311;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      
+    }
+
+    #complex-info-table td {
+      font-size: 20px;
+      background-color: #f8f8f8;
+    }
+
+    #complex-info-table tr:nth-child(even) td {
+      background-color: #f1f1f1;
+    }
+
+    #complex-info-table tr:hover td {
+      background-color: #fca311;
+      color: white;
+    }
+    /* 테이블과 산업단지 이름 숨기기 */
+    #complex-info-table, #complex-name-header, #emptyheart #fullheart {
+      display: none;  /* 처음에는 테이블과 이름을 숨김 */
+    }
+
+    /* 자동완성 목록 스타일 */
+	#autocomplete-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 400px;
+    z-index: 1001;
+    max-height: 200px; /* 스크롤바 표시를 위한 최대 높이 설정 */
+    overflow-y: auto; /* 넘칠 경우 세로 스크롤바 표시 */
+    overflow-x: hidden; /* 가로 스크롤바 숨김 */
+	}
+
+	/* 스크롤바 스타일 (Webkit 기반 브라우저) */
+	#autocomplete-list::-webkit-scrollbar {
+    width: 10px; /* 스크롤바 너비 */
+	}
+
+	#autocomplete-list::-webkit-scrollbar-thumb {
+    background-color: #fca311; /* 스크롤바 
+    색상 */
+    border-radius: 5px; /* 스크롤바 모서리 둥글게 */
+	}
+
+	#autocomplete-list::-webkit-scrollbar-track {
+    background-color: #f8f8f8; /* 스크롤바 트랙 색상 */
+	}
+   
+   	#autocomplete-list li {
+    padding: 8px;
+    cursor: pointer;
+   	}
+   
+   	#autocomplete-list li:hover {
+    background-color: #f0f0f0;
+   	}
+
+   #complex-info-table {
+   margin-left: 400px;}
+   
+#emptyheart img, #fullheart img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  top:10px;
+}
+
+.heart-buttons {
+  display: flex;
+  gap: 20px; /* 버튼 사이 간격 조정 */
+}
+/* 하트 버튼과 제목을 포함한 그룹 */
+.heart-buttons + #complex-name-header {
+  margin-left: 20px; /* 하트와 제목 사이에 10px 간격 */
+}
+
+.pleaseButtonHover:hover {
+    cursor: pointer; /* hover 시 클릭 모양으로 변경 */
+ }
+   

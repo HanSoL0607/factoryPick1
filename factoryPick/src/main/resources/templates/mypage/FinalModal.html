@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/mypage_like_modal-vars.css}">
+   <link rel="stylesheet" th:href="@{/css/MyPageLikeVars.css}">
+  <link rel="stylesheet" th:href="@{/css/MyPageLikeStyle.css}">
+  <script th:src="@{/script/jquery-3.7.1.min.js}"></script>
+  <script th:src="@{/script/FinalModal.js}" defer></script>
+  <script th:src="@{/script/authStatus.js}" defer></script>
+  <title>산업단지 비교 모달</title>
+
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+    /* 전체 레이아웃 스타일 */
+    body {
+      margin: 0;
+      font-family: "Inter-Bold", sans-serif;
+      background-color: #ffffff;
+      font-weight:900;
+    }
+    
+.pagination {
+  position: relative;  /* 절대 위치로 배치 */
+  top: 1080px;         /* rectangle-6 ~ rectangle-9 사이에 위치 */
+  left: 1100px;           /* 수평 가운데 정렬 */
+  transform: translateX(-50%); /* 정확한 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.page-number {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.page-number.active {
+  background-color: #14213d;
+  color: white;
+  font-weight: bold;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+    /* 모달 오버레이 */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 1920px;
+      height: 100%;
+      background: rgb(114, 112, 112, 0.2); 
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    /* 모달 윈도우 */
+    .modal-window {
+      background: white;
+      width: 1217px;
+      height: 712px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* 닫기 버튼 */
+    .close-area {
+      position: absolute;
+      top: 3px;
+      right: 10px;
+      font-size: 24px;
+      color: grey;
+      cursor: pointer;
+    }
+
+    /* 타이틀 스타일 */
+    .title {
+      text-align: center;
+      color: rgba(252, 163, 17);
+      font-size: 45px;
+      font-weight: 700;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+      margin-bottom: 30px;
+    }
+
+    /* 테이블 스타일 */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      text-align: center;
+      color: black;
+    }
+
+    /* 개별 셀에만 border 적용 */
+    th, td {
+      padding: 15px;
+      font-size: 20px;
+      font-family: "Inter-Bold", sans-serif;
+      font-weight: 900;
+    }
+
+    /* 상단 제목 행의 border */
+    th {
+      color: black;
+      border-bottom: 3px solid grey;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    /* 내부 셀 중 특정 셀에만 경계선 추가 */
+    td {
+      border-bottom: 1px solid grey; /* 아래쪽 경계선만 적용 */
+    }
+
+    /* 특정 셀의 경계를 강조 */
+    .cell-border {
+      border-left: 2px solid grey;
+      border-right: 2px solid grey;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 모달 열기 버튼 -->
+    <div class="frame-1">
+    <div class="div">
+      <div class="div2">마이페이지</div>
+    </div>
+    <div class="rectangle-10"></div>
+   <div class="pagination">
+     <span class="arrow" id="prev-page">&lt;</span>  <!-- 이전 페이지 버튼 -->
+    
+     <!-- 페이지 넘버들 -->
+     <span class="page-number active" data-page="1">1</span>
+     <span class="page-number" data-page="2">2</span>
+     <span class="page-number" data-page="3">3</span>
+     <span class="page-number" data-page="4">4</span>
+     <span class="page-number" data-page="5">5</span>
+     
+     <span class="arrow" id="next-page">&gt;</span>  <!-- 다음 페이지 버튼 -->
+   </div>
+   <!-- 여기서 부터 -->
+    <div th:each="name, status : ${likeList}">  
+          <div th:id="|rectangle-17${status.index}|"></div> 
+       <div class="complex_name" th:id="|complex_name${status.index}|" th:text="${name}">산업단지명</div>
+      <img th:id = "|image${status.index}|" th:src= "|/images/${status.index}.jpeg|"/>
+   </div>
+
+    <div class="div13">
+      ※ 산업단지명을 클릭하면 산업단지의 자세한 정보를 파악할 수 있습니다.
+      <br />
+      ※ 비교하기 버튼을 클릭하시면, 비교하고자 하는 산업단지 간의 정보를 한 눈에
+      비교할 수 있습니다.
+    </div>
+    <div class="rectangle-4"></div>
+    <img class="image-22" th:src="@{/images/image-11.png}" />
+    <div class="div15">추천 시스템 소개</div>
+    <div class="div16">마이페이지</div>
+    <div class="div17">산업단지 둘러보기</div>
+    <div class="div18">공장입지 추천받기</div>
+    <div class="div19">로그인 / 회원가입</div>
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com"
+    >
+      <span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span"
+        >
+          상호 : (주)팩토리픽  |  대표 : 임한솔 |  사업자등록번호: 120-87-61559
+          <br />
+          주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽
+          고객센터 1661-6844
+          <br />
+          COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+          <br />
+          서비스 이용문의: 1661-8734  |  이메일 : hanwhasystem
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span2"
+        >
+          com 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3"
+        >
+           |  팩스 : 02-568-4908
+          <br />
+          서비스제휴문의 : 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4"
+        >
+          partnership@factorypick.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5"
+        >
+            |  분양광고 문의 : ad@factorypick.com
+        </span>
+      </span>
+    </div>
+    <img class="image-3" th:src="@{/images/image-30.png}" />
+    <div class="div21">
+   <a href="/mypage/mypage_recommend">추천받은 산업단지</a>
+   </div>
+    <div class="div20">
+       찜한 산업단지
+   </div>
+   <div class="_1-1">1:1 문의</div>
+   <div class="div22">정보 수정</div>
+   <div class="rectangle-container">
+      <div class="div14">
+        비교하고 싶은
+         <br />
+         산업단지를 선택해주세요!
+       </div>
+      <img class="rectangle-3" th:src="@{/images/rectangle-30.svg}" />
+      <div class="classic-button-true">
+         <div class="button" id="start-comparison">
+         <div class="get-started">비교 시작하기 💻</div>
+         </div>
+       </div>
+       <img
+         class="smiling-young-man-with-laptop-sitting-on-floor"
+         th:src="@{/images/smiling-young-man-with-laptop-sitting-on-floor0.png}"
+       />
+      <div class="rectangle-18">
+         <div class="first-choice">
+          <input type="text" id="firstFactory" placeholder="첫 번째 산업단지" readonly>
+         </div>
+      </div>
+      <div class="rectangle-19">
+         <div class="second-choice">
+          <input type="text" id="secondFactory" placeholder="두 번째 산업단지" readonly>
+         </div>
+      </div>
+   </div>
+   <div class="line-6"></div>
+   <div class="group-56">
+     <div class="group-4">
+       <div class="group-1">
+         <div class="button2">
+           <button class="recommendation" data-recommendation="recommendation">
+             공장입지 추천 받기
+           </button>
+         </div>
+         <div class="button3">
+           <button class="intro" data-intro="intro">추천시스템 소개</button>
+         </div>
+         <div class="button4">
+           <button class="property" data-property="property">
+             산업단지 둘러보기
+           </button>
+         </div>
+         <div class="button5">
+           <button class="myPage" data-my-page="myPage">마이페이지</button>
+         </div>
+         <div class="button6">
+           <button class="support" data-support="support">고객지원</button>
+         </div>
+         <div class="button7">
+           <div class="users">일반회원</div>
+         </div>
+         <div class="button8">
+           <div class="agent">중개인</div>
+         </div>
+         <div class="button9">
+           <div class="login" id="authButton">로그인/ 회원가입</div>
+         </div>
+       </div>
+       <div class="button10">
+         <img class="home" data-mainpage="mainpage" th:src="@{/images/image-20.png}" />
+       </div>
+     </div>
+
+  <!-- 모달 오버레이 -->
+  <div id="modal" class="modal-overlay">
+    <div class="modal-window">
+      <!-- 닫기 버튼 -->
+      <div class="close-area" id="close-modal">×</div>
+
+      <!-- 타이틀 -->
+      <div class="title">찜한 산업단지 비교하기</div>
+
+      <!-- 테이블 -->
+      <table>
+        <thead>
+          <tr>
+            <th id="firstComplexName" th:text="${firstComplexName}">산업단지 1</th>
+            <th>위치</th>
+            <th id="secondComplexName" th:text="${secondComplexName}">산업단지 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="firstSize" th:text="${firstSize}">m²</td>
+            <td class="cell-border">면적</td>
+            <td  id ="secondSize" th:text="${secondSize}">m²</td>
+          </tr>
+          <tr>
+            <td  id="firstCompletionDate" th:text="${firstCompletionDate}">YYYY년도 MM월 DD일</td>
+            <td class="cell-border">착공일 / 준공인가일</td>
+            <td id = "secondCompletionDate" th:text="${secondCompletionDate}">YYYY년도 MM월 DD일</td>
+          </tr>
+          <tr>
+            <td id="firstHighway" th:text="${firstHighway}">000 고속도로 00KM</td>
+            <td class="cell-border">고속도로</td>
+            <td id="secondHighway" th:text="${secondHighway}">000 고속도로 00KM</td>
+          </tr>
+          <tr>
+            <td id="firstSeaport" th:text="${firstSeaport}">00항만 00KM</td>
+            <td class="cell-border">항만</td>
+            <td id="secondSeaport" th:text="${secondSeaport}">00항만 00KM</td>
+          </tr>
+          <tr>
+            <td id="firstStation" th:text="${firstStation}">00역 00KM</td>
+            <td class="cell-border">철도</td>
+            <td id="secondStation" th:text="${secondStation}">00역 00KM</td>
+          </tr>
+          <tr>
+            <td id="firstAirport" th:text="${firstAirport}">00공항 00KM</td>
+            <td class="cell-border">항공</td>
+            <td id="secondAirport" th:text="${secondAirport}">00공항 00KM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const ITEMS_PER_PAGE = 6; // 페이지당 항목 수
+    let currentPage = 1; // 현재 페이지
+
+    const complexNames = document.querySelectorAll('.complex_name'); // 이름 요소들
+    const complexImages = document.querySelectorAll('[id^="image"]'); // ID가 'image'로 시작하는 이미지 요소들
+    const pageNumbers = document.querySelectorAll('.page-number'); // 페이지 번호
+    const prevButton = document.getElementById('prev-page'); // 이전 버튼
+    const nextButton = document.getElementById('next-page'); // 다음 버튼
+
+    const totalPages = Math.ceil(complexNames.length / ITEMS_PER_PAGE); // 총 페이지 수
+
+    // 페이지에 해당하는 항목과 이미지를 표시하는 함수
+    function showPage(page) {
+        const start = (page - 1) * ITEMS_PER_PAGE;
+        const end = start + ITEMS_PER_PAGE;
+
+        // 모든 이름과 이미지 숨기기
+        complexNames.forEach(item => (item.style.display = 'none'));
+        complexImages.forEach(img => (img.style.display = 'none'));
+
+        // 현재 페이지에 해당하는 이름과 이미지 표시
+        for (let i = start; i < end; i++) {
+            if (complexNames[i]) {
+                complexNames[i].style.display = 'block';
+                complexImages[i].style.display = 'block'; // 이름과 매칭되는 이미지 표시
+            }
+        }
+
+        // 현재 활성화된 페이지 번호 업데이트
+        pageNumbers.forEach(p => p.classList.remove('active'));
+        const activePage = document.querySelector(`.page-number[data-page="${page}"]`);
+        if (activePage) activePage.classList.add('active');
+    }
+    
+    // **complex_name 요소 더블클릭 이벤트: input에 값 추가**
+    complexNames.forEach(nameElement => {
+      nameElement.addEventListener('dblclick', () => {
+        const selectedText = nameElement.textContent; // 선택된 텍스트 가져오기
+
+        // 첫 번째 input이 비어 있으면 채우기
+        if (!firstFactory.value) {
+          firstFactory.value = selectedText;
+        }
+        // 두 번째 input이 비어 있으면 채우기
+        else if (!secondFactory.value) {
+          secondFactory.value = selectedText;
+        }
+        // 이미 두 개가 채워진 경우 경고 메시지
+        else {
+          alert('두 개의 산업단지만 선택할 수 있습니다.');
+        }
+      });
+    });
+
+    // **input 요소 클릭 시 초기화 이벤트**
+    firstFactory.addEventListener('click', () => {
+      firstFactory.value = ''; // 첫 번째 input 초기화
+    });
+
+    secondFactory.addEventListener('click', () => {
+      secondFactory.value = ''; // 두 번째 input 초기화
+    });    
+
+    // 페이지 번호 클릭 이벤트 처리
+    pageNumbers.forEach(page => {
+        page.addEventListener('click', () => {
+            currentPage = parseInt(page.getAttribute('data-page'));
+            showPage(currentPage);
+        });
+    });
+
+    // 이전 버튼 클릭 이벤트
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            showPage(currentPage);
+        }
+    });
+
+    // 다음 버튼 클릭 이벤트
+    nextButton.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            showPage(currentPage);
+        }
+    });
+
+    // 초기 페이지 표시
+    showPage(currentPage);
+});
+
+
+</script>
+</html>

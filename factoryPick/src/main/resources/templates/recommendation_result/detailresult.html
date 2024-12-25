@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{/css/detailresult-vars.css}">
+  <link rel="stylesheet" th:href="@{/css/detailresult-style.css}">
+	<script th:src="@{/script/authStatus.js}" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="frame-1">
+    <div class="rectangle-1"></div>
+    <div class="rectangle-7"></div>
+
+    <div class="complex_name_1" id="complexNameDisplay">
+      산업단지명 <!-- 데이터가 없을 때 기본 표시 -->
+    </div>
+
+    <!-- 산업단지 이름 출력 -->
+    <div class="complex_name_1">
+      <span id="complexName"></span>
+    </div>
+
+    <!-- 지도 표시 영역 -->
+    <div id="map"></div>
+
+    <div class="frame-3">
+      <div class="status-text" th:text="${complexInfoDTO.status}"
+        style="font-size: 25px; font-weight: bold; color: white; text-align: center;">
+      </div>
+    </div>
+
+    <div class="div2">준공인가일</div>
+
+    <div class="industry-section">
+      <div class="div3">업종집적도</div> <!-- 업종 집적도 텍스트 -->
+      <canvas id="industryPieChart" width="450" height="450"></canvas> <!-- 파이차트 -->
+    </div>
+
+
+
+    <div class="rectangle-5">
+      <div class="completion-date-label" th:text="${complexInfoDTO.completionDate}">
+      </div>
+    </div>
+
+    <div class="pie-chart-wrapper">
+      <div class="pie-chart">
+      </div>
+    </div>
+
+	<div class="set">   
+	  <div class="div4">유치업종</div>
+	  <div class="rectangle-6">
+	    <!-- complexInfoDTO가 존재하고 industryType이 있을 때 -->
+	    <div th:if="${complexInfoDTO != null && complexInfoDTO.industryType != null}">
+	      <div class="industry_type" th:text="${complexInfoDTO.industryType}">유치업종 종류</div>
+	    </div>
+	    
+	    <!-- complexInfoDTO가 null이거나 industryType이 없을 때 -->
+	    <div th:if="${complexInfoDTO == null || complexInfoDTO.industryType == null}">
+	      <p style="color: red;">유치업종 정보를 찾을 수 없습니다.</p>
+	    </div>
+	  </div>
+	  
+	  <div class="div5">세제혜택</div>
+	  <div class="button-tax-button"> 
+	    <button id="downloadPdfButton" class="download-button">세제혜택 바로 확인하기 🔍</button>
+	  </div> 
+	</div>
+
+    <script>
+      // 버튼 클릭 시 PDF 다운로드 엔드포인트로 이동
+      document.getElementById('downloadPdfButton').addEventListener('click', () => {
+        window.location.href = "/download-pdf";  // PDF 다운로드 요청
+      });
+    </script>
+
+    <div class="div7">교통정보</div>
+    <div class="div8">항공</div>
+    <!-- <div class="highway">
+        <span th:text="${transInfoDTO.highwayName}">고속도로 이름</span><br>
+        <span th:text="${transInfoDTO.highwayDistance} + 'km'">0km</span>
+   </div> -->
+
+    <div class="highway">
+      <span th:text="${highwayInfo}">고속도로 정보</span>
+    </div>
+
+
+    <div class="group-5"></div>
+    <div class="rectangle-8"></div>
+    <div class="rectangle-9"></div>
+    <div class="rectangle-10"></div>
+    <div class="rectangle-11"></div>
+    <div class="div10">고속도로</div>
+    <div class="div11">고속철도</div>
+    <div class="div12">항만</div>
+
+    <!-- <div class="airport">
+        <span th:text="${transInfoDTO.airportName}">공항 이름</span><br>
+        <span th:text="${transInfoDTO.airportDistance} + 'km'">0km</span>
+     </div> -->
+
+    <div class="airport">
+      <span th:text="${airportInfo}">공항 정보</span>
+    </div>
+
+    <!-- <div class="seaport">
+        <span th:text="${transInfoDTO.seaportName}">항만 이름</span><br>
+        <span th:text="${transInfoDTO.seaportDistance} + 'km'">0km</span>
+     </div> -->
+
+    <div class="seaport">
+      <span th:text="${seaportInfo}">항만 정보</span>
+    </div>
+
+    <!-- <div class="train">
+         <span th:text="${transInfoDTO.stationName}">철도 이름</span><br>
+         <span th:text="${transInfoDTO.stationDistance} + 'km'">0km</span>
+      </div> -->
+
+    <div class="train">
+      <span th:text="${stationInfo}">철도 정보</span>
+    </div>
+
+  
+    <div class="group-52">
+      <img class="fishing-boat" th:src="@{../images/fishing-boat0.png}" />
+      <img class="train_image" th:src="@{../images/train0.png}" />
+      <img class="truck" th:src="@{../images/truck0.png}" />
+      <img class="airplane-take-off" th:src="@{../images/airplane-take-off0.png}" />
+    </div>
+    <div class="group-1">
+      <div class="button2">
+        <a class="recommendation pleaseButtonHover" data-recommendation="recommendation"
+          th:href="@{/recommendation/recommendation_intro}">
+          공장입지 추천 받기
+        </a>
+      </div>
+      <div class="button3">
+        <a class="intro pleaseButtonHover" data-intro="intro" th:href="@{/intro}">추천시스템 소개</a>
+      </div>
+      <div class="button4">
+        <a class="property pleaseButtonHover" data-property="property" th:href="@{/property/intro}">산업단지 둘러보기</a>
+      </div>
+      <div class="button5">
+        <a class="myPage pleaseButtonHover" data-my-page="myPage" th:href="@{/FinalModal}">마이페이지</a>
+      </div>
+      <div class="button6">
+        <a class="support pleaseButtonHover" data-support="suppport" th:href="@{/support}">고객지원</a>
+      </div>
+      <div class="button7">
+        <div class="users pleaseButtonHover">일반회원</div>
+      </div>
+      <div class="button8">
+        <div class="agent pleaseButtonHover">중개인</div>
+      </div>
+      <div class="button9">
+        <div class="login pleaseButtonHover" id="authButton"><a th:href="@{/login}">로그인/ 회원가입</a></div>
+      </div>
+    </div>
+    <div class="button10">
+      <a th:href="@{/}">
+        <img class="home pleaseButtonHover" data-mainpage="mainpage" th:src="@{../images/image-20.png}" />
+      </a>
+    </div>
+    <div class="div21">
+      <div class="property-1-heart">
+      </div>
+    </div>
+
+    <div class="frame-4">
+      <a href="/mainresult" class="back-link"> <!-- URL 수정 -->
+         < 추천 결과로 되돌아가기 </a>
+    </div>
+    <div class="line-6"></div>
+    <div class="div24">중개인 정보</div>
+    <div class="rectangle-3"></div>
+    <div class="rectangle-32"></div>
+    <div class="rectangle-42"></div>
+    <div class="div25">산업용지 평균 분양가</div>
+    <div class="div26">홍길동</div>
+    <div class="rectangle-33"></div>
+    <div class="div27">중개인 연결 🔍</div>
+
+
+<div class="land_price" id="landPrice" th:text="'₩ ' + ${complexInfoDTO.avgPrice} + ' / ㎡'">₩</div>
+<div class="land_size" id="landSize" th:text="${complexInfoDTO.landSize} + ' ㎡'">㎡</div>
+
+<script>
+  // 숫자에 컴마 추가 함수
+  function formatNumberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  // 컴마 추가를 위한 HTML 요소 업데이트
+  const landPriceElement = document.getElementById("landPrice");
+  const landSizeElement = document.getElementById("landSize");
+
+  // land_price와 land_size 값에 대해 컴마 추가
+  if (landPriceElement) {
+    const originalLandPrice = landPriceElement.innerText.replace(/₩| \/ ㎡/g, '').trim(); // 숫자만 추출
+    landPriceElement.innerText = '₩ ' + formatNumberWithCommas(originalLandPrice) + ' / ㎡';
+  }
+
+  if (landSizeElement) {
+    const originalLandSize = landSizeElement.innerText.replace(/㎡/g, '').trim(); // 숫자만 추출
+    landSizeElement.innerText = formatNumberWithCommas(originalLandSize) + ' ㎡';
+  }
+</script>
+
+
+    <div class="_010-1234-5678">010-1234-5678</div>
+    <div class="_513">서울특별시 강남구 영동대로 513</div>
+    <div class="rectangle-34"></div>
+    <!-- <div class="div28">사이트 바로가기 👆</div> -->
+    <div class="div28" id="goToSite">사이트 바로가기 👆</div>
+    <!-- URL 오류 메시지 표시 -->
+    <div th:if="${urlError != null}">
+      <p style="color: red;">[[${urlError}]]</p>
+    </div>
+
+    <script th:inline="javascript">
+      const websiteUrl = /*[[${websiteUrl}]]*/ "";
+
+      console.log("Website URL:", websiteUrl);  // 디버깅용 로그
+
+      document.getElementById('goToSite').addEventListener('click', () => {
+        if (websiteUrl && websiteUrl.startsWith("http")) {
+          window.location.href = websiteUrl;  // 해당 URL로 이동
+        } else {
+          alert('유효한 URL을 찾을 수 없습니다.');
+        }
+      });
+    </script>
+
+
+
+    <!-- Kakao 지도 API 추가 -->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1708a916702bd0a90d99218c7d3dbfbd"></script>
+
+    <!-- 지도 API 스크립트 -->
+    <script>
+
+
+      let complexData = [];
+
+      //JSON 파일에서 산업단지 위치 데이터를 로드합니다.
+      fetch('/script/COMPLEX_POSITION.json')
+        .then(response => response.json())
+        .then(data => {
+          complexData = data;  // 데이터를 변수에 저장
+          initMap();  // 지도 초기화 함수 호출
+        })
+        .catch(error => console.error('JSON 데이터를 불러오는 중 오류 발생:', error));
+
+      //URL에서 전달된 파라미터를 추출하는 함수
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);  // 'name' 파라미터 값을 반환
+      }
+
+      //지도 초기화 함수
+      function initMap() {
+        const complexName = getQueryParam('name');  // URL에서 'name' 값을 가져옴
+        if (!complexName) {
+          alert('산업단지 이름을 찾을 수 없습니다.');
+          return;
+        }
+
+        // 동적으로 산업단지명을 표시
+        document.getElementById('complexNameDisplay').innerText = complexName;
+
+        // 지도 위치 데이터를 불러와서 처리하는 나머지 로직
+        const complexLocation = complexData.find(complex => complex.complex_name === complexName);  // 이름이 일치하는 데이터를 찾음
+
+        if (complexLocation) {
+          // 카카오 지도 생성 및 설정
+          const mapContainer = document.getElementById('map');
+          const mapOption = {
+            center: new kakao.maps.LatLng(complexLocation.latitude, complexLocation.longitude),  // 산업단지 좌표
+            level: 6  // 줌 레벨
+          };
+          const map = new kakao.maps.Map(mapContainer, mapOption);  // 지도 생성
+
+          // 마커 생성 및 지도에 추가
+          const marker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(complexLocation.latitude, complexLocation.longitude)
+          });
+          marker.setMap(map);
+
+          // 마커에 산업단지 이름을 표시하는 인포윈도우 추가
+          const infowindow = new kakao.maps.InfoWindow({
+            content: `<div class="custom-info-window" style="
+            background-color: #fca311;
+            	font-size: 22px; 
+                font-weight: bold; 
+                text-align: center; 
+                padding: 10px;
+                border-radius: 8px;
+          ">${complexName}</div>`
+          });
+          infowindow.open(map, marker);
+        } else {
+          alert('해당 산업단지 위치 정보를 찾을 수 없습니다.');
+        }
+      }
+      
+      
+    </script>
+    <div class="div29">산업단지 면적</div>
+
+    <div class="complex_name_2" th:text="${complexInfoDTO.complexName}">
+      <span id="complexName">산업단지명</span>
+      <img class="favorite" src="path_to_favorite_icon.png" alt="favorite icon">
+    </div>
+    <div class="province" th:text="${province}">산업단지 위치</div>
+    <div class="div32">
+    </div>
+    <img class="circled-user-male-skin-type-6" th:src="@{../images/circled-user-male-skin-type-60.png}" />
+    <div class="variant-3">
+    </div>
+
+<!-- Chart.js 파이차트 생성 스크립트 -->
+<script th:inline="javascript">
+  const complexRatioData = /*[[${complexRatioData}]]*/ {};  // Thymeleaf 데이터를 JS로 전달
+  console.log('ComplexRatio Data:', complexRatioData);  // 데이터가 올바르게 전달되는지 확인
+
+  // 데이터를 가져와서 합계를 계산
+  const rawData = [
+    complexRatioData.food || 0,
+    complexRatioData.clothing || 0,
+    complexRatioData.wood || 0,
+    complexRatioData.petrochemical || 0,
+    complexRatioData.nonMetal || 0,
+    complexRatioData.metal || 0,
+    complexRatioData.electronics || 0,
+    complexRatioData.trans || 0,
+    complexRatioData.other || 0,
+    complexRatioData.nonManu || 0
+  ];
+
+  // 전체 합을 구하고 각 항목의 비율을 계산
+  const total = rawData.reduce((acc, value) => acc + value, 0);
+  const data = rawData.map(value => value / total);  // 1로 정규화된 데이터 배열
+
+  const ctx = document.getElementById('industryPieChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: [
+        '음식료', '섬유의복', '목재종이', '석유화학', '비금속',
+        '철강', '기계', '전기전자', '운송장비', '기타', '비제조업'
+      ],
+      datasets: [{
+        data: data,
+        backgroundColor: [
+          '#FF5733',  // 빨강-주황
+          '#33FF57',  // 연두
+          '#3357FF',  // 파랑
+          '#FF33A8',  // 핑크
+          '#33FFF5',  // 민트
+          '#FFC300',  // 노랑
+          '#DAF7A6',  // 연두빛
+          '#fca311',
+          '#6baed6',  // 밝은 하늘색
+          '#581845',  // 진한 보라
+          '#e5e5e5'
+        ],
+      }]
+    },
+    options: {
+      responsive: false,
+      maintainAspectRatio: false,
+      layout: {
+        padding: 0
+      },
+      plugins: {
+        legend: { position: 'top' },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              const value = context.raw;
+              const percentage = (value * 100).toFixed(2) + '%';
+              return `${context.label}: ${percentage}`;
+            }
+          }
+        }
+      }
+    }
+  });
+</script>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-menu">
+        <a href="#">추천 시스템 소개</a>
+        <a href="#">공장입지 추천받기</a>
+        <a href="#">산업단지 둘러보기</a>
+        <a href="#">마이페이지</a>
+        <a href="#">로그인 / 회원가입</a>
+      </div>
+      <div class="footer-info">
+        <p>상호: (주)팩토리픽 | 대표: 임한솔 | 사업자등록번호: 120-87-61559</p>
+        <p>주소: 서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽 고객센터 1661-6844</p>
+        <p>COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.</p>
+        <p>서비스 이용문의: 1661-8734 | 이메일: hanwhasystem@factorypick.com</p>
+        <p>팩스: 02-568-4908 | 서비스제휴문의: partnership@factorypick.com | 분양광고 문의: ad@factorypick.com</p>
+      </div>
+      <img src="../images/image-30.png" alt="FactoryPick Logo" class="footer-logo" />
+    </div>
+  </footer>
+</html>

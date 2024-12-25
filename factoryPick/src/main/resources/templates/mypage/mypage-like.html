@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/mypage-like-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/mypage-like-style.css}">
+  
+  <style>
+   a,
+   button,
+   input,
+   select,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: none;
+       text-decoration: none;
+       background: none;
+   
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   menu, ol, ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="frame-1">
+    <div class="div">
+      <div class="div2">마이페이지</div>
+    </div>
+    <div class="rectangle-10"></div>
+    <div class="_1-2-3-4-5-6">
+      <span>
+        <span class="_1-2-3-4-5-6-span">1</span>
+        <span class="_1-2-3-4-5-6-span2">2 3 4 5 6</span>
+      </span>
+    </div>
+    <div class="rectangle-6"></div>
+    <div class="rectangle-7"></div>
+    <div class="rectangle-8"></div>
+    <div class="rectangle-9"></div>
+    <div class="div3">&lt;&lt;</div>
+    <div class="div4">&lt;</div>
+    <div class="div5">&gt;</div>
+    <div class="div6">&gt;&gt;</div>
+    <div class="rectangle-17"></div>
+    <div class="complex_name" id="complex_name1" th:text="${complexName1}">산업단지명</div>
+    <div class="rectangle-172"></div>
+    <div class="complex_name" id="complex_name2" th:text="${complexName2}">산업단지명</div>
+    <div class="group-52">
+      <div class="rectangle-173"></div>
+      <div class="complex_name" id="complex_name3" th:text="${complexName3}">산업단지명</div>
+      <div class="group-53">
+        <div class="rectangle-174"></div>
+        <div class="complex_name" id="complex_name4" th:text="${complexName4}">산업단지명</div>
+        <div class="group-54">
+          <div class="rectangle-175"></div>
+          <div class="complex_name" id="complex_name5" th:text="${complexName5}">산업단지명</div>
+          <div class="group-55">
+            <div class="rectangle-176"></div>
+            <div class="complex_name" id="complex_name6" th:text="${complexName6}">산업단지명</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="image-2" th:src="@{../images/image-70.png}" />
+    <img class="image-7" th:src="@{../images/image-70.png}" />
+    <img class="image-8" th:src="@{../images/image-80.png}" />
+    <img class="image-9" th:src="@{../images/image-90.png}" />
+    <img class="image-10" th:src="@{../images/image-100.png}" />
+    <img class="image-11" th:src="@{../images/image-110.png}" />
+    <div class="div13">
+      ※ 산업단지명을 클릭하면 산업단지의 자세한 정보를 파악할 수 있습니다.
+      <br />
+      ※ 비교하기 버튼을 클릭하시면, 비교하고자 하는 산업단지 간의 정보를 한 눈에
+      비교할 수 있습니다.
+    </div>
+    <img class="rectangle-3" th:src="@{../images/rectangle-30.svg}" />
+    <div class="div14">
+      비교하고 싶은
+      <br />
+      산업단지를 선택해주세요!
+    </div>
+    <div class="classic-button-true">
+      <div class="button">
+        <div class="get-started">비교 시작하기 💻</div>
+      </div>
+    </div>
+    <img
+      class="smiling-young-man-with-laptop-sitting-on-floor"
+      th:src="@{/images/smiling-young-man-with-laptop-sitting-on-floor0.png}"
+    />
+    <div class="rectangle-4"></div>
+    <img class="image-22" th:src="@{../images/image-11.png}" />
+    <div class="div15">추천 시스템 소개</div>
+    <div class="div16">마이페이지</div>
+    <div class="div17">산업단지 둘러보기</div>
+    <div class="div18">공장입지 추천받기</div>
+    <div class="div19">로그인 / 회원가입</div>
+    <div class="line-7"></div>
+    <div class="line-8"></div>
+    <div class="line-9"></div>
+    <div class="line-10"></div>
+    <div
+      class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com"
+    >
+      <span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span"
+        >
+          상호 : (주)팩토리픽  |  대표 : 임한솔 |  사업자등록번호: 120-87-61559
+          <br />
+          주소 :서울특별시 강남구 영동대로511(삼성동, 무역회관 4703호) 팩토리픽
+          고객센터 1661-6844
+          <br />
+          COPYRIGHT© 2024 FACTORY PICK CORP. ALL RIGHTS RESERVED.
+          <br />
+          서비스 이용문의: 1661-8734  |  이메일 : hanwhasystem
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span2"
+        >
+          com 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3"
+        >
+           |  팩스 : 02-568-4908
+          <br />
+          서비스제휴문의 : 
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4"
+        >
+          partnership@factorypick.com
+        </span>
+        <span
+          class="_120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5"
+        >
+            |  분양광고 문의 : ad@factorypick.com
+        </span>
+      </span>
+    </div>
+    <img class="image-3" th:src="@{../images/image-30.png}" />
+    <div class="div20">찜한 산업단지</div>
+	<div class="div21">추천받은 산업단지</div>
+	<div class="_1-1">1:1 문의</div>
+	<div class="div22">정보 수정</div>
+	<div class="first-choice">
+	  <div class="rectangle-18"></div>
+	</div>
+	<div class="second-choice">
+	  <div class="rectangle-19"></div>
+	</div>
+	<div class="div23" th:text="${firstFactoryName}">첫 번째 산업단지</div>
+	<div class="div24" th:text="${secondFactoryName}">두 번째 산업단지</div>
+	<div class="line-6"></div>
+	<div class="group-56">
+	  <div class="group-4">
+	    <div class="group-1">
+	      <div class="button2">
+	        <button class="recommendation" data-recommendation="recommendation">
+	          공장입지 추천 받기
+	        </button>
+	      </div>
+	      <div class="button3">
+	        <button class="intro" data-intro="intro">추천시스템 소개</button>
+	      </div>
+	      <div class="button4">
+	        <button class="property" data-property="property">
+	          산업단지 둘러보기
+	        </button>
+	      </div>
+	      <div class="button5">
+	        <button class="myPage" data-my-page="myPage">마이페이지</button>
+	      </div>
+	      <div class="button6">
+	        <button class="support" data-support="support">고객지원</button>
+	      </div>
+	      <div class="button7">
+	        <div class="users">일반회원</div>
+	      </div>
+	      <div class="button8">
+	        <div class="agent">중개인</div>
+	      </div>
+	      <div class="button9">
+	        <div class="login">로그인/ 회원가입</div>
+	      </div>
+	    </div>
+	    <div class="button10">
+	      <img class="home" data-mainpage="mainpage" th:src="@{../images/image-20.png}" />
+	    </div>
+	  </div>
+	</div>

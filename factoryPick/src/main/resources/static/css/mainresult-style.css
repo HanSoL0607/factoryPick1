@@ -1,0 +1,1034 @@
+.rectangle-6 {
+  background: white !important;
+  ;
+  width: 800px !important;
+  ;
+  height: 970px !important;
+  ;
+  position: absolute !important;
+  ;
+  left: 999px !important;
+  ;
+  top: 1100px !important;
+  ;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15),
+    /* 메인 그림자 */
+    0px 6px 10px rgba(0, 0, 0, 0.05);
+  /* 부드러운 작은 그림자 */
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* 미세한 테두리로 경계선 */
+}
+
+.ranking-header {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: relative;
+  left: 50%;
+  /* 부모 요소 기준으로 중앙 정렬 */
+  top: 5.5%;
+  /* 부모 요소에서의 상대적 위치 */
+  transform: translateX(-50%);
+  /* 정확한 중앙 배치 */
+  width: 546px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+  /* z-index 추가 */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ranking-table {
+  width: 90%;
+  /* 전체 테이블의 폭 설정 */
+  margin: 0 auto;
+  /* 수평 중앙 정렬 */
+  margin-top: 70px !important;
+  border-radius: 30px;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: auto;
+  /* 열의 크기를 내용에 따라 설정 */
+}
+
+.ranking-table th,
+.ranking-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  font-size: 25px;
+}
+
+.ranking-table th {
+  background-color: #fca311;
+  font-weight: bold;
+  color: white;
+}
+
+/* 각 컬럼의 너비 설정 */
+.ranking-table th:nth-child(1),
+.ranking-table td:nth-child(1) {
+  width: 30%;
+  /* 추천 순위 컬럼 폭 작게 */
+}
+
+.ranking-table th:nth-child(2),
+.ranking-table td:nth-child(2) {
+  width: 70%;
+  /* 추천 단지 컬럼 폭 크게 */
+}
+
+.ranking-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+  /* 짝수 줄에 다른 배경색 적용 */
+}
+
+.ranking-table tbody tr:hover {
+  background-color: #fca311;
+  /* 마우스를 올렸을 때 노란색으로 변경 */
+  color: white;
+  /* 글자 색상도 흰색으로 변경 */
+}
+
+.footer {
+  background-color: #f0f0f0;
+  /* Gray background */
+  padding: 20px 40px;
+  width: 100%;
+  position: absolute;
+  /* If you want to always keep it at the bottom */
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.footer-menu a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.footer-menu a:hover {
+  color: #fca311;
+  /* Highlight color */
+}
+
+.footer-info {
+  color: #000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.div-6-span {
+  text-shadow: 2px 2px 4px rgba(255, 166, 0, 0.2);
+}
+
+.div-6-span2,
+div7 {
+  text-shadow: 2px 2px 4px rgba(109, 109, 109, 0.2);
+}
+
+.button:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover,
+.button8:hover,
+.button9:hover {
+  color: #ffffff;
+  /* 텍스트 색상 변경 */
+  transform: scale(1.05);
+  /* 요소 크기 살짝 확대 */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  /* 애니메이션 효과 */
+}
+
+.intro {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.property {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.myPage {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.support {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.recommendation {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.users {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+
+}
+
+.agent {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+
+}
+
+.login {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.frame-1,
+.frame-1 * {
+  box-sizing: border-box;
+}
+
+.frame-1 {
+  background: #ffffff;
+  height: 2400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.group-2 {
+  position: absolute;
+  inset: 0;
+}
+
+.rectangle-4 {
+  background: rgba(203, 203, 203, 0.25);
+  width: 1927px;
+  height: 291px;
+  position: absolute;
+  left: 0px;
+  top: 1024px;
+}
+
+.image-2 {
+  width: 320px;
+  height: 93.81px;
+  position: absolute;
+  left: 1102px;
+  top: 1181px;
+  object-fit: cover;
+}
+
+.div {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 174px;
+  top: 1056px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1134px;
+  top: 1062px;
+  width: 300px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 818px;
+  top: 1053px;
+  width: 292px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div4 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 494px;
+  top: 1056px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div5 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1454px;
+  top: 1053px;
+  width: 300px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-7 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 483px;
+  top: 1097.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+
+.line-8 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 806px;
+  top: 1097.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+
+.line-9 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 1124px;
+  top: 1100.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+
+.line-10 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 43.01px;
+  height: 0px;
+  position: absolute;
+  left: 1446px;
+  top: 1097.01px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: var(--line-height-23, 23px);
+  font-weight: 400;
+  position: absolute;
+  left: 238px;
+  top: 1151px;
+  width: 806px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span2 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span3 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span4 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+._120-87-61559-511-4703-1661-6844-copyright-2024-factory-pick-corp-all-rights-reserved-1661-8734-hanwhasystemcom-02-568-4908-partnership-factorypick-com-ad-factorypick-com-span5 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.image-3 {
+  width: 327px;
+  height: 53px;
+  position: absolute;
+  left: 1464px;
+  top: 1216px;
+  object-fit: cover;
+}
+
+.image-1 {
+  width: 843px;
+  height: 669px;
+  position: absolute;
+  left: 149px;
+  top: 294px;
+  object-fit: cover;
+}
+
+.div6 {
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  width: 100%;
+  /* 화면 전체에 맞춰서 중앙 정렬을 쉽게 만듭니다 */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* 화면에 고정 */
+  top: 145px;
+  /* 화면의 10% 위치에 고정 */
+  left: 960px;
+  /* 수평 중앙 */
+  transform: translateX(-50%);
+  /* 수평 중앙만 맞추기 위한 transform */
+  z-index: 1000;
+  /* 다른 요소 위에 고정 */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* 배경색 추가 (투명도 조절) */
+  text-shadow: 2px 2px 4px (rgba 0, 0, 0 0.2);
+}
+
+.div-6-span {
+  color: #fca311;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.div-6-span2 {
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.rectangle-5 {
+  background: #ffffff;
+  /* 그라데이션 배경 */
+  width: 800px !important;
+  ;
+  height: 970px !important;
+  ;
+  position: absolute;
+  left: 148px;
+  top: 1100px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15),
+    /* 메인 그림자 */
+    0px 6px 10px rgba(0, 0, 0, 0.05);
+  /* 부드러운 작은 그림자 */
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* 미세한 테두리로 경계선 */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
+  /* 수평 중앙 정렬 */
+  align-items: flex-start;
+  /* 위쪽에서 시작 */
+  padding-top: 200px;
+  /* 위쪽 여백 추가 */
+}
+
+#radarChart {
+  display: block;
+  position: absolute;
+  /* 절대 위치 지정 */
+  left: 50%;
+  /* 부모 요소 기준 수평 중앙 */
+  top: 55%;
+  /* 부모 요소 기준 수직 중앙 */
+  transform: translate(-50%, -50%);
+  /* 정확히 중앙에 배치 */
+  width: 700px !important;
+  /* 차트 크기 설정 */
+  height: 700px !important;
+  image-rendering: crisp-edges;
+  /* 이미지 선명도 유지 */
+
+}
+
+.div7 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  position: absolute;
+  left: 270px;
+  top: 1170px;
+  width: 546px;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.rectangle-6 {
+  background: #d9d9d9;
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  left: 1219px;
+  top: 419px;
+}
+
+.group-4 {
+  position: absolute;
+  inset: 0;
+}
+
+.group-1 {
+  width: 1806px;
+  height: 103px;
+  position: static;
+}
+
+.button {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  position: absolute;
+  left: 642px;
+  top: 33px;
+
+}
+
+.sing-in {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.button2 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 251px;
+  height: 30px;
+  position: absolute;
+  left: 414px;
+  top: 39px;
+
+}
+
+.button3 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 30px;
+  position: absolute;
+  left: 958px;
+  top: 39px;
+
+}
+
+.button4 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 196px;
+  height: 30px;
+  position: absolute;
+  left: 1240px;
+  top: 38px;
+
+}
+
+.button5 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 30px;
+  position: absolute;
+  left: 1443px;
+  top: 38px;
+
+}
+
+.button6 {
+  background: #fca311;
+  border-radius: 15px;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 1713px;
+  top: 33px;
+
+}
+
+.sing-in2 {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.button7 {
+  background: #fca311;
+  border-radius: 15px;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 117px;
+  position: absolute;
+  left: 1713px;
+  width: 123px;
+  top: 71px;
+
+}
+
+.sing-in3 {
+  color: #000000;
+  text-align: center;
+  font-family: var(--navigation-font-family, "Inter-Bold", sans-serif);
+  font-size: var(--navigation-font-size, 14px);
+  line-height: var(--navigation-line-height, 120%);
+  letter-spacing: var(--navigation-letter-spacing, -0.03em);
+  font-weight: var(--navigation-font-weight, 700);
+  position: relative;
+}
+
+.button8 {
+  background: #ffffff;
+  padding: 5px 26px 5px 26px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 228px;
+  height: 30px;
+  position: absolute;
+  left: 1658px;
+  top: 0px;
+}
+
+
+.sing-in4 {
+  color: #000000;
+  text-align: center;
+  font-family: var(--var-sds-typography-title-hero-font-family,
+      "Inter-Bold",
+      sans-serif);
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  font-weight: var(--var-sds-typography-title-hero-font-weight, 700);
+  position: relative;
+}
+
+.button9 {
+  width: 253px;
+  height: 80px;
+  position: absolute;
+  left: 80px;
+  top: 9px;
+
+}
+
+.image-12 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+.line-6 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 1920px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 120.17px;
+  transform-origin: 0 0;
+  transform: rotate(-0.124deg) scale(1, 1);
+
+}
+
+.variant-3 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 1536px;
+  top: 274px;
+}
+
+.favorite {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  object-fit: cover;
+}
+
+
+/* 차트의 캔버스 자체 스타일 (차트 크기 설정)
+#radarChart {
+  width: 100%; 캔버스가 감싸는 div 크기에 맞추어 크기를 설정
+  height: 100%;
+} */
+
+
+
+.go-detail-button {
+
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 1130px;
+  left: 840px;
+  /* 화면 좌우 중앙 정렬을 위해 50%로 설정 */
+  transform: translateX(-50%);
+  /* 정확히 중앙으로 정렬되도록 이동 */
+  font-weight: bold;
+}
+
+.go-detail-button:hover {
+  background-color: darkorange;
+}
+
+.complex-info {
+  display: flex;
+  flex-direction: column;
+  /* 세로 방향 정렬 */
+  align-items: center;
+  /* 가로 중앙 정렬 */
+  margin-top: 20px;
+  /* 부모 요소와의 상단 간격 */
+  gap: 10px;
+  /* 요소 간 간격 */
+}
+
+/* 지도 스타일 */
+#map {
+  width: 1650px;
+  height: 800px;
+  top: 240px;
+  left: 150px;
+  right: 150px;
+  border-radius: 15px;
+  /* 부드러운 모서리 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  /* 부드러운 그림자 효과 */
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  /* 미세한 테두리 */
+}
+
+
+div[style*="border"] {
+  border: none !important;
+  background: unset !important;
+  /* 배경 제거 */
+}
+
+/* 커스텀 정보 창 스타일 */
+#custom-info-window {
+  padding: 8px 16px;
+  /* 상하와 좌우 패딩을 추가해 중앙 배치 */
+  font-size: 18px;
+  /* 약간 줄인 글씨 크기로 정제된 느낌 */
+  text-align: center;
+  background-color: #e07b2b;
+  /* 따뜻한 오렌지 배경 */
+  color: #ffffff;
+  /* 흰색 텍스트 */
+  min-width: 60px;
+  /* 최소 너비를 늘려 여유있는 레이아웃 */
+  font-weight: 700;
+  /* 살짝 얇은 글씨로 가볍고 세련된 느낌 */
+  border-radius: 15px;
+  /* 부드러운 둥근 모서리 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15),
+    /* 미세한 그림자 */
+    0px 8px 20px rgba(0, 0, 0, 0.1);
+  /* 더 깊은 그림자로 다층 그림자 효과 */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  /* 부드러운 전환 */
+}
+
+/* 호버 시 배경 색상, 크기, 그림자 조정 */
+#custom-info-window:hover {
+  background-color: #d96c20;
+  /* 진한 오렌지색 */
+  transform: scale(1.1);
+  /* 크기를 1.1배로 확대 */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  /* 그림자 효과 */
+}
+
+
+/* 테이블에서 클릭 가능한 요소에 포인터 커서 및 배경색 강조 추가 */
+.rank-clickable:hover,
+.complex-clickable:hover {
+  cursor: pointer;
+  color: #ffffff;
+  /* 흰색 텍스트로 변경 */
+  background-color: #fca311;
+  /* 강조 배경색 */
+  font-weight: bold;
+  /* 텍스트를 굵게 표시 */
+}
+
+.pleaseButtonHover:hover {
+  cursor: pointer;
+  /* hover 시 클릭 모양으로 변경 */
+}

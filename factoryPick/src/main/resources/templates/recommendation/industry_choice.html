@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/industry choice-vars.css}">
+  <link rel="stylesheet" th:href="@{../css/industry choice-style.css}">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>업종</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="frame-1">
+      <div class="div2">
+        <span>
+          <span class="div-2-span">어떤</span>
+          <span class="div-2-span2">"업종"</span>
+          <span class="div-2-span3">에 종사하고 계시나요?</span>
+        </span>
+      </div>
+      <div class="div"></div>
+
+      <!-- 선택된 업종을 백엔드로 보내는 폼 -->
+      <form id="industryForm" th:action="@{/recommendation/industry_choice}" method="post">
+        <input type="hidden" id="selectedIndustry" name="industry" value="" required> <!-- 숨겨진 input 필드 -->
+      </form>
+
+
+      <!-- 11개의 버튼 추가 -->
+      <div class="button-container">
+        <!-- 첫 번째 줄 5개 -->
+        <div class="button-row">
+          <button class="industry-button" onclick="selectIndustry('음식료')">음식료</button>
+          <button class="industry-button" onclick="selectIndustry('섬유의복')">섬유의복</button>
+          <button class="industry-button" onclick="selectIndustry('목재종이')">목재종이</button>
+          <button class="industry-button" onclick="selectIndustry('석유화학')">석유화학</button>
+          <button class="industry-button" onclick="selectIndustry('비금속')">비금속</button>
+        </div>
+        <!-- 두 번째 줄 6개 -->
+        <div class="button-row">
+          <button class="industry-button" onclick="selectIndustry('철강')">철강</button>
+          <button class="industry-button" onclick="selectIndustry('기계')">기계</button>
+          <button class="industry-button" onclick="selectIndustry('전기전자')">전기전자</button>
+          <button class="industry-button" onclick="selectIndustry('운송장비')">운송장비</button>
+          <button class="industry-button" onclick="selectIndustry('기타')">기타</button>
+          <button class="industry-button" onclick="selectIndustry('비제조')">비제조</button>
+        </div>
+      </div>
+
+      <div id="selected-industry" class="selected-industry">
+        선택된 업종: <span id="industry-name"></span>
+      </div>
+
+      <div class="arrow-and-number">
+        <a th:href="@{/recommendation/payable_choice_copy}">
+          <img class="left" th:src="@{../images/left.svg}" />
+        </a>
+        <div class="_4">4</div>
+
+        <!-- 오른쪽 화살표 버튼 (서버로 제출할 버튼) -->
+        <a href="#" id="submit-button">
+          <img class="right" th:src="@{../images/right.svg}" alt="다음" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function selectIndustry(industry) {
+      event.preventDefault(); // 기본 클릭 동작 방지
+
+      // 모든 버튼에서 'selected' 클래스 제거
+      const buttons = document.querySelectorAll('.industry-button');
+      buttons.forEach(button => button.classList.remove('selected'));
+
+
+      // 현재 클릭된 버튼에만 'selected' 클래스 추가
+      const clickedButton = event.currentTarget;
+      clickedButton.classList.add('selected');
+
+      // 선택된 업종을 숨겨진 input에 설정
+      document.getElementById('selectedIndustry').value = industry;
+      document.getElementById('industry-name').textContent = industry;
+
+    }
+
+    const submitButton = document.getElementById('submit-button');
+    const industryInput = document.getElementById('selectedIndustry'); // 숨겨진 input 필드
+    const form = document.getElementById('industryForm'); // 폼
+
+    // 오른쪽 화살표 클릭 시 폼 제출
+    submitButton.addEventListener('click', function (event) {
+      event.preventDefault(); // 기본 링크 동작 방지
+      if (industryInput.value) {
+        console.log("저장할 업종: " + industryInput.value); // 로그로 선택된 업종 확인
+        form.submit(); // 폼 제출
+      } else {
+        alert('업종을 선택해주세요.'); // 업종이 선택되지 않았을 경우 알림
+      }
+    });
+  </script>
+</body>
+
+</html>

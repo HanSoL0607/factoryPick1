@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" th:href="@{../css/payable choice-vars copy.css}">
+  <link rel="stylesheet" th:href="@{../css/payable choice-style copy.css}">
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      background: none;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <title>임대가격</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="frame-1">
+      <div class="div2">
+        <span>
+          <span class="div-2-span2">"임대가격 상한선"</span>
+          <span class="div-2-span5">을 설정해주세요!</span>
+        </span>
+      </div>
+      <div class="div">
+        ※ 산업단지별 토지 임대가격의 평균가격과 연결됩니다.
+      </div>
+
+      <!-- 사용자 입력 폼 -->
+      <form id="landPrice-form" th:action="@{/recommendation/payable_choice_copy}" method="post">
+        <div class="input-field-container">
+          <label for="landPrice">산업용지 평균분양가 (원/㎡):</label>
+          <input type="number" id="landPrice" name="landPrice" required placeholder="토지 가격 입력">
+        </div>
+      </form>
+
+      <!-- 화살표 버튼 및 숫자 -->
+      <div class="arrow-and-number">
+        <a th:href="@{/recommendation/transportation_choice}">
+          <img class="left" th:src="@{../images/left.svg}" />
+        </a>
+        <div class="_3">3</div>
+        <a href="#" id="submit-arrow">
+          <img class="right" th:src="@{../images/right.svg}" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 오른쪽 화살표 버튼과 폼 요소 가져오기
+    const submitArrow = document.getElementById('submit-arrow');
+    const landPriceForm = document.getElementById('landPrice-form');
+    const landPriceInput = document.getElementById('landPrice');
+
+    // 오른쪽 화살표 클릭 시 폼 제출 및 페이지 이동
+    submitArrow.addEventListener('click', function (event) {
+      event.preventDefault(); // 기본 링크 동작 방지
+
+      if (landPriceInput.value) {
+        console.log("제출할 토지 가격:", landPriceInput.value);  // 폼 데이터 확인용 로그
+        landPriceForm.submit(); // 폼 제출
+      } else {
+        alert('토지 가격을 입력하세요.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
